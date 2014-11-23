@@ -1,6 +1,6 @@
 import numpy
 
-input = [1,2,3,4,5,6,7,8,-9,-8,-7,-6,-5,43,32,23,21]
+input = [2,4,1,3,5]
 output = [0] * len(input)
 #output = numpy.zeros(len(input))
 
