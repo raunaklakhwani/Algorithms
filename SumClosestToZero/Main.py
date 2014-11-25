@@ -44,7 +44,7 @@ def smartClosestToZero() :
     else :
         negIndex = 0;
         posIndex = length - 1
-        while negIndex <= posIndex and input1[negIndex] < 0 and input1[posIndex] > 0 :
+        while negIndex < posIndex and input1[negIndex] < 0 and input1[posIndex] > 0 :
             s = input1[negIndex]
             d = input1[posIndex]
             difference = d + s
