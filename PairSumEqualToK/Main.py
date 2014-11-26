@@ -4,7 +4,7 @@ import copy
 
 #input = [1, 2, -1, 3, 6, 7, 9, 8]
 input = [2,2,2,2,2]
-K = 4
+K = 6
 
 def bruteForceMethod() :
     '''
@@ -35,9 +35,23 @@ def smartMethod() :
             end = end - 1
     return "No Such Element Found" 
 
-
+def secondSmartMethod() :
+    '''
+    Time Complexity : O(n)
+    Space Complexity : O(n)
+    '''
+    dict = {}
+    length = len(input)
+    for index,element in enumerate(input) :
+        if dict.get(K-element) is not None: 
+            return [element,K-element]
+        else :
+            dict[element] = element
+    return "No Such Element Found" 
+     
         
 
 if __name__ == '__main__':
     print bruteForceMethod()
     print smartMethod()
+    print secondSmartMethod()
