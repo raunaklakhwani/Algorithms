@@ -1,10 +1,11 @@
+import cProfile
 import sys
 import math
 import copy
 
-input = [1, 2, -1, 3, 6, 7, 9, 8]
-# input = [2,2,2,2,2]
-K = 4
+#input = [1, 2, -1, 3, 6, 7, 9, 8]
+input = [2,2,2,2,2]
+K = 6
 
 def bruteForceMethod() :
     '''
@@ -76,7 +77,7 @@ def secondSmartMethod() :
                 if start == index : 
                     start = start + 1
     
-    print dict 
+    #print dict 
     output = []               
     for index,element in enumerate(input1) :
         list =  dict.get(element)
