@@ -2,8 +2,9 @@ import sys
 import math
 import copy
 
-input = [1, 2, -1, 3, 6, 7, 9, 8]
-K = 10
+#input = [1, 2, -1, 3, 6, 7, 9, 8]
+input = [2,2,2,2,2]
+K = 4
 
 def bruteForceMethod() :
     '''
@@ -32,7 +33,10 @@ def smartMethod() :
             start = start + 1
         else :
             end = end - 1
-    return "No Such Element Found"     
+    return "No Such Element Found" 
+
+
+        
 
 if __name__ == '__main__':
     print bruteForceMethod()
