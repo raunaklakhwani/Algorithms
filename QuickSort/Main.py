@@ -15,13 +15,14 @@ def partition(pivotIndex, start, end) :
     The idea is to have two variables i and j
     i points to the start of the second array i.e elements greater than the pivot
     Run Time of partition is O(n)
+    Note if u replace < than sign with > than it will do decreasing order
     '''
     if pivotIndex != start :
         swap(pivotIndex, start)
     pivot = input[start]
     i = start + 1
     for j in range(start + 1, end + 1) :
-        if input[j] < pivot :
+        if input[j] > pivot :
             swap(i, j)
             i = i + 1
     
