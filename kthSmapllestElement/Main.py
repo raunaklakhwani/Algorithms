@@ -53,6 +53,7 @@ def kthSmallestNumber(input, start, end, order):
 def kthSmalleshMethodSmartMethod(input,start, end, order) :
     '''
     Time Complexity : O(N)
+    Link : https://class.coursera.org/algo-004/lecture/41, http://en.wikipedia.org/wiki/Median_of_medians#Algorithm
     Similar to kth smallestMethod. Only difference is that pivot element is not selected at random rather than its calculated
     from median of median logic
     '''
