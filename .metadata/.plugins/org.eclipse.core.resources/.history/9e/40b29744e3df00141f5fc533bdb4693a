@@ -1,0 +1,42 @@
+import sys
+
+
+def standingOvation(smax, shynessString):
+    l = []
+    for i in range(0,smax + 1):
+        l.append((i,int(shynessString[i])))
+    
+    minimum = 0
+    numPersonStood = 0
+    #print l
+    for s,p in l:
+        if s > numPersonStood:
+            minimum = minimum + s - numPersonStood
+            numPersonStood = numPersonStood + s - numPersonStood
+        numPersonStood = numPersonStood + p
+        
+    return minimum
+        
+    
+        
+if __name__ == '__main__':
+    with open("A-small-attempt1.in") as f:
+        count = f.readline()
+        for i in xrange(count):
+            smax,shynessString = f.readline().split()
+            result = str(standingOvation(int(smax),shynessString))
+        while True:
+            
+            if line == '':
+                break
+            print line
+    
+    args = sys.argv[2:]
+    i = 0
+    case = 0
+    while i < len(args):
+        result = str(standingOvation(int(args[i]),args[i+1]))
+        print "Case #" + str(case) + ": " + result
+        i = i+ 2
+        case = case + 1
+    

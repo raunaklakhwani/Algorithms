@@ -1,0 +1,11 @@
+INSTUPMain
+/Users/ronaklakhwani/Desktop/Algorithms/Dijkstra/Main.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&2|6|2|1&&2|7|2|1&&3|8|2|1
+__init__=3
+Main=2
+graph=8
+adjacencyList=4
+Graph=1
+prims=7
+dijkstra=6
+Graph.__init__=5

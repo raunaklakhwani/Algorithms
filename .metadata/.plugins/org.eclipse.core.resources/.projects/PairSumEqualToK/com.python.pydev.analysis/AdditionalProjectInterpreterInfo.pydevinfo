@@ -1,0 +1,20 @@
+-- VERSION_4
+-- START DISKCACHE
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/PairSumEqualToK/com.python.pydev.analysis/v2_indexcache
+Main|1428702005000|/Users/ronaklakhwani/Desktop/Algorithms/PairSumEqualToK/Main.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=Main
+-- END DICTIONARY
+-- START TREE 1
+5
+K|1|K!11@
+bru|1|bruteForceMethod!10@
+inp|1|input!11@
+sec|1|secondSmartMethod!10@
+sma|1|smartMethod!10@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

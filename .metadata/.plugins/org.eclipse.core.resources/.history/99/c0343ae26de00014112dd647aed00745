@@ -1,0 +1,25 @@
+from collections import Counter
+import heapq
+def getMinMinutes(d,nonEmpty):
+    min = 0
+    heap = []
+    d = int(d)
+    nonEmpty = nonEmpty.split()
+    c = Counter(nonEmpty)
+    keys = sorted(c.viewkeys(), reverse = True)
+    
+    for item in keys:
+        heapq.heappush(heap, (-item,c[item]))
+    
+    while True:
+        itemPop = heapq.heappop(heap)
+        
+    
+        
+    
+    return min
+
+
+if __name__ == '__main__':
+    getMinMinutes("4", "1 2 1 2")
+    print ''

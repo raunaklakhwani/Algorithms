@@ -1,0 +1,19 @@
+-- VERSION_4
+-- START DISKCACHE
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/QuickSort/com.python.pydev.analysis/v2_indexcache
+Main|1428702005000|/Users/ronaklakhwani/Desktop/Algorithms/QuickSort/Main.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=Main
+-- END DICTIONARY
+-- START TREE 1
+4
+inp|1|input!11@
+par|1|partition!10@
+qui|1|quickSort!10@
+swa|1|swap!10@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

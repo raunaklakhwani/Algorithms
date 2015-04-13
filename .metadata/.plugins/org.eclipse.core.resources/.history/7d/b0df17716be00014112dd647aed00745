@@ -1,0 +1,15 @@
+from collections import Counter
+def getMinMinutes(d,nonEmpty):
+    min = 0
+    heap = []
+    d = int(d)
+    nonEmpty = nonEmpty.split()
+    c = Counter(nonEmpty)
+    keys = sorted(c.viewkeys(), reversed)
+    
+    return min
+
+
+if __name__ == '__main__':
+    getMinMinutes("4", "1 2 1 2")
+    print ''

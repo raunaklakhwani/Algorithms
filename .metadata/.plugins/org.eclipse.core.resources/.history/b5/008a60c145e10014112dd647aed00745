@@ -1,0 +1,19 @@
+from pprint import pprint
+class UndirectedGraph:
+    def __init__(self, edges):
+        self.adjacencyList = {}
+        for edge in edges:
+            source,destination,cost = edge
+            self.adjacencyList.setdefault(source,[]).append((destination,cost))
+            self.adjacencyList.setdefault(destination,[]).append((source,cost))
+
+    def prims(self):
+        sourceVertex =self.adjacencyList.keys()[0]
+        print ''
+        
+        
+if __name__ == '__main__':
+    graph = UndirectedGraph([("a", "b", 7),  ("a", "c", 9),  ("a", "f", 14), ("b", "c", 10),
+               ("b", "d", 15), ("c", "d", 11), ("c", "f", 2),  ("d", "e", 6),
+               ("e", "f", 9)])
+    pprint(graph.adjacencyList)

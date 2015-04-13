@@ -1,0 +1,9 @@
+
+def getMinMinutes(d,nonEmpty):
+    min = 0
+    heap = []
+    return min
+
+
+if __name__ == '__main__':
+    print ''

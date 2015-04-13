@@ -1,0 +1,22 @@
+-- VERSION_4
+-- START DISKCACHE
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/ClosestPairDistance/com.python.pydev.analysis/v2_indexcache
+ClosestPair|1428702005000|/Users/ronaklakhwani/Desktop/Algorithms/ClosestPairDistance/ClosestPair.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=ClosestPair
+-- END DICTIONARY
+-- START TREE 1
+7
+bru|1|bruteForceClosestPair!10@
+cal|1|calculateDistance!10@
+div|1|divideAndConquerClosestPair!10@
+fin|1|findClosestPair!10@
+inp|1|input!11@
+out|1|output!11@
+spl|1|splitClosestPair!10@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

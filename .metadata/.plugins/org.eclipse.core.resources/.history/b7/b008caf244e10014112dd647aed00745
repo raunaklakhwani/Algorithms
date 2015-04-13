@@ -1,0 +1,9 @@
+class UndirectedGraph:
+    def __init__(self, edges):
+        self.adjacencyList = {}
+        for edge in edges:
+            source,destination,cost = edge
+            self.adjacencyList.setdefault(source,[]).append((destination,cost))
+
+if __name__ == '__main__':
+    print ''

@@ -1,0 +1,37 @@
+from collections import Counter
+import heapq
+
+class MaxHeap(object):
+    def __init__(self, x):
+        self.heap = [-e for e in x]
+        heapq.heapify(self.heap)
+    def push(self, value):
+        heapq.heappush(self.heap, (-value[0],value[1]))
+    def pop(self):
+        pop = heapq.heappop(self.heap)
+        return (-pop[0],pop[1])
+    
+    
+def getMinMinutes(d,nonEmpty):
+    min = 0
+    heap = MaxHeap([])
+    d = int(d)
+    nonEmpty = nonEmpty.split()
+    c = Counter(nonEmpty)
+    keys = sorted(c.viewkeys(), reverse = True)
+    
+    for item in keys:
+        heapq.heappush(heap, (item,c[item]))
+    
+    while True:
+        itemPop = heapq.heappop(heap)
+        
+    
+        
+    
+    return min
+
+
+if __name__ == '__main__':
+    getMinMinutes("4", "1 2 1 2")
+    print ''

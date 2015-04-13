@@ -1,0 +1,44 @@
+-- VERSION_4
+-- START DISKCACHE
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/GoogleCodeJam/com.python.pydev.analysis/v2_indexcache
+Main|1428713020000|/Users/ronaklakhwani/Desktop/Algorithms/GoogleCodeJam/Main.py
+Main3|1428827299000|/Users/ronaklakhwani/Desktop/Algorithms/GoogleCodeJam/Main3.py
+-- END DISKCACHE
+-- START DICTIONARY
+4
+3=MaxHeap
+1=Main
+2=Main3
+4=MaxHeap.__init__
+-- END DICTIONARY
+-- START TREE 1
+12
+!<m|0|
+cou|2|count!11@count!19@
+d|1|d!19@
+get|1|getMinMinutes!18@
+max|1|MaxHeap!17@
+min|1|minTime!19@
+non|1|nonEmpty!19@
+res|1|result!11@
+set|1|setItem!18@
+shy|1|shynessString!11@
+sma|1|smax!11@
+sta|1|standingOvation!10@
+-- END TREE
+-- START TREE 2
+13
+!<m|0|
+__i|1|__init__!3&18@
+cou|0|
+d|0|
+get|2|getMax!3&18@getItems!3&18@
+hea|1|heap!4&19@
+len|1|len!3&18@
+min|0|
+non|0|
+pop|1|pop!3&18@
+pus|1|push!3&18@
+r|0|
+set|0|
+-- END TREE
