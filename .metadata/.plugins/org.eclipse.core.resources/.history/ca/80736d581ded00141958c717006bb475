@@ -10,8 +10,6 @@ def towerOfHanoiRecursive(num, source, aux, destination):
 
 def towerOfHanoiIterative(num, source, aux, destination):
     '''
-    URL : http://www.geeksforgeeks.org/iterative-tower-of-hanoi/
-    
     1. Calculate total number of moves : i.e 2^n - 1
     2. if number of disk is even then swap destination and aux
     3. for i in 1.. total moves
