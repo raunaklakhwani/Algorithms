@@ -1,0 +1,13 @@
+
+num_of_disks = 3
+
+
+def moveDisk(num,source,aux,destination):
+    if num > 1:
+        moveDisk(num-1, source, destination, aux)
+        
+        
+
+
+if __name__ == '__main__':
+    print ''
