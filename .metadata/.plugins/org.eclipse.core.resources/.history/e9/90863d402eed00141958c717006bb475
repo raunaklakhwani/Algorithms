@@ -1,0 +1,13 @@
+
+class Node:
+    def __init__(self, key, next, arb):
+        self.key = key
+        self.arb = arb
+        self.next = next
+        
+def printList(head):
+    while head is not None:
+        
+
+if __name__ == '__main__':
+    print''

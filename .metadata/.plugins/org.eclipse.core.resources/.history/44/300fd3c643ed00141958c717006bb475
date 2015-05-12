@@ -1,0 +1,84 @@
+
+'''
+URL : http://www.geeksforgeeks.org/point-to-next-higher-value-node-in-a-linked-list-with-an-arbitrary-pointer/
+Point to next higher value node in a linked list with an arbitrary pointer
+'''
+
+class Node:
+    def __init__(self, key, next = None, arb = None):
+        self.key = key
+        self.arb = arb
+        self.next = next
+        
+def fillArb(head):
+    while head is not None:
+        head.arb = head.next
+        head = head.next
+        
+def pointNextHigher(head):
+    fillArb(head)
+    result = mergeSort(head)
+    while result is not None:
+        print head.key, 
+        head = head.arb
+    
+
+
+def splitTwo(head):
+    fast = head
+    slow = head
+    mid = None
+    while fast is not None:
+        fast = fast.arb
+        if fast is not None:
+            fast = fast.arb
+            mid = slow
+            slow = slow.arb
+    
+    slow.arb = None        
+    return (head,slow)
+            
+            
+        
+def mergeSort(head):
+    if head is None or head.arb is None:
+        return
+    else :
+        front,mid = splitTwo(head)
+        mergeSort(front)
+        mergeSort(mid)
+        return merge(front,mid)
+        
+def merge(front,mid):
+    print ''
+    if front is None:
+        return mid
+    elif mid is None:
+        return front
+    elif front.key < mid.key:
+        result = front
+        result.arb = merge(front.arb,mid)
+    else:
+        result = mid
+        result.arb = merge(front,mid.arb)
+        
+    return result
+        
+def printList(head):
+    while head is not None:
+        print head.key, 
+        head = head.next
+
+
+
+if __name__ == '__main__':
+    a = Node(5)
+    b = Node(10)
+    c = Node(2)
+    d = Node(3)
+    a.next = b
+    b.next = c
+    c.next = d
+    
+    printList(a)
+    pointNextHigher(a)

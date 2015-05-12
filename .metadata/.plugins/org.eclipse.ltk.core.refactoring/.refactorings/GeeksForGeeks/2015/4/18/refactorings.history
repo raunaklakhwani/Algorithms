@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GeeksForGeeks/PointToNextHigherValue&apos; to &apos;PointToNextHigherValue.py&apos;" description="Rename resource &apos;PointToNextHigherValue&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="PointToNextHigherValue" name="PointToNextHigherValue.py" stamp="1430174196872" updateReferences="true"/>
+</session>

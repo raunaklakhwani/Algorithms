@@ -1,19 +1,16 @@
 -- VERSION_4
 -- START DISKCACHE
 /Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/TowerOfHanoi/com.python.pydev.analysis/v2_indexcache
-Main|1430166849000|/Users/ronaklakhwani/Desktop/Algorithms/TowerOfHanoi/Main.py
+Main|1430167102000|/Users/ronaklakhwani/Desktop/Algorithms/TowerOfHanoi/Main.py
 -- END DISKCACHE
 -- START DICTIONARY
 1
 1=Main
 -- END DICTIONARY
 -- START TREE 1
-6
-des|0|
+3
 leg|1|legalMove!10@
-mov|0|
 num|1|num_of_disks!11@
-sou|0|
 tow|2|towerOfHanoiRecursive!10@towerOfHanoiIterative!10@
 -- END TREE
 -- START TREE 2

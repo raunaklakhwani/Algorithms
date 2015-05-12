@@ -1,0 +1,40 @@
+'''
+Project Euler #74: Digit factorial chains
+URL : https://www.hackerrank.com/contests/projecteuler/challenges/euler074
+'''
+
+from collections import defaultdict
+N,L = (221,7)
+F = [1,1,2,6,24,120,720,40320,362880 ,3628800]
+
+def calcSum(n):
+    s = 0
+    while (n!=0):
+        d = n%10
+        n = n/10
+        s = s + F[d]
+    return s
+
+cache = defaultdict(int)
+#print "hello"
+for i in range(N):
+    l = [i]
+    j = 0
+    s = i
+    while cache.get(s) is None:
+        j = j + 1
+        s = calcSum(i)
+        
+        l.append(s)
+        
+    for item in l:
+        cache[item] = cache.get(s) + j
+        if cache[item] == L:
+            print item
+    
+    
+        
+    
+        
+    
+    
