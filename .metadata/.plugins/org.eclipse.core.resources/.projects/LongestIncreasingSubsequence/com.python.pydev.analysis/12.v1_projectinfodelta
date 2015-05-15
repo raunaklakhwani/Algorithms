@@ -1,0 +1,10 @@
+INSTUPMain
+/Users/ronaklakhwani/Desktop/Algorithms/LongestIncreasingSubsequence/Main.py
+INFOS:&&3|1|2|0&&2|3|2|0&&2|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0
+num=7
+getBinaryIndex=3
+Main=2
+getIndex=4
+active=6
+N=5
+tail=1

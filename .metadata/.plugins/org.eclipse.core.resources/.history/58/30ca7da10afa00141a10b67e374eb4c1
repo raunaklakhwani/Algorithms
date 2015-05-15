@@ -1,0 +1,25 @@
+def getLIS(i,num):
+    m = 0
+    while i >= 0:
+        if num > l[i] and m < j[i]:
+            m = j[i]
+        i = i - 1
+    if m!= 0 :
+        return 1 + m
+    else:
+        return 1
+
+N = 9
+l = [10,22,9,33,22,50,41,60,80]
+
+j = [1 for _ in xrange(N)]
+#print j
+ma = -1
+for i in xrange(N):
+    j[i] = getLIS(i-1,l[i])
+    #print j[i]
+    if ma < j[i]:
+        ma = j[i]
+
+#print j
+print ma
