@@ -1,0 +1,7 @@
+import json
+
+d = {}
+
+with open("graphData1.json") as f:
+    d = json.load(f)
+    print d

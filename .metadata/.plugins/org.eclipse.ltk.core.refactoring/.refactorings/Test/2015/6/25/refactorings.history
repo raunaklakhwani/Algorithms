@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Test/SeparateOddAndEven&apos; to &apos;SeparateOddAndEven.py&apos;" description="Rename resource &apos;SeparateOddAndEven&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="SeparateOddAndEven" name="SeparateOddAndEven.py" stamp="1434566611418" updateReferences="true"/>
+</session>

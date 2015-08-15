@@ -1,0 +1,9 @@
+import json
+
+d = {}
+out = {}
+with open("graphData1.json") as f:
+    d = json.load(f)
+    out["nodes"] = [{"name":node["name"]} for node in d["nodes"]]
+    out["links"] = [{"source":link["source"],"target":link["target"]} for link in d["links"]]
+        

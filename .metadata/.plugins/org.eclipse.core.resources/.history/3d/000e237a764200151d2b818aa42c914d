@@ -1,0 +1,21 @@
+# URL : http://www.geeksforgeeks.org/custom-tree-problem/
+
+class Node:
+    def __init__(self, data, left, right):
+        self.data = data
+        self.left = left
+        self.right = right
+
+
+def getTreeUsingInorderPreorder(inorder,preorder):
+    print
+        
+
+
+
+if __name__ == '__main__':
+    inorder = [4, 2, 5, 1, 3, 6]
+    preorder = [1, 2, 4, 5, 3, 6]
+    root= getTreeUsingInorderPreorder(inorder, preorder)
+    
+    

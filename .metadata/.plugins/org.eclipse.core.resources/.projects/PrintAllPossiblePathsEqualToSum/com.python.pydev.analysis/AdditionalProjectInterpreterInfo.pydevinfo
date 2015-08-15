@@ -1,0 +1,26 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/PrintAllPossiblePathsEqualToSum/com.python.pydev.analysis/v2_indexcache
+Main|1438859997000000000|/Users/ronaklakhwani/Desktop/Algorithms/PrintAllPossiblePathsEqualToSum/Main.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+1=Main
+2=Node
+3=Node.__init__
+-- END DICTIONARY
+-- START TREE 1
+5
+che|2|checkPathUtil!10@checkPath!10@
+con|1|constructTree!10@
+get|1|getTreeDict!10@
+mer|1|merge!10@
+nod|1|Node!9@
+-- END TREE
+-- START TREE 2
+4
+__i|1|__init__!2&10@
+dat|1|data!3&11@
+lef|1|left!3&11@
+rig|1|right!3&11@
+-- END TREE

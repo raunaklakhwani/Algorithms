@@ -1,0 +1,34 @@
+def longest_palindrome_sequence(S):
+    l = len(S)
+    p = [[0] * (len(S)) for i in xrange(len(S))]
+    
+    for i in xrange(len(S)):
+        p[i][i] = 1
+    
+    #pprint(l)
+    
+    for ln in xrange(1,l):
+        for i in xrange(0,l-ln):
+            j = i + ln
+            if S[i] == S[j]:
+                p[i][j] = 2 + (p[i + 1][j - 1] if j-1 >=0 else 0)
+            else:
+                p[i][j] = max(p[i+1][j],(p[i][j-1] if j-1 >= 0 else 0))
+            #print i,j,p[i][j]
+    pprint(p)
+    return p[0][len(S) - 1]    
+
+
+from pprint import pprint
+S = "BBABCBCAB"
+m = 0
+longest_palindrome_sequence(S)
+
+for i in xrange(len(S) - 1):
+    left = S[:i+1]
+    right = S[i+1:]
+    lp = longest_palindrome_sequence(left)
+    rp = longest_palindrome_sequence(right)
+    if m < lp * rp:
+        m = lp * rp
+print m

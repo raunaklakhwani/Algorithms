@@ -1,0 +1,26 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/JosephusProblem/com.python.pydev.analysis/v2_indexcache
+Main|1438153652000000000|/Users/ronaklakhwani/Desktop/Algorithms/JosephusProblem/Main.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+1=Main
+2=Node
+3=Node.__init__
+-- END DICTIONARY
+-- START TREE 1
+6
+M|1|M!11@
+N|1|N!11@
+adv|1|advanceHead!10@
+get|2|getCircularList!10@getJosephusWinner!10@
+nod|1|Node!9@
+pri|1|printCircularList!10@
+-- END TREE
+-- START TREE 2
+3
+__i|1|__init__!2&10@
+dat|1|data!3&11@
+nex|1|next!3&11@
+-- END TREE

@@ -1,0 +1,32 @@
+def solve(A,B,i,j,s):
+    pI = i
+    pJ = j
+    while i < len(A) and j < len(B) and A[i] == B[j]:
+        i += 1
+        j += 1
+   
+    for x in xrange(i - pI):
+        s = s + A[pI + x] + A[pI + x]
+    return i,j,s
+    
+
+for _ in xrange(1):
+    A = list("ABACABA")
+    B = list("ABACABA")
+    s = ""
+    i,j = 0,0
+    while i != len(A) and j != len(B):
+        if ord(A[i]) < ord(B[j]):
+            s = s + A[i]
+            i += 1
+        elif ord(A[i]) > ord(B[j]):
+            s = s + B[j]
+            j += 1
+        else :
+            i,j,s = solve(A,B,i,j,s)
+    if len(A) == i:
+        s = s + "".join(B[j:])
+    if len(B) == j:
+        s = s + "".join(A[i:])
+    print s
+            

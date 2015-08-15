@@ -1,0 +1,44 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/ImplementLRUCache/com.python.pydev.analysis/v2_indexcache
+Main|1438241788000000000|/Users/ronaklakhwani/Desktop/Algorithms/ImplementLRUCache/Main.py
+-- END DISKCACHE
+-- START DICTIONARY
+9
+2=LRUCache
+1=Main
+4=Node
+6=Queue.moveNodeToFront
+3=Queue
+7=Queue.insert
+9=LRUCache.__init__
+8=Queue.__init__
+5=Node.__init__
+-- END DICTIONARY
+-- START TREE 1
+5
+cac|1|cacheSize!11@
+lru|1|LRUCache!9@
+nod|1|Node!9@
+num|1|numOfPages!11@
+que|1|Queue!9@
+-- END TREE
+-- START TREE 2
+16
+__i|3|__init__!2&10@__init__!3&10@__init__!4&10@
+cac|1|cache!2&11@
+dat|1|data!5&11@
+fro|3|front!6&11@front!7&11@front!8&11@
+get|1|getLength!3&10@
+has|1|hash!9&11@
+ins|1|insert!3&10@
+isf|1|isFull!3&10@
+len|1|length!8&11@
+mov|1|moveNodeToFront!3&10@
+nex|1|next!5&11@
+pre|1|previous!5&11@
+pri|2|printQ!2&10@printHash!2&10@
+q|1|q!9&11@
+rea|3|rear!6&11@rear!7&11@rear!8&11@
+ref|2|referencePageNumber!2&10@references!2&11@
+-- END TREE

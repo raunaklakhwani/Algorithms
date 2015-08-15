@@ -1,0 +1,24 @@
+# URL : http://www.geeksforgeeks.org/print-left-view-binary-tree/
+class Node:
+    def __init__(self, data, left, right):
+        self.data = data
+        self.left = left
+        self.right = right
+
+
+def postTraversal(root):
+    if root is not None:
+        postTraversal(root.left)
+        postTraversal(root.right)
+        print root.data,
+
+
+if __name__ == '__main__':
+    inorder = [4, 2, 5, 1, 3, 6]
+    preorder = [1, 2, 4, 5, 3, 6]
+    root = getTreeUsingInorderPreorder(inorder, preorder)
+    postTraversal(root)
+    print 
+    print getPostorderUsingInorderPreorder(inorder, preorder)
+    
+    

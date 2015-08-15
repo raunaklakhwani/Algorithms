@@ -1,0 +1,28 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/TernarySearchTree/com.python.pydev.analysis/v2_indexcache
+Main|1439460407000000000|/Users/ronaklakhwani/Desktop/Algorithms/TernarySearchTree/Main.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+1=Main
+2=Node
+3=Node.__init__
+-- END DICTIONARY
+-- START TREE 1
+5
+add|1|addNode!10@
+cre|1|createTernarySearchTree!10@
+lev|1|levelOrder!10@
+nod|1|Node!9@
+sea|1|search!10@
+-- END TREE
+-- START TREE 2
+6
+__i|1|__init__!2&10@
+dat|1|data!3&11@
+end|1|end!3&11@
+equ|1|equal!3&11@
+lef|1|left!3&11@
+rig|1|right!3&11@
+-- END TREE

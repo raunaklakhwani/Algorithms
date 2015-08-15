@@ -1,0 +1,19 @@
+import json
+
+d = {}
+out = {}
+m = []
+with open("graphData1.json") as f:
+    d = json.load(f)
+    out["nodes"] = [{"name":node["name"]} for node in d["nodes"]]
+    out["links"] = [{"source":link["source"],"target":link["target"]} for link in d["links"]]
+    
+    for link in d["links"]:
+        m.append(link["source"])
+        m.append(link["target"])
+        
+    print min(m)
+    print max(m)
+    print len(out["nodes"])
+with open("gen.json","w+") as f:
+    json.dump(out,f)    

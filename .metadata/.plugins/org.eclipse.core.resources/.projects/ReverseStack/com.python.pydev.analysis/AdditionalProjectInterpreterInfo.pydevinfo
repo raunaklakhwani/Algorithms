@@ -1,0 +1,27 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/ReverseStack/com.python.pydev.analysis/v2_indexcache
+Main|1438337270000000000|/Users/ronaklakhwani/Desktop/Algorithms/ReverseStack/Main.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+2=Stack
+1=Main
+3=Stack.__init__
+-- END DICTIONARY
+-- START TREE 1
+1
+sta|1|Stack!9@
+-- END TREE
+-- START TREE 2
+9
+__i|1|__init__!2&10@
+inp|1|inp!3&11@
+ins|1|insertAtBottom!2&10@
+ise|1|isEmpty!2&10@
+pop|1|pop!2&10@
+pri|1|printStack!2&10@
+pus|1|push!2&10@
+rev|1|reverseStack!2&10@
+s1|1|s1!2&11@
+-- END TREE

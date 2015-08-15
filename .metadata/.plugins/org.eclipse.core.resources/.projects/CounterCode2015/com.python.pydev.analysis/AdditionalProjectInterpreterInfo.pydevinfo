@@ -1,0 +1,59 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/CounterCode2015/com.python.pydev.analysis/v2_indexcache
+Test|1439569746000000000|/Users/ronaklakhwani/Desktop/Algorithms/CounterCode2015/Test.py
+Poisonous_Plants|1438617621000000000|/Users/ronaklakhwani/Desktop/Algorithms/CounterCode2015/Poisonous_Plants.py
+Imba|1438507153000000000|/Users/ronaklakhwani/Desktop/Algorithms/CounterCode2015/Imba.py
+Campers|1438489750000000000|/Users/ronaklakhwani/Desktop/Algorithms/CounterCode2015/Campers.py
+-- END DISKCACHE
+-- START DICTIONARY
+6
+1=Test
+5=Node
+4=Imba
+3=Poisonous_Plants
+6=Node.__init__
+2=Campers
+-- END DICTIONARY
+-- START TREE 1
+25
+__a|2|__about__!11@__author__!11@
+__c|1|__copyright__!11@
+col|1|colorGenerator!10@
+con|0|
+get|7|get_useful_data_from_json!10@getBetween!18@get_useful_data_from_XML!10@getData!26@getList!26@getDay!26@get_response!10@
+ino|0|
+mac|1|macs!11@
+mse|1|mse_ip!11@
+nod|1|Node!25@
+par|1|parse_date!10@
+pas|1|password!11@
+per|2|permutationsUtil!34@permutations!34@
+plo|1|plot_data!10@
+pos|0|
+pre|1|pre!19@
+pri|1|printList!26@
+rem|0|
+res|1|response_format!11@
+s|1|s!19@
+sat|1|satisfy!34@
+sea|0|
+sni|1|snipers!19@
+url|2|url_prefix!11@url_suffix!11@
+use|1|username!11@
+ver|1|version!11@
+-- END TREE
+-- START TREE 2
+11
+__i|1|__init__!5&26@
+chi|0|
+dat|1|data!6&27@
+in|0|
+ino|0|
+inp|0|
+lef|0|
+nex|1|next!6&27@
+pin|0|
+pre|0|
+rig|0|
+-- END TREE

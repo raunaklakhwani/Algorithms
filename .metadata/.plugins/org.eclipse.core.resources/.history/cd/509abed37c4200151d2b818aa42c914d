@@ -1,0 +1,18 @@
+# URL : http://www.geeksforgeeks.org/print-left-view-binary-tree/
+class Node:
+    def __init__(self, data, left, right):
+        self.data = data
+        self.left = left
+        self.right = right
+
+
+def postTraversal(root):
+    if root is not None:
+        postTraversal(root.left)
+        postTraversal(root.right)
+        print root.data,
+
+
+if __name__ == '__main__':
+    
+    

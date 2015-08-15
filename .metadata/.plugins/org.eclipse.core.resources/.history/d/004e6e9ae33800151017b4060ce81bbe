@@ -1,0 +1,3 @@
+for _ in xrange(input()):
+    N = input()
+    

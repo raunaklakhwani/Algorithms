@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;PreOrderNonRecursiveTreeTraversal&apos; to &apos;TreeTraversals&apos;" description="Rename resource &apos;PreOrderNonRecursiveTreeTraversal&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/PreOrderNonRecursiveTreeTraversal" name="TreeTraversals" stamp="1438580492008" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;TreeTraversals&apos; to &apos;Tree&apos;" description="Rename resource &apos;TreeTraversals&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/TreeTraversals" name="Tree" stamp="1438747224658" updateReferences="true"/>
+</session>

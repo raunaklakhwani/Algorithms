@@ -1,0 +1,19 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/CountNumbersThatDontContainThree/com.python.pydev.analysis/v2_indexcache
+Main|1438501062000000000|/Users/ronaklakhwani/Desktop/Algorithms/CountNumbersThatDontContainThree/Main.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=Main
+-- END DICTIONARY
+-- START TREE 1
+4
+cou|3|countFromZeroToTenToThePowerD!10@countNumbersThatDontContain3BruteForce!10@countNumbersThatDontContain3Smartly!10@
+doe|1|doesContainThree!10@
+get|1|getDigits!10@
+pre|1|pre!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

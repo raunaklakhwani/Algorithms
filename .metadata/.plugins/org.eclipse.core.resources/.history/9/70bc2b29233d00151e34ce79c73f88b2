@@ -1,0 +1,100 @@
+class Node:
+    def __init__(self, data, left, right):
+        self.data = data
+        self.left = left
+        self.right = right
+
+def constructTree(d, key):
+    if d.get(key) is None:
+        return Node(key, None, None)
+    else:
+        root = Node(key, None, None)
+        child = d[key]
+        if len(child) == 1:
+            if child[0] is not None:
+                root.left = constructTree(d, child[0])
+        elif len(child) == 2:
+            if child[0] is not None:
+                root.left = constructTree(d, child[0])
+            if child[1] is not None:
+                root.right = constructTree(d, child[1])
+        return root
+    
+def getTreeDict():
+    #===========================================================================
+    # d = {}
+    # d[1] = [2,3]
+    # d[2] = [4,5]
+    # d[3] = [6]
+    # d[4] = [7,8]
+    # return d
+    #===========================================================================
+
+    d = {}
+    d[5] = [1,7]
+    d[1] = [-5,3]
+    d[7] = [6,12]
+    d[12] = [10,20]
+    return d
+
+def inorder(root):
+    if root is not None:
+        inorder(root.left)
+        print root.data,
+        inorder(root.right)
+
+def getKthLargestUtil(root,K):
+    if root is not None and getKthLargest.kthElement is None:
+        getKthLargestUtil(root.left,K)
+        getKthLargest.index += 1
+        if getKthLargest.index == K:
+            getKthLargest.kthElement = root.data
+            return
+        getKthLargestUtil(root.right,K)
+
+def getKthLargest(root,K):
+    getKthLargest.index = 0
+    getKthLargest.kthElement = None
+    getKthLargestUtil(root,K)
+    return getKthLargest.kthElement
+    
+
+def getKthLargestUsingMorrisTraversal(root,K):
+    kthLargest = None
+    index = 0
+    while root is not None:
+        if root.left is None:
+            index += 1
+            if index == K:
+                kthLargest = root.data
+            root = root.right
+            continue
+        left = root.left
+        while left is not None and (left.right is not None or left.right != root):
+            left = left.right
+        if left.right is None:
+            left.right = root
+            root = left
+        else:
+            temp = left.right
+            index += 1
+            if index == K:
+                kthLargest = temp.data
+            left.right = None
+            root = temp.right
+            
+            
+    return kthLargest
+
+if __name__ == '__main__':
+    root = constructTree(getTreeDict(), 5)
+    inorder(root)
+    print 
+    
+    for i in xrange(1,10):
+        print getKthLargest(root, i)
+        
+    for i in xrange(1,10):
+        print getKthLargest(root, i)
+    
+    

@@ -1,0 +1,19 @@
+# URL : http://www.geeksforgeeks.org/custom-tree-problem/
+
+class Node:
+    def __init__(self, data, left, right):
+        self.data = data
+        self.left = left
+        self.right = right
+
+
+
+        
+
+
+
+if __name__ == '__main__':
+    # inp = ["z y", "a b", "z a", "a g", "b c", "c d", "d e", "c f", "y x", "x w"]
+    inp = ["z y", "a b", "a g", "b c", "c d", "d e", "c f", "y x", "x w"]
+    printIndentedTree(inp)
+    

@@ -1,0 +1,15 @@
+INSTUPPostorderUsingInorderAndPreorder
+/Users/ronaklakhwani/Desktop/Algorithms/Tree/PostorderUsingInorderAndPreorder.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&3|6|2|5&&3|7|2|5&&2|8|2|0&&2|9|2|0&&2|10|2|0&&2|11|2|0&&2|12|2|0
+__init__=3
+getTreeUsingInorderPreorder=9
+getTreeUsingInorderPreorderUtil=8
+Node=1
+postTraversal=12
+data=4
+left=6
+getPostorderUsingInorderPreorderUtil=10
+right=7
+Node.__init__=5
+PostorderUsingInorderAndPreorder=2
+getPostorderUsingInorderPreorder=11

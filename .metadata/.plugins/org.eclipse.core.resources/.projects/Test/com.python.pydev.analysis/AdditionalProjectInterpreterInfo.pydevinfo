@@ -1,0 +1,71 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/Test/com.python.pydev.analysis/v2_indexcache
+Example25|1433466868000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Example25.py
+Example24|1433462074000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Example24.py
+Test|1433464098000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Test.py
+Main|1433193685000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Main.py
+SumOfDigits|1435373305000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/SumOfDigits.py
+SeparateOddAndEven|1434577181000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/SeparateOddAndEven.py
+Main2|1433315884000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Main2.py
+Main3|1433366442000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Main3.py
+Example23|1433381536000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Example23.py
+Main4|1433379824000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Main4.py
+permutations|1433456697000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/permutations.py
+-- END DISKCACHE
+-- START DICTIONARY
+13
+3=Example25
+10=Example24
+8=Main
+2=Test
+11=SeparateOddAndEven
+6=SumOfDigits
+12=Node
+1=Main2
+7=Main3
+5=Example23
+4=Main4
+9=permutations
+13=Node.__init__
+-- END DICTIONARY
+-- START TREE 1
+30
+N|2|N!11@N!19@
+a|1|a!19@
+ans|1|ansCache!11@
+b|1|b!19@
+c|1|c!11@
+cac|4|cache!27@cache!35@cache!43@cache!11@
+cal|6|calculateSumOfDigits!50@calculateNumberOfSundays!58@calculateDay!58@calculateSundays!58@calculateSumSmartly!50@calculateBruteForce!50@
+cou|1|count!67@
+day|2|day!59@days!59@
+f|1|f!74@
+fac|1|factorial!83@
+fil|1|fillData!26@
+get|7|getSumOfDivisors!34@getLength!10@getDigits!50@getDaysInMonth!58@getSumOfDivisors!42@getSum!50@getFixed!82@
+hea|1|head!67@
+i|1|i!11@
+ind|1|ind!27@
+inp|1|inp!91@
+isl|1|isLeapYear!58@
+l|1|l!27@
+max|3|maximum!35@maximum!43@maximum!11@
+mer|1|merge!66@
+nod|1|Node!65@
+per|1|permutations!74@
+pre|1|pre!51@
+pri|2|primes!35@primes!43@
+res|1|result!67@
+s|2|s!75@s!83@
+sep|1|separateEAndO!90@
+tem|1|temp!67@
+x|2|x!35@x!43@
+-- END TREE
+-- START TREE 2
+4
+__i|1|__init__!12&66@
+dat|1|data!13&67@
+dow|1|down!13&67@
+nex|1|next!13&67@
+-- END TREE

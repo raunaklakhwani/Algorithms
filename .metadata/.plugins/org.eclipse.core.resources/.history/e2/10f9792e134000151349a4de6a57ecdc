@@ -1,0 +1,137 @@
+from _collections import deque
+class Node:
+    
+    def __init__(self, data, left, right, height):
+        self.data = data
+        self.left = left
+        self.right = right
+        self.height = height
+
+
+def inorder(root):
+    if root is not None:
+        inorder(root.left)
+        print root.data,
+        inorder(root.right)
+        
+def getHeight(node):
+    if node is not None:
+        return node.height
+    else:
+        return 0
+
+def LLRotation(W):
+    X = W.left
+    W.left = X.right
+    X.right = W
+    W.height = max(getHeight(W.left), getHeight(W.right)) + 1
+    X.height = max(W.height, getHeight(X.left)) + 1
+    return X
+
+def RRRotation(W):
+    X = W.right
+    W.right = X.left
+    X.left = W
+    W.height = max(getHeight(W.left), getHeight(W.right)) + 1
+    X.height = max(W.height, getHeight(X.right)) + 1
+    return X
+
+def LRRotation(W):
+    W.left = RRRotation(W.left)
+    return LLRotation(W)
+
+def RLRotation(W):
+    W.right = LLRotation(W.right)
+    return RRRotation(W)
+ 
+def insertAVLNode(root, data):
+    if root is None:
+        return Node(data, None, None, 1)
+    elif data <= root.data:
+        root.left = insertAVLNode(root.left, data)
+    else:
+        root.right = insertAVLNode(root.right, data)
+    
+    if getHeight(root.left) - getHeight(root.right) > 1:
+        if data <= root.left.data:
+            root = LLRotation(root)
+        else:
+            root = LRRotation(root)
+    elif getHeight(root.right) - getHeight(root.left) > 1:
+        if data <= root.right.data:
+            root = RLRotation(root)
+        else:
+            root = RRRotation(root)
+    root.height = max(getHeight(root.left), getHeight(root.right)) + 1
+    return root
+ 
+def getAvlTree(inp):
+    root = None
+    for i in inp:
+        root = insertAVLNode(root, i)
+        inorder(root)
+        print 
+        print root.height
+        print "_____________________"
+    return root
+
+def levelOrder(root):
+    if root is not None:
+        q = deque([root, None])
+        while len(q):
+            item = q.popleft()
+            if item:
+                if item.left:
+                    q.append(item.left)
+                if item.right:
+                    q.append(item.right)
+                print item.data,
+            else:
+                print
+                if len(q):
+                    q.append(None)
+                else:
+                    break
+        
+def getBalanceFactor(root):
+    return getHeight(root.left) - getHeight(root.right)
+            
+
+def deleteNodeUtil(root, data):
+    if root is not None:
+        if data < root.data:
+            root.left = deleteNodeUtil(root.left, data)
+        elif data > root.data:
+            root.right = deleteNodeUtil(root.right, data)
+        else:
+            if root.left is None:
+                return root.right
+            if root.right is None:
+                return root.left
+            left = root.left
+            while left.right is not None:
+                left = left.right
+            root.data = left.data
+            root.left = left.left
+            return root
+        
+        root.height = max(getHeight(root.left), getHeight(root.right)) + 1
+        
+        if getBalanceFactor(root) > 1 and getBalanceFactor(root.left) > 1
+        
+    else:
+        return None
+
+def deleteNode(root, data):
+    root = deleteNodeUtil(root, data)
+    return root
+
+if __name__ == '__main__':
+    inp = [3, 2, 1, 4, 5, 6, 7, 16, 15, 14]
+    root = getAvlTree(inp)
+    print "___________________"
+    levelOrder(root)
+    
+    
+    
+    

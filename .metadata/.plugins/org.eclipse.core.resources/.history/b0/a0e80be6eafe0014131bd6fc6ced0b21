@@ -1,0 +1,58 @@
+from collections import OrderedDict
+from bisect import bisect_left
+from math import fabs
+d = OrderedDict()
+d1 = []
+
+x = 74
+h = 1
+m = 3
+
+l = 1
+s = 0
+i = 0
+while h < x:
+    l = h
+    h = h * m
+    
+    s += l
+    d[s] = i
+    i += 1
+    d1.append(s)
+    
+
+l = h
+h = h * m
+s += l
+d[s] = i
+i += 1
+d1.append(s)
+
+
+re = h - x
+print l,h,re
+print d
+keys = d1
+left = x
+right = 0
+out = {}
+while left!=right:
+    num = left - right
+    if num > 0:
+        direc = "R"
+        i = bisect_left(keys,num)
+        out[3**i] = direc
+        right += 3**i
+    else:
+        modnum = fabs(num)
+        direc = "L"
+        i = bisect_left(keys,modnum)
+        out[3**i] = direc
+        left += 3**i
+        
+print out
+        
+        
+        
+        
+    

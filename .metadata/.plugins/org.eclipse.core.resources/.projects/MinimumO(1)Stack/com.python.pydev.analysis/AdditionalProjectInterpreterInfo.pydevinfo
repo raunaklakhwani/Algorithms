@@ -1,0 +1,27 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/MinimumO(1)Stack/com.python.pydev.analysis/v2_indexcache
+Main|1438335624000000000|/Users/ronaklakhwani/Desktop/Algorithms/MinimumO(1)Stack/Main.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+2=Stack
+1=Main
+3=Stack.__init__
+-- END DICTIONARY
+-- START TREE 1
+1
+sta|1|Stack!9@
+-- END TREE
+-- START TREE 2
+9
+__i|1|__init__!2&10@
+dum|1|dummy!3&11@
+get|1|getMinimum!2&10@
+inp|2|inp!2&11@inp!3&11@
+pop|1|pop!2&10@
+pus|1|push!2&10@
+s1|1|s1!2&11@
+s2|1|s2!2&11@
+top|1|top!3&11@
+-- END TREE
