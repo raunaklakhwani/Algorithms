@@ -1,0 +1,26 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/SuffixArray/com.python.pydev.analysis/v2_indexcache
+SuffixArrayConstruction|1442921528000000000|/Users/ronaklakhwani/Desktop/Algorithms/SuffixArray/SuffixArrayConstruction.py
+SuffixArrayWithLCP1|1446888400000000000|/Users/ronaklakhwani/Desktop/Algorithms/SuffixArray/SuffixArrayWithLCP1.py
+SuffixArrayWithLCP2|1442897275000000000|/Users/ronaklakhwani/Desktop/Algorithms/SuffixArray/SuffixArrayWithLCP2.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+1=SuffixArrayConstruction
+2=SuffixArrayWithLCP1
+3=SuffixArrayWithLCP2
+-- END DICTIONARY
+-- START TREE 1
+7
+d|1|d!11@
+get|3|getSuffixArray!18@getSuffixArrayUtil!18@getSuffixArray!10@
+key|1|key!11@
+res|1|result!11@
+s|1|s!11@
+sor|1|sort_bucket!10@
+suf|2|suffix_array_ManberMyers!10@suffix_array!26@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

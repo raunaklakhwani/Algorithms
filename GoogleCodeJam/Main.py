@@ -20,7 +20,7 @@ def standingOvation(smax, shynessString):
     
         
 if __name__ == '__main__':
-    with open("A-large.in") as f:
+    with open("abc.in") as f:
         count = int(f.readline())
         for i in xrange(count):
             smax,shynessString = f.readline().split()

@@ -1,52 +1,62 @@
-input = [1,20,6,4,5]
-output = [0] * len(input)
+# URL : http://www.geeksforgeeks.org/counting-inversions/
+inp = [1, 20, 6, 4, 5]
 
-def getInversionCount(input, start, end) :
-    if (start < end) :
-        mid = (start + end) / 2
-        leftInversion = getInversionCount(input, start, mid)
-        rightInversion = getInversionCount(input, mid + 1, end)
-        mergeInversion = getMergeInversion(input, start, mid, end)
-        return leftInversion + rightInversion + mergeInversion
-    else :
+#===============================================================================
+# inp = [2, 1, 0, 2]
+# inp = [2, 3, 1, 4]
+#===============================================================================
+
+def countMergeInversions(inp, start, mid, end):
+    out = countInversion.out
+    first = start
+    second = mid + 1
+    inv = 0
+    index = start
+    while first <= mid and second <= end:
+        if inp[first] <= inp[second]:
+            out[index] = inp[first]
+            first += 1
+        else:
+            inv += (mid - first + 1)
+            out[index] = inp[second]
+            second += 1
+        index += 1
+        
+    while first <= mid:
+        out[index] = inp[first]
+        first += 1
+        
+    while second <= end:
+        out[index] = inp[second]
+        second += 1
+        
+    for i in xrange(start, end + 1):
+        inp[i] = out[i]
+    
+    return inv
+        
+    
+        
+
+def countInversionUtil(inp, start, end):
+    if start >= end:
         return 0
-        
+    else:
+        mid = start + (end - start) / 2
+        a = countInversionUtil(inp, start, mid)
+        b = countInversionUtil(inp, mid + 1, end)
+        c = countMergeInversions(inp, start, mid, end)
+        return a + b + c
+    print
 
-def getMergeInversion(input , start, mid, end) :
-    mergeInversion = 0
-    i = start
-    j = mid + 1
-    for k in range(start,end + 1) :
-        if i != mid + 1 and j != end + 1 :
-            if input[i] < input[j] :
-                output[k] = input[i]
-                i = i + 1
-            else :
-                mergeInversion = mergeInversion + mid - i + 1
-                output[k] = input[j]
-                j = j + 1
-        else :
-            if i == mid + 1:
-                for m in range(j,end + 1) :
-                    output[k] = input[m]
-                    k = k + 1
-            else :
-                for m in range(i,mid + 1) :
-                    output[k] = input[m]
-                    k = k + 1
-                    
-            break
-        
-    #This loop is to copy the output elements to input
-    #At each breakup this is required as input has to be updated as it is used in merge of next bigger parts
-    for k in range(start,end + 1) : 
-        input[k] = output[k]
-        
-    return mergeInversion
+def countInversion(inp):
+    if len(inp):
+        countInversion.out = [0] * len(inp)
+        x = countInversionUtil(inp, 0, len(inp) - 1)
+        del countInversion.out
+        return x
+    else:
+        return 0
 
-
-
-
-
-if __name__ == "__main__" : 
-    print getInversionCount(input, 0, len(input) - 1)
+if __name__ == '__main__':
+    print countInversion(inp)

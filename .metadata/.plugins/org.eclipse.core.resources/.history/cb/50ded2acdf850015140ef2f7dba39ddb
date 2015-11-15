@@ -1,0 +1,81 @@
+def recurse(grid, ch, i, j):
+    if i == len(grid) or j == len(grid[0]) or i == -1 or j == -1:
+        return
+    if grid[i][j] == '0':
+        return
+    if grid[i][j] == '1' and ch[i][j] == 0:
+        ch[i][j] = 1
+        recurse(grid, ch, i+1, j)
+        recurse(grid, ch, i-1, j)
+        recurse(grid, ch, i, j+1)
+        recurse(grid, ch, i, j-1)
+
+def check(grid):
+    ch = []
+    for i in range(r):
+        ch.append(c * [0])
+    count = 0
+    
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            if grid[i][j] == '1' and ch[i][j] == 0:
+                count += 1
+                recurse(grid, ch, i, j)
+    return count
+    
+#===============================================================================
+# a = open('input.txt', 'r')
+# b = open('output.txt', 'w')
+# t = int(a.readline())
+# n = t
+# while t != 0:
+#     b.write('Case #' + str(n-t+1) + ':\n')
+#     r, c = [int(i) for i in a.readline().split()]
+#     grid = []
+#     for i in range(r):
+#         grid.append(c * ['0'])
+#     for i in range(r):
+#         temp = a.readline()
+#         for j in range(c):
+#             grid[i][j] = temp[j]
+#     q = int(a.readline())
+#     while q!=0:
+#         q -= 1
+#         qu = a.readline().split()
+#         if qu[0] == 'Q':
+#             l = check(grid)
+#             #print(l)
+#             b.write(str(l)+'\n')
+#         else:
+#             grid[int(qu[1])][int(qu[2])] = qu[3]
+#     t-=1
+#===============================================================================
+    
+    
+if __name__ == '__main__':
+    with open("fourth.txt", "w+") as f:
+        for t in xrange(input()):
+            out = "Case #" + str(t + 1) + ":" + "\n"
+            f.write(out)
+            r,c = map(int,raw_input().split())
+            grid = []
+            
+            for i in range(r):
+                grid.append(c * ['0'])
+            for i in range(r):
+                temp = raw_input()
+                for j in range(c):
+                    grid[i][j] = temp[j]
+            q = int(raw_input())
+            while q!=0:
+                q -= 1
+                qu = raw_input().split()
+                if qu[0] == 'Q':
+                    l = check(grid)
+                    #print(l)
+                    f.write(str(l)+'\n')
+                else:
+                    grid[int(qu[1])][int(qu[2])] = qu[3]
+            
+            
+            

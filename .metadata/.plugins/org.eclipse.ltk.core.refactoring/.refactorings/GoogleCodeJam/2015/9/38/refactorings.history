@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;GoogleCodeJam/A-small-practice (1).in&apos; to &apos;abc.in&apos;" description="Rename resource &apos;A-small-practice (1).in&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="A-small-practice (1).in" name="abc.in" stamp="1442399071453" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;GoogleCodeJam/A-large-practice (1).in&apos; to &apos;abc.in&apos;" description="Rename resource &apos;A-large-practice (1).in&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="A-large-practice (1).in" name="abc.in" stamp="1442399283312" updateReferences="true"/>
+</session>

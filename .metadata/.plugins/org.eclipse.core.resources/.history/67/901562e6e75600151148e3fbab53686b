@@ -1,0 +1,51 @@
+class UnionFind:
+    def __init__(self, li):
+        self.p = [-1] * len(li)
+
+    def find(self, x):
+        if self.p[x] >= 0:
+            parent = self.p[x]
+            result, size = self.find(parent)
+            self.p[x] = result
+            return (result, size)
+        else:
+            return (x, self.p[x])
+        
+    def union(self, a, b):
+        if a != b:
+            pa,sa = self.find(a)
+            pb,sb = self.find(b)
+            if pa != pb:
+                if abs(sa) >= abs(sb):
+                    self.p[pb] = pa
+                    self.p[pa] += sb
+                else:
+                    self.p[pa] = pb
+                    self.p[pb] += sa
+                
+                    
+
+
+for _ in xrange(1):
+    s = "7 1 -2 -3 -4 2 0 -1"
+    li = map(int, s.split())
+    del li[0]
+    if len(li):
+        minimum = float("inf")
+        li.sort()
+        #print li
+        m = 1
+        for i in xrange(1,len(li)):
+            if li[i-1] + 1 == li[i]:
+                m += 1
+            else:
+                if m < minimum:
+                    minimum = m 
+                m = 1
+        print m
+            
+            
+            
+        
+    else:
+        print 0

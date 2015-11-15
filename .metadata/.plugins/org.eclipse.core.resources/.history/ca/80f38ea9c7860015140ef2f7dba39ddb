@@ -1,0 +1,20 @@
+
+minMax = []
+while True:
+    try:
+        fileName = raw_input()
+        with open(fileName) as f:
+            while True:
+                try:
+                    line = f.readline().split()
+                    if len(line):
+                        line.sort()
+                        minMax.append(line[0],line[-1])
+                    else:
+                        break
+                except EOFError:
+                    break
+    except EOFError:
+        break
+    
+print minMax

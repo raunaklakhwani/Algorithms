@@ -1,0 +1,8 @@
+for _ in xrange(1):
+    li = map(int,raw_input().split())
+    del li[0]
+    if len(li):
+        print
+        
+    else:
+        print 0

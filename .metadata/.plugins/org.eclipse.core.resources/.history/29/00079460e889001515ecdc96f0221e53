@@ -1,0 +1,32 @@
+class Solution(object):
+    def longestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        N = len(s)
+        dp = [[0] * N for _ in xrange(N)]
+        
+        for i in xrange(N):
+            dp[i][i] = 1
+        m = 1
+        ans = s[0]
+        for l in xrange(2,N+1):
+            for i in xrange(N):
+                e = i + l - 1
+                if e >= N:
+                    break
+                #print i,e
+                if s[i] == s[e]:
+                    dp[i][e] = dp[i+1][e-1]
+                    if dp[i][e] == 1:
+                        if e - i + 1 > m:
+                            m = e - i + 1
+                            ans = s[i:e+1]
+                            
+        
+        #print dp
+        return ans
+                    
+                
+        

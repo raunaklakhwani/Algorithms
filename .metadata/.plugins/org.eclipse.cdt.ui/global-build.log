@@ -1,0 +1,635 @@
+10:17:00 **** Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+10:17:32 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+10:21:23 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:42:15: error: expected ';' after expression
+                printf("\n")
+                            ^
+                            ;
+1 error generated.
+make: *** [src/CPPDemo.o] Error 1
+10:22:37 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+10:23:08 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+10:24:14 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+10:24:33 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+10:34:27 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:78:4: error: no matching function for call to 'print'
+                        print(n,m);
+                        ^~~~~
+../src/CPPDemo.cpp:35:6: note: candidate function not viable: requires 3 arguments, but 2 were provided
+void print(int n, int m,int i) {
+     ^
+1 error generated.
+make: *** [src/CPPDemo.o] Error 1
+10:34:51 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+10:59:00 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+11:00:57 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+11:25:51 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+11:28:08 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+11:32:32 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+11:33:11 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+11:34:05 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+11:40:43 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+11:23:54 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:1:10: fatal error: 'bits/stdc++.h' file not found
+#include <bits/stdc++.h>
+         ^
+1 error generated.
+make: *** [src/CPPDemo.o] Error 1
+11:24:55 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:1:10: fatal error: 'bits/stdc++.h' file not found
+#include <bits/stdc++.h>
+         ^
+1 error generated.
+make: *** [src/CPPDemo.o] Error 1
+12:26:34 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:1:10: fatal error: 'bits/stdc++.h' file not found
+#include <bits/stdc++.h>
+         ^
+1 error generated.
+make: *** [src/CPPDemo.o] Error 1
+12:12:59 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:3:6: error: cannot initialize a variable of type 'int' with an rvalue of type 'int *'
+        int a = (int *) 60;
+            ^   ~~~~~~~~~~
+../src/CPPDemo.cpp:4:6: error: cannot initialize a variable of type 'int' with an rvalue of type 'int *'
+        int b = (int *) 40;
+            ^   ~~~~~~~~~~
+../src/CPPDemo.cpp:5:9: error: non-ASCII characters are not allowed outside of literals and identifiers
+        printf(“%d”,a-b);
+               ^
+../src/CPPDemo.cpp:5:12: error: expected expression
+        printf(“%d”,a-b);
+                ^
+../src/CPPDemo.cpp:5:14: error: non-ASCII characters are not allowed outside of literals and identifiers
+        printf(“%d”,a-b);
+                  ^
+../src/CPPDemo.cpp:5:13: error: use of undeclared identifier 'd'
+        printf(“%d”,a-b);
+                 ^
+6 errors generated.
+make: *** [src/CPPDemo.o] Error 1
+22:02:38 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+../src/CPPDemo.cpp:13:2: error: use of undeclared identifier 'vector'
+        vector <a*>v1 =new vector<a*>;
+        ^
+../src/CPPDemo.cpp:13:10: error: 'a' does not refer to a value
+        vector <a*>v1 =new vector<a*>;
+                ^
+../src/CPPDemo.cpp:5:7: note: declared here
+class a {
+      ^
+../src/CPPDemo.cpp:13:12: error: expected expression
+        vector <a*>v1 =new vector<a*>;
+                  ^
+../src/CPPDemo.cpp:13:13: error: use of undeclared identifier 'v1'
+        vector <a*>v1 =new vector<a*>;
+                   ^
+../src/CPPDemo.cpp:13:21: error: unknown type name 'vector'
+        vector <a*>v1 =new vector<a*>;
+                           ^
+../src/CPPDemo.cpp:13:31: error: non-ASCII characters are not allowed outside of literals and identifiers
+        vector <a*>v1 =new vector<a*>;
+                                     ^
+../src/CPPDemo.cpp:14:30: error: non-ASCII characters are not allowed outside of literals and identifiers
+        vector <a> *v2=new vector<a>;
+                                    ^
+1 warning and 7 errors generated.
+make: *** [src/CPPDemo.o] Error 1
+22:03:22 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+../src/CPPDemo.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+using namespace std;
+                ^
+../src/CPPDemo.cpp:13:2: error: use of undeclared identifier 'vector'
+        vector<a*> v1 =new vector<a*>;
+        ^
+../src/CPPDemo.cpp:13:9: error: 'a' does not refer to a value
+        vector<a*> v1 =new vector<a*>;
+               ^
+../src/CPPDemo.cpp:5:7: note: declared here
+class a {
+      ^
+../src/CPPDemo.cpp:13:11: error: expected expression
+        vector<a*> v1 =new vector<a*>;
+                 ^
+../src/CPPDemo.cpp:13:13: error: use of undeclared identifier 'v1'
+        vector<a*> v1 =new vector<a*>;
+                   ^
+../src/CPPDemo.cpp:13:21: error: unknown type name 'vector'
+        vector<a*> v1 =new vector<a*>;
+                           ^
+../src/CPPDemo.cpp:13:31: error: non-ASCII characters are not allowed outside of literals and identifiers
+        vector<a*> v1 =new vector<a*>;
+                                     ^
+../src/CPPDemo.cpp:14:29: error: non-ASCII characters are not allowed outside of literals and identifiers
+        vector<a> *v2=new vector<a>;
+                                   ^
+1 warning and 7 errors generated.
+make: *** [src/CPPDemo.o] Error 1
+16:36:44 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:3:17: warning: using directive refers to implicitly-defined namespace 'std'
+using namespace std;
+                ^
+../src/CPPDemo.cpp:13:2: error: use of undeclared identifier 'vector'
+        vector<a*> v1 =new vector<a*>;
+        ^
+../src/CPPDemo.cpp:13:9: error: 'a' does not refer to a value
+        vector<a*> v1 =new vector<a*>;
+               ^
+../src/CPPDemo.cpp:5:7: note: declared here
+class a {
+      ^
+../src/CPPDemo.cpp:13:11: error: expected expression
+        vector<a*> v1 =new vector<a*>;
+                 ^
+../src/CPPDemo.cpp:13:13: error: use of undeclared identifier 'v1'
+        vector<a*> v1 =new vector<a*>;
+                   ^
+../src/CPPDemo.cpp:13:21: error: unknown type name 'vector'
+        vector<a*> v1 =new vector<a*>;
+                           ^
+../src/CPPDemo.cpp:13:31: error: non-ASCII characters are not allowed outside of literals and identifiers
+        vector<a*> v1 =new vector<a*>;
+                                     ^
+../src/CPPDemo.cpp:14:29: error: non-ASCII characters are not allowed outside of literals and identifiers
+        vector<a> *v2=new vector<a>;
+                                   ^
+1 warning and 7 errors generated.
+make: *** [src/CPPDemo.o] Error 1
+13:56:10 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:10:13: error: expected ';' at end of declaration
+        int counter{0};
+                   ^
+                   ;
+../src/CPPDemo.cpp:15:20: error: expected ';' at end of declaration
+        short exactMatch_n{0};
+                          ^
+                          ;
+../src/CPPDemo.cpp:28:13: error: expected ';' at end of declaration
+        short count{0};
+                   ^
+                   ;
+../src/CPPDemo.cpp:29:11: error: expected ';' in 'for' statement specifier
+        for(int i{0};i<pattern.length();i++)
+                 ^
+../src/CPPDemo.cpp:29:11: error: expected expression
+../src/CPPDemo.cpp:29:33: error: expected ')'
+        for(int i{0};i<pattern.length();i++)
+                                       ^
+../src/CPPDemo.cpp:29:5: note: to match this '('
+        for(int i{0};i<pattern.length();i++)
+           ^
+../src/CPPDemo.cpp:29:16: warning: relational comparison result unused [-Wunused-comparison]
+        for(int i{0};i<pattern.length();i++)
+                     ~^~~~~~~~~~~~~~~~~
+../src/CPPDemo.cpp:29:34: error: use of undeclared identifier 'i'
+        for(int i{0};i<pattern.length();i++)
+                                        ^
+../src/CPPDemo.cpp:39:13: error: expected ';' at end of declaration
+        short count{0};
+                   ^
+                   ;
+../src/CPPDemo.cpp:40:11: error: expected ';' in 'for' statement specifier
+        for(int i{0};i<pattern.length();i++)
+                 ^
+../src/CPPDemo.cpp:40:11: error: expected expression
+../src/CPPDemo.cpp:40:33: error: expected ')'
+        for(int i{0};i<pattern.length();i++)
+                                       ^
+../src/CPPDemo.cpp:40:5: note: to match this '('
+        for(int i{0};i<pattern.length();i++)
+           ^
+../src/CPPDemo.cpp:40:16: warning: relational comparison result unused [-Wunused-comparison]
+        for(int i{0};i<pattern.length();i++)
+                     ~^~~~~~~~~~~~~~~~~
+../src/CPPDemo.cpp:40:34: error: use of undeclared identifier 'i'
+        for(int i{0};i<pattern.length();i++)
+                                        ^
+2 warnings and 12 errors generated.
+make: *** [src/CPPDemo.o] Error 1
+20:15:25 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:4:2: warning: expression result unused [-Wunused-value]
+        *y++;
+        ^~~~
+1 warning generated.
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+20:15:46 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+20:16:28 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:6:14: warning: format specifies type 'int' but the argument has type 'int *' [-Wformat]
+        printf("%d",&x);
+                ~~  ^~
+1 warning generated.
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+20:16:39 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+08:28:42 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:3:1: error: 'main' must return 'int'
+void main() {
+^~~~
+int
+../src/CPPDemo.cpp:5:26: warning: unsequenced modification and access to 'i' [-Wunsequenced]
+   printf("%d %d %d", i, ++i, i++);
+                      ~  ^
+1 warning and 1 error generated.
+make: *** [src/CPPDemo.o] Error 1
+08:28:58 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:5:26: warning: unsequenced modification and access to 'i' [-Wunsequenced]
+   printf("%d %d %d", i, ++i, i++);
+                      ~  ^
+1 warning generated.
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+08:32:04 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:5:26: warning: unsequenced modification and access to 'i' [-Wunsequenced]
+   printf("%d %d %d", i, ++i, i++);
+                      ~  ^
+../src/CPPDemo.cpp:11:10: warning: multiple unsequenced modifications to 'i' [-Wunsequenced]
+           j = i++ + ++i;
+                ^    ~~
+2 warnings generated.
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+10:13:28 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:5:26: warning: unsequenced modification and access to 'i' [-Wunsequenced]
+   printf("%d %d %d", i, ++i, i++);
+                      ~  ^
+../src/CPPDemo.cpp:20:10: warning: multiple unsequenced modifications to 'i' [-Wunsequenced]
+           j = i++ + ++i;
+                ^    ~~
+2 warnings generated.
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+10:14:12 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:5:26: warning: unsequenced modification and access to 'i' [-Wunsequenced]
+   printf("%d %d %d", i, ++i, i++);
+                      ~  ^
+../src/CPPDemo.cpp:22:10: warning: multiple unsequenced modifications to 'i' [-Wunsequenced]
+           j = i++ + ++i;
+                ^    ~~
+2 warnings generated.
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+10:14:49 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:5:26: warning: unsequenced modification and access to 'i' [-Wunsequenced]
+   printf("%d %d %d", i, ++i, i++);
+                      ~  ^
+../src/CPPDemo.cpp:23:10: warning: multiple unsequenced modifications to 'i' [-Wunsequenced]
+           j = i++ + ++i;
+                ^    ~~
+2 warnings generated.
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+10:15:03 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:5:26: warning: unsequenced modification and access to 'i' [-Wunsequenced]
+   printf("%d %d %d", i, ++i, i++);
+                      ~  ^
+../src/CPPDemo.cpp:23:10: warning: multiple unsequenced modifications to 'i' [-Wunsequenced]
+           j = i++ + ++i;
+                ^    ~~
+2 warnings generated.
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+10:15:32 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:5:26: warning: unsequenced modification and access to 'i' [-Wunsequenced]
+   printf("%d %d %d", i, ++i, i++);
+                      ~  ^
+../src/CPPDemo.cpp:23:10: warning: multiple unsequenced modifications to 'i' [-Wunsequenced]
+           j = i++ + ++i;
+                ^    ~~
+../src/CPPDemo.cpp:28:9: error: array type 'int [3]' is not assignable
+           arr = arr + 1;
+           ~~~ ^
+2 warnings and 1 error generated.
+make: *** [src/CPPDemo.o] Error 1
+10:53:54 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:9:14: warning: expression result unused [-Wunused-value]
+    }while(s(90),4);
+             ^~
+../src/CPPDemo.cpp:3:14: note: expanded from macro 's'
+#define s(x) x
+             ^
+../src/CPPDemo.cpp:6:14: warning: unused variable 'n' [-Wunused-variable]
+    int m=14,n=4;
+             ^
+2 warnings generated.
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 

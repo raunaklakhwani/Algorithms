@@ -1,0 +1,16 @@
+class UnionFind:
+    def __init__(self,li):
+        self.p = [-1] * len(li)
+        
+        
+
+
+for _ in xrange(1):
+    s = "7 1 -2 -3 -4 2 0 -1"
+    li = map(int,s.split())
+    del li[0]
+    if len(li):
+        print li
+        
+    else:
+        print 0

@@ -1,0 +1,22 @@
+lang = raw_input()
+
+code = ""
+input=""
+while True:
+    try:
+        s = raw_input()
+        if s == "#" * 15:
+            break
+        code += s
+    except EOFError:
+        break
+        
+while True:
+    try:
+        print
+    except EOFError:
+        break
+    
+
+        
+        

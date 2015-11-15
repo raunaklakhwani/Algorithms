@@ -1,0 +1,55 @@
+'''
+7 3
+7654321
+'''
+
+
+from math import ceil
+from heapq import heappush,heappop
+
+class Node:
+    def __init__(self,index,data,isValid):
+        self.index = index
+        self.data = data
+        self.isValid = isValid
+
+N,K = map(int,raw_input().split())
+li = map(int,list(raw_input()))
+print li
+
+heap = []
+
+h = {}
+for i in xrange(N):
+    node = Node(i,li[i],True)
+    heappush(heap, (li[i],node))
+    h[i] = node
+
+
+while True:
+    data,node = heappop(heap)
+    if node.isValid:
+        x = int(ceil(N / float(K)))
+        if node.index + x - 1 < len(li):
+            ans = ""
+            for y in xrange(node.index,node.index + x):
+                h[y].isValid = False
+                ans += str(h[y].data)
+        else:
+            
+                
+            
+    else:
+        continue
+    
+    
+
+
+x = ceil(N/float(K))
+
+
+
+
+
+
+

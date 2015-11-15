@@ -1,0 +1,26 @@
+'''
+8 3
+6 7
+2 4
+1 8
+'''
+N,M = map(int,raw_input().split())
+li = []
+
+for _ in xrange(M):
+    li.append(map(int,raw_input().split()))
+    
+li.sort(key = lambda item: item[0], reverse = True)
+
+
+r = 0
+h = {}
+for a,b in li:
+    h[(a,b)] = r
+    r += 1
+    
+print h
+    
+    
+    
+

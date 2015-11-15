@@ -1,0 +1,17 @@
+from bisect import bisect_left
+N = input()
+li = map(int,raw_input().split())
+P,Q = map(int,raw_input().split())
+li.sort()
+maximum = float("-inf")
+maximumI = None
+for i in xrange(P,Q+1):
+    ind = bisect_left(li,i)
+    if ind > 0 and ind < len(li) - 1:
+        minimum = min(abs(i-li[ind-1]), abs(i-li[ind]))
+        if minimum > maximum:
+            maximum = minimum
+            maximumI = i
+
+print maximumI
+        

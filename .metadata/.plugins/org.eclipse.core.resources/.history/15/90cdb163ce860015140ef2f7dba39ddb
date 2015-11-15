@@ -1,0 +1,72 @@
+
+
+
+
+#lang = raw_input()
+input = ""
+code = ""
+#===============================================================================
+# code = ""
+# input=""
+# while True:
+#     try:
+#         s = raw_input()
+#         if s == "#" * 15:
+#             break
+#         code += s
+#     except EOFError:
+#         break
+#         
+# while True:
+#     try:
+#         s = raw_input()
+#         input += s
+#     except EOFError:
+#         break
+#     
+#     
+#===============================================================================
+
+code = '''
+class Solution {
+    public static void main(String args[]){
+        String s = null;
+        System.out.println(s.length());
+    }
+}
+'''
+    
+query = "api.hackerrank.com/checker/submission.json -d 'source=" + code + "&lang=3" + "&testcases=['1']&api_key=hackerrank|180512-500|492c7e2269c1355e2b97f92e0754bd6c46d166e7'"    
+
+d = {}
+d['source'] = code
+d['lang'] = 3
+d['testcases'] = ['1']
+d['api_key'] = "hackerrank|180512-500|492c7e2269c1355e2b97f92e0754bd6c46d166e7"
+url = 'api.hackerrank.com/checker/submission.json'
+
+
+import requests
+r =  requests.post(url,data=d)
+
+
+
+
+import urllib2
+print "Ronak"
+req = urllib2.Request(url, d, {'Content-Type': 'application/json'})
+f = urllib2.urlopen(req)
+for x in f:
+    print x
+f.close()
+
+
+
+    
+print code
+print input
+
+
+
+        
+        

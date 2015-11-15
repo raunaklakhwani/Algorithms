@@ -5,6 +5,7 @@ Example25|1433466868000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Examp
 Example24|1433462074000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Example24.py
 Test|1433464098000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Test.py
 Main|1433193685000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Main.py
+Example26|1439623253000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Example26.py
 SumOfDigits|1435373305000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/SumOfDigits.py
 SeparateOddAndEven|1434577181000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/SeparateOddAndEven.py
 Main2|1433315884000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Main2.py
@@ -14,20 +15,21 @@ Main4|1433379824000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/Main4.py
 permutations|1433456697000000000|/Users/ronaklakhwani/Desktop/Algorithms/Test/permutations.py
 -- END DISKCACHE
 -- START DICTIONARY
-13
-3=Example25
-10=Example24
-8=Main
-2=Test
-11=SeparateOddAndEven
-6=SumOfDigits
-12=Node
+14
 1=Main2
 7=Main3
-5=Example23
 4=Main4
+14=Node.__init__
+3=Example25
+10=Example24
+2=Test
+8=Main
+11=Example26
+6=SumOfDigits
+12=SeparateOddAndEven
+13=Node
+5=Example23
 9=permutations
-13=Node.__init__
 -- END DICTIONARY
 -- START TREE 1
 30
@@ -43,11 +45,11 @@ day|2|day!59@days!59@
 f|1|f!74@
 fac|1|factorial!83@
 fil|1|fillData!26@
-get|7|getSumOfDivisors!34@getLength!10@getDigits!50@getDaysInMonth!58@getSumOfDivisors!42@getSum!50@getFixed!82@
+get|8|getSumOfDivisors!34@getLength!10@getDigits!50@getRecurDigits!90@getDaysInMonth!58@getSumOfDivisors!42@getSum!50@getFixed!82@
 hea|1|head!67@
 i|1|i!11@
 ind|1|ind!27@
-inp|1|inp!91@
+inp|1|inp!99@
 isl|1|isLeapYear!58@
 l|1|l!27@
 max|3|maximum!35@maximum!43@maximum!11@
@@ -58,14 +60,14 @@ pre|1|pre!51@
 pri|2|primes!35@primes!43@
 res|1|result!67@
 s|2|s!75@s!83@
-sep|1|separateEAndO!90@
+sep|1|separateEAndO!98@
 tem|1|temp!67@
 x|2|x!35@x!43@
 -- END TREE
 -- START TREE 2
 4
-__i|1|__init__!12&66@
-dat|1|data!13&67@
-dow|1|down!13&67@
-nex|1|next!13&67@
+__i|1|__init__!13&66@
+dat|1|data!14&67@
+dow|1|down!14&67@
+nex|1|next!14&67@
 -- END TREE

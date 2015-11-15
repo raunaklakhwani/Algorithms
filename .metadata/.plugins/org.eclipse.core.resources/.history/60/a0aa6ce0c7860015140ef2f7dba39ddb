@@ -1,0 +1,29 @@
+
+minMax = []
+while True:
+    try:
+        fileName = raw_input()
+        if len(fileName):
+            with open(fileName) as f:
+                while True:
+                    try:
+                        line = f.readline().split()
+                        if len(line):
+                            line.sort()
+                            minMax.append(line[0] + line[-1])
+                        else:
+                            break
+                    except EOFError:
+                        break
+        else:
+            break
+    except EOFError:
+        break
+    
+def compare(a,b):
+    if len(a) < len(b):
+        return 1
+    elif len(a) < len(b):
+        return -1
+    else:
+        return a < b:

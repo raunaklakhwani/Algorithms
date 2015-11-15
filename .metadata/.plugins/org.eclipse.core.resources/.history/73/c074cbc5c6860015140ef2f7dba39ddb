@@ -1,0 +1,13 @@
+
+while True:
+    try:
+        fileName = raw_input()
+        with open(fileName) as f:
+            while True:
+                try:
+                    line = f.readline().split()
+                    line.sort()
+                except EOFError:
+                    break
+    except EOFError:
+        break

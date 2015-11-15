@@ -1,0 +1,88 @@
+from math import log
+
+class QuickUnionWithSizePathCompression:
+    def __init__(self, li):
+        self.p = [-1] * len(li)
+        self.diss = len(li)
+        
+    def find(self, a):
+        '''
+        Time Complexity is O(depth)
+        '''
+        if a < 0 or a > len(self.p):
+            return None
+        else:
+            
+            if self.p[a] < 0:
+                return (a, self.p[a])
+            else:
+                # a = self.p[a]
+                m, n = self.find(self.p[a])
+                self.p[a] = m
+                return (m, n)
+        
+    def union(self, a, b):
+        '''
+        Time Complexity is O(depth)
+        '''
+        pa, sa = self.find(a)
+        pb, sb = self.find(b)
+        if pa != pb:
+            if sa < sb:
+                self.p[pb] = pa
+                self.p[pa] += sb
+            else:
+                self.p[pa] = pb
+                self.p[pb] += sa
+            
+            
+         
+def getCount(li):
+    #print li
+    q = QuickUnionWithSizePathCompression(xrange(0, 64))
+    for num in li:
+        pre = None
+        while num:
+            bit = int(log(num & ~(num - 1), 2))
+            if pre is None:
+                pre = bit
+            else:
+                q.union(pre, bit)
+                pre = bit
+            num = num & (num - 1)
+            
+    count = 0
+    #print q.p
+    for i in xrange(len(q.p)):
+        element = q.p[i]
+        if element < 0:
+            count += 1
+            
+    return count       
+if __name__ == '__main__':
+    N = input()
+    li = map(int, raw_input().split())
+    
+    totalAns = 0
+    
+    for x in xrange((1 << N)):
+        a = []
+        
+        while x:
+            bit = int(log(x & ~(x - 1), 2))
+            a.append(li[bit])
+            x = x & (x - 1)
+        
+        res = getCount(a)
+        print res
+        totalAns += res
+        
+    print totalAns
+            
+    
+        
+    
+        
+    
+    
+        

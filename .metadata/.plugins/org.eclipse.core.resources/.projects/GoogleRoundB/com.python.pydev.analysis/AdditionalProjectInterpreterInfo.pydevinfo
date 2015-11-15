@@ -1,0 +1,38 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/GoogleRoundB/com.python.pydev.analysis/v2_indexcache
+Test1|1442765593000000000|/Users/ronaklakhwani/Desktop/Algorithms/GoogleRoundB/Test1.py
+GoogleTemplate|1442724433000000000|/Users/ronaklakhwani/Desktop/Algorithms/GoogleRoundB/GoogleTemplate.py
+Test2|1442769696000000000|/Users/ronaklakhwani/Desktop/Algorithms/GoogleRoundB/Test2.py
+Test3|1442730629000000000|/Users/ronaklakhwani/Desktop/Algorithms/GoogleRoundB/Test3.py
+Test4|1442724514000000000|/Users/ronaklakhwani/Desktop/Algorithms/GoogleRoundB/Test4.py
+-- END DISKCACHE
+-- START DICTIONARY
+5
+3=Test1
+4=GoogleTemplate
+2=Test2
+1=Test3
+5=Test4
+-- END DICTIONARY
+-- START TREE 1
+15
+N|1|N!11@
+d|1|d!11@
+div|1|div!11@
+get|8|getResult!18@getResult!10@getResult1!18@getResult!26@getResult!34@getDivisors!10@getDigits!10@getResult!42@
+h|1|h!11@
+l|1|l!11@
+max|1|maximum!11@
+out|1|out!11@
+pri|2|primes!11@prime!11@
+r|1|r!11@
+res|1|result!11@
+s|1|s!11@
+tim|1|timeInADay!27@
+tur|1|turn!11@
+win|1|winner!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

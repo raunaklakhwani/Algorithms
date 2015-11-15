@@ -1,3 +1,6 @@
 MODULES_MANAGER_V2
+2DSegmentTree|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/2DSegmentTree.py
+LazyPropagation|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/LazyPropagation.py
 MainMin|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/MainMin.py
 MainSum|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/MainSum.py
+persistentsegmenttree|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/persistentsegmenttree.py

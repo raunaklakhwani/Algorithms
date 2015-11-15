@@ -1,0 +1,21 @@
+def  maximum_minimum(arr, m):
+    print
+    
+    
+
+m1 = float("-inf")
+def maximum(arr,m,index,su):
+    global m1
+    
+    if index >= len(arr):
+        
+    
+    
+    
+
+
+if __name__ == '__main__':
+    print
+    
+    
+    maximum_minimum([5, 8, 3, 1, 5, 7], 2)

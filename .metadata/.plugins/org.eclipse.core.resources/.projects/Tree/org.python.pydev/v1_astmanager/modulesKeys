@@ -19,8 +19,10 @@ LCA|/Users/ronaklakhwani/Desktop/Algorithms/Tree/LCA.py
 LargestIndependentSet|/Users/ronaklakhwani/Desktop/Algorithms/Tree/LargestIndependentSet.py
 Main|/Users/ronaklakhwani/Desktop/Algorithms/Tree/Main.py
 Morris|/Users/ronaklakhwani/Desktop/Algorithms/Tree/Morris.py
+PostorderUsingInorderAndPreorder|/Users/ronaklakhwani/Desktop/Algorithms/Tree/PostorderUsingInorderAndPreorder.py
 PrintAncestors|/Users/ronaklakhwani/Desktop/Algorithms/Tree/PrintAncestors.py
 PrintBoundary|/Users/ronaklakhwani/Desktop/Algorithms/Tree/PrintBoundary.py
+RemoveAllNodesWhichDontLieInAnyPathWithSumGreaterThanEqualToK|/Users/ronaklakhwani/Desktop/Algorithms/Tree/RemoveAllNodesWhichDontLieInAnyPathWithSumGreaterThanEqualToK.py
 RemoveAllTheHalfNodes|/Users/ronaklakhwani/Desktop/Algorithms/Tree/RemoveAllTheHalfNodes.py
 SpecialTreeFromGivenPreorderTraversal|/Users/ronaklakhwani/Desktop/Algorithms/Tree/SpecialTreeFromGivenPreorderTraversal.py
 Successors|/Users/ronaklakhwani/Desktop/Algorithms/Tree/Successors.py

@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+int main1() {
+   int i = 1;
+   printf("%d %d %d", i, ++i, i++);
+   return 0;
+}
+
+void foo1(int arr[]){
+	arr = arr + 1;
+	printf("%d",*arr);
+	arr = NULL;
+}
+
+void foo(int *p){
+	p = NULL;
+}
+
+
+int main(){
+	int i = 0, j = 0;
+	   j = i++ + ++i;
+	   printf("%d\n", i);
+	   printf("%d\n", j);
+
+	   int arr[] = {1,2,3};
+	   foo(arr);
+	   foo1(arr);
+
+
+	   return 0;
+}
+
+

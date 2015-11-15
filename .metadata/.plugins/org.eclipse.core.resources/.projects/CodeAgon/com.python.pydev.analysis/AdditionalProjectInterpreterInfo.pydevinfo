@@ -1,0 +1,24 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/CodeAgon/com.python.pydev.analysis/v2_indexcache
+Sherlock_And_Subarray_Queries|1439718071000000000|/Users/ronaklakhwani/Desktop/Algorithms/CodeAgon/Sherlock_And_Subarray_Queries.py
+Another_Knapsack|1439699133000000000|/Users/ronaklakhwani/Desktop/Algorithms/CodeAgon/Another_Knapsack.py
+GohanAndBlocks|1439713854000000000|/Users/ronaklakhwani/Desktop/Algorithms/CodeAgon/GohanAndBlocks.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+3=Sherlock_And_Subarray_Queries
+2=Another_Knapsack
+1=GohanAndBlocks
+-- END DICTIONARY
+-- START TREE 1
+5
+cou|2|count!11@count1!11@
+get|6|getMinimumHackosToPay!18@getSegmentTreeUtil!26@getMaximumUtil!26@getMaximum!26@getAns!10@getSegmentTree!26@
+map|1|map!11@
+ori|1|originals!11@
+s|1|s!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

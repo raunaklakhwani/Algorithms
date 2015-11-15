@@ -1,0 +1,36 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/SearchHackerRank/com.python.pydev.analysis/v2_indexcache
+Playing_With_Numbers|1442121147000000000|/Users/ronaklakhwani/Desktop/Algorithms/SearchHackerRank/Playing_With_Numbers.py
+Similar_Pair|1442128988000000000|/Users/ronaklakhwani/Desktop/Algorithms/SearchHackerRank/Similar_Pair.py
+-- END DISKCACHE
+-- START DICTIONARY
+4
+1=Playing_With_Numbers
+4=Bit.__init__
+2=Similar_Pair
+3=Bit
+-- END DICTIONARY
+-- START TREE 1
+12
+N|1|N!11@
+Q|1|Q!11@
+add|1|add!11@
+bit|1|Bit!17@
+cum|1|cumm!11@
+dfs|1|dfs!18@
+isr|1|isroot!19@
+lef|1|left!11@
+li|1|li!11@
+que|1|query!11@
+res|1|result!11@
+tre|1|tree!19@
+-- END TREE
+-- START TREE 2
+5
+__i|1|__init__!3&18@
+add|1|add!3&18@
+arr|1|array!4&19@
+get|1|get!3&18@
+siz|1|size!4&19@
+-- END TREE

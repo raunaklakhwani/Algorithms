@@ -1,0 +1,28 @@
+from collections import deque
+words = ["a","b","ba","bca","bda","bdca"]
+
+words.sort(key = lambda item:len(item),reverse = True)
+
+
+def recurse(words,index,cache,ans):
+    if cache.get(index) is not None:
+        return cache[index]
+    elif index == -1:
+        return ans
+    else:
+        m = 0
+        l = list(words[index])
+        for i in xrange(len(l)):
+            temp = l[i]
+            del l[i]
+            temps = "".join(l)
+            if temps in words:
+                try:
+                    ni = words.index(temps)
+                    res = recurse(words, ni, cache, ans + 1)
+                except ValueError:
+                    pass
+            
+            l.insert(i, temp)
+        
+

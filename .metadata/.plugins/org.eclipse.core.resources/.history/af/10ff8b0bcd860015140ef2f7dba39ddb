@@ -1,0 +1,61 @@
+
+
+
+
+lang = raw_input()
+input = ""
+code = ""
+#===============================================================================
+# code = ""
+# input=""
+# while True:
+#     try:
+#         s = raw_input()
+#         if s == "#" * 15:
+#             break
+#         code += s
+#     except EOFError:
+#         break
+#         
+# while True:
+#     try:
+#         s = raw_input()
+#         input += s
+#     except EOFError:
+#         break
+#     
+#     
+#===============================================================================
+
+code = '''
+class Solution {
+    public static void main(String args[]){
+        String s = null;
+        System.out.println(s.length());
+    }
+}
+'''
+    
+query = "api.hackerrank.com/checker/submission.json -d 'source=" + code + "&lang=3" + "&testcases=['1']&api_key=hackerrank|180512-500|492c7e2269c1355e2b97f92e0754bd6c46d166e7'"    
+
+
+
+import urllib2
+data = '{"nw_src": "10.0.0.1/32", "nw_dst": "10.0.0.2/32", "nw_proto": "ICMP", "actions": "ALLOW", "priority": "10"}'
+url = 'http://localhost:8080/firewall/rules/0000000000000001'
+req = urllib2.Request(url, data, {'Content-Type': 'application/json'})
+f = urllib2.urlopen(req)
+for x in f:
+    print(x)
+f.close()
+
+
+
+    
+print code
+print input
+
+
+
+        
+        

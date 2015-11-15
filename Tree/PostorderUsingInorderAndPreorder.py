@@ -44,6 +44,25 @@ def getPostorderUsingInorderPreorderUtil(inorder, preorder, ins, ine, pres):
         #d.extendleft(right)
         #d.extendleft(left)
         return d
+
+index = 0    
+def recurse(inorder,preorder,s,e):
+    global index
+    if s > e:
+        return ""
+    elif s == e:
+        element = preorder[index]
+        index += 1
+        return str(element)
+    else:
+        element = preorder[index]
+        mid = inorder.index(element)
+        index += 1
+        left = recurse(inorder,preorder,s,mid - 1)
+        right = recurse(inorder, preorder, mid + 1, e)
+        #print left,right,element
+        s1 = left + right + str(element)
+        return s1
         
         
         
@@ -66,5 +85,6 @@ if __name__ == '__main__':
     postTraversal(root)
     print 
     print getPostorderUsingInorderPreorder(inorder, preorder)
+    print recurse(inorder, preorder, 0, len(preorder) - 1)
     
     

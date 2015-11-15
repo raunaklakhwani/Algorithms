@@ -1,0 +1,19 @@
+def findhcf(x , y):
+    m = max(x,y)
+    n = min(x,y)
+    if(m%n == 0):
+        return n
+    return findhcf( n , m%n)
+        
+t = int(raw_input(''))
+while(t !=0):
+    t=t-1
+    n = int(raw_input(''))
+ 
+    ss = raw_input('')
+    arr = [int(val.strip()) for val in ss.split(' ')]
+    lcm=arr[0]
+    for i in range    (1,len(arr)):
+        hcf = findhcf(lcm,arr[i])
+        lcm = (lcm *arr[i])/hcf
+    print lcm%1000000007

@@ -1,0 +1,22 @@
+from collections import defaultdict
+if __name__ == '__main__':
+    fruitdict = defaultdict(int)
+    computerdict = defaultdict(int)
+    with open("apple-fruit.txt") as f:
+        while True:
+            line = f.readline()
+            if len(line):
+                for word in line.split():
+                    fruitdict[word] += 1
+            else:
+                break
+            
+    with open("apple-computers.txt") as f:
+        line = f.readline()
+            if len(line):
+                for word in line.split():
+                    fruitdict[word] += 1
+            else:
+                break
+            
+    print 

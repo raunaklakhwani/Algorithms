@@ -1,0 +1,17 @@
+class TreeNode:
+    def __init__(self, val):
+        val = val
+        left = right = None
+index = 0
+
+def getTreeInorderPreorder(inorder, preorder, s, e):
+    global index
+    if index < len(preorder):
+        root = TreeNode(preorder[index])
+        print preorder[index], s, e,
+        x = inorder.index(preorder[index], s, e)
+        print x
+        index += 1
+        root.left = getTreeInorderPreorder(inorder, preorder, s, x)
+        root.right = getTreeInorderPreorder(inorder, preorder, x + 1, e)
+        return root    

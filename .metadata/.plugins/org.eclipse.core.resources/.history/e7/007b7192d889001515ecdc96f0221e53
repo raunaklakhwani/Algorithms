@@ -1,0 +1,35 @@
+class Solution(object):
+    
+    def findMedianSortedArrays(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: float
+        """
+        
+        def getKthElement(A,B,k):
+            if len(A) == 0:
+                return B[k-1]
+            elif k == 1:
+                return min(A[0],B[0])
+            elif len(A) > len(B):
+                return getKthElement(B, A, k)
+            else:
+                mid1 = min(k>>1,len(A))
+        
+        la = len(nums1)
+        lb = len(nums2)
+        totalLength = la + lb
+        
+        if totalLength & 1:
+            k = totalLength << 1
+            return getKthElement(nums1, nums2, k)
+        else:
+            k1 = totalLength << 1
+            e1 = getKthElement(nums1, nums2, k1)
+            e2 = getKthElement(nums1, nums2, k1 + 1)
+            return (e1 + e2) * 0.5
+            
+            
+        
+        

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CounterCode2015/2DSegmentTree&apos; to &apos;2DSegmentTree.py&apos;" description="Rename resource &apos;2DSegmentTree&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="2DSegmentTree" name="2DSegmentTree.py" stamp="1445195550433" updateReferences="true"/>
+</session>

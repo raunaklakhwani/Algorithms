@@ -1,0 +1,23 @@
+class UnionFind:
+    def __init__(self, li):
+        self.p = [-1] * len(li)
+
+    def find(self, x):
+        if self.p[x] >= 0:
+            parent = self.p[x]
+            result = self.find(parent)
+            
+            return result
+        else:
+            return x
+
+
+for _ in xrange(1):
+    s = "7 1 -2 -3 -4 2 0 -1"
+    li = map(int, s.split())
+    del li[0]
+    if len(li):
+        print li
+        
+    else:
+        print 0

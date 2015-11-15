@@ -1,0 +1,31 @@
+class Node:
+    def __init__(self,start,end,height,index):
+        self.start = start
+        self.end = end
+        self.heigth = height
+        self.index = index
+
+class Solution(object):
+    def getSkyline(self, buildings):
+        """
+        :type buildings: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        print
+        
+        N = len(buildings)
+        
+        for i in xrange(N):
+            l,r,h = buildings[i]
+            node = Node(l, r, h, i)
+            
+        
+        
+        
+        
+        
+        
+if __name__ == '__main__':
+    s = Solution()
+    print s.getSkyline([[2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8]])
+    

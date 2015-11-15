@@ -1,0 +1,40 @@
+s = '''English, Physics, Chemistry, Mathematics, Computer Science    
+English, Physics, Chemistry, Mathematics, Physical Education    
+English, Physics, Chemistry, Mathematics, Economics    
+English, Physics, Chemistry, Mathematics, Biology  
+English, Economics, Accountancy, Mathematics, Business Studies 
+'''
+import json
+s = s.replace(" ", "").split()
+sets = []
+order = []
+for i in s:
+    sets.append(set(i.split(",")))
+    order.append(i.split(","))
+data = [[] for _ in xrange(len(sets))]
+
+
+with open("training.json") as f:
+     
+    N = int(f.readline())
+    for _ in xrange(N):
+        s = f.readline()
+        m = json.loads(s)
+        del m["serial"]
+        for j in xrange(len(sets)):
+            i = sets[j]
+            for k in m:
+                if k not in i:
+                    break
+            else:
+                li = []
+                for x in xrange(len(order)):
+                    li.append(m[order[x]])
+                data[j].append(li)
+                
+    print data
+            
+                
+            
+    
+

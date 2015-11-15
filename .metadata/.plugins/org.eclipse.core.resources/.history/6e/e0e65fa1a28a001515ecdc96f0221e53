@@ -1,0 +1,69 @@
+class Solution(object):
+    def calculate(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        p = {}
+        p["+"] = 1
+        p["-"] = 1
+        p["*"] = 2
+        p["/"] = 2
+        N = len(s)
+        
+        operator = []
+        operand = []
+        op = p.keys()
+        i = 0 
+        res = ""
+        while i < N:
+            print operator,operand,res
+            if s[i] == " ":
+                i += 1
+                if len(res):
+                    operand.append(res)
+                    res = ""
+                continue
+            if s[i] in op:
+                if len(res):
+                    operand.append(res)
+                    res = ""
+                if not len(operator):
+                    operator.append(s[i])
+                elif p[operator[-1]] >= p[s[i]]:
+                    b = operand.pop()
+                    a = operand.pop()
+                    operation = operator.pop()
+                    ans = eval(a + operation + b)
+                    operand.append(str(ans))
+                    operator.append(s[i])
+                else:
+                    operator.append(s[i])
+            
+                i += 1
+                continue
+            
+            
+            res += s[i]
+            i += 1
+        else:
+            if len(res):
+                operand.append(res)
+            
+            while len(operator):
+                b = operand.pop()
+                a = operand.pop()
+                operation = operator.pop()
+                ans = eval(a + operation + b)
+                operand.append(str(ans))
+                
+            return operand[0]
+            
+                
+                
+            
+            
+if __name__ == '__main__':
+    s = Solution()
+    print s.calculate("2 + 2 * 7")
+    print s.calculate("1*2-3/4+5*6-7*8+9/10")

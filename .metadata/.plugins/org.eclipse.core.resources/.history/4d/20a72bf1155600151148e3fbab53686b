@@ -1,0 +1,33 @@
+# URL : http://www.geeksforgeeks.org/maximum-of-all-subarrays-of-size-k/
+from collections import deque
+inp = [1, 2, 3, 1, 4, 5, 2, 3, 6]
+inp = [3, 2, 1, 1, 4, 5, 2, 3, 6]
+#inp = [2, 3, 1, 1, 4, 5, 2, 3, 6]
+k = 3
+
+def printMaxInAWindow(inp, k):
+    q = deque([])
+    for i in xrange(k):
+        while len(q) and inp[i] >= q[0]:
+            q.pop()
+        q.appendleft(inp[i])
+        print q
+        
+    
+                
+                    
+                
+                
+                
+        
+        # print q
+        
+        
+        
+        
+        
+        
+    
+
+if __name__ == '__main__':
+    printMaxInAWindow(inp, k)

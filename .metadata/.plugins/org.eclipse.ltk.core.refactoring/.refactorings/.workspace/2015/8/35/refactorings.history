@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;SampleCodeTest/config&apos;" deleteContents="false" description="Delete resource &apos;SampleCodeTest/config&apos;" element1="/SampleCodeTest/config" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1440694664857"/>&#x0A;<refactoring comment="Delete resource &apos;FindUnion/Prims.py&apos;" deleteContents="false" description="Delete resource &apos;FindUnion/Prims.py&apos;" element1="/FindUnion/Prims.py" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1440868092508"/>
+</session>

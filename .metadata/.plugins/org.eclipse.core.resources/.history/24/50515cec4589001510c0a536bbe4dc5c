@@ -1,0 +1,48 @@
+from collections import defaultdict
+import re
+if __name__ == '__main__':
+    worddict = defaultdict(int)
+    with open("corpus.txt") as f:
+        while True:
+            try:
+                line = f.readline()
+                if len(line):
+                    for word in re.split("\W+",line.upper()):
+                        worddict[word] += 1
+                else:
+                    break
+            except EOFError:
+                break
+            
+    print worddict
+    N = input()
+    for _ in xrange(N):
+        s = raw_input().upper().split()
+        candidates = []
+        #addition
+        for i in xrange(len(s) + 1):
+            for x in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+                s.insert(i, x)
+                word = "".join(s)
+                if word in worddict:
+                    candidates.append(word)
+                del s[i]
+                
+                
+        #deletion
+        for i in xrange(len(s)):
+            temp = s[i]
+            del s[i]
+            word = "".join(s)
+            if word in worddict:
+                candidates.append(word)
+            s.insert(i, temp)
+            
+            
+                
+    
+            
+        
+        
+            
+    

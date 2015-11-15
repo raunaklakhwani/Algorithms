@@ -1,0 +1,73 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/GSQuantify/com.python.pydev.analysis/v2_indexcache
+Summation|1443164538000000000|/Users/ronaklakhwani/Desktop/Algorithms/GSQuantify/Summation.py
+Final|1443251067000000000|/Users/ronaklakhwani/Desktop/Algorithms/GSQuantify/Final.py
+Product|1443187328000000000|/Users/ronaklakhwani/Desktop/Algorithms/GSQuantify/Product.py
+Maximum|1443164391000000000|/Users/ronaklakhwani/Desktop/Algorithms/GSQuantify/Maximum.py
+delta|1443434221000000000|/Users/ronaklakhwani/Desktop/Algorithms/GSQuantify/delta.py
+-- END DISKCACHE
+-- START DICTIONARY
+9
+4=Summation
+2=Final
+3=Product
+7=Node
+1=Maximum
+5=delta
+9=SymbolDictObject.__init__
+6=SymbolDictObject
+8=Node.__init__
+-- END DICTIONARY
+-- START TREE 1
+38
+K|3|K!11@K!19@K!27@
+N|4|N!27@N!11@N!19@N!35@
+Q|2|Q!35@Q!11@
+arr|1|arr!43@
+coe|1|coefficients!19@
+com|2|commandType!19@commandType!27@
+del|1|delta!19@
+dif|1|differentError!19@
+e|1|e!19@
+err|3|error!19@errorCurrent!19@errors!19@
+et|4|et!35@et!27@et!11@et!19@
+fie|20|fieldName!11@fieldValue!19@fieldMap!35@fieldMap!27@field2!27@field!35@fieldMap!11@fieldValue!11@fieldName!35@fieldValue!27@field2!19@field!19@field!27@fieldName!27@fieldValue!35@fieldName!19@field1!19@field!11@field1!27@fieldMap!19@
+fin|1|final!19@
+get|3|getSegments!18@getError!18@getLineSlopeAndIntercept!18@
+hea|3|heap!27@heap!19@heap!11@
+i|4|i!35@i!11@i!27@i!19@
+ind|9|indexRight!19@indexLeft!19@indices!43@indexLeft!27@indexRight!11@indexRight!35@indexLeft!35@indexRight!27@indexLeft!11@
+ins|5|insert!42@insertInHeap!10@insertInHeap!26@insertInHeap!18@insertInHeap!34@
+ite|8|itemsA!27@items!27@itemsA!19@items!19@item!35@itemsB!27@item!11@itemsB!19@
+key|4|keys!35@keys!19@keys!11@keys!27@
+li|1|li!43@
+max|2|maximumError!19@maximum!43@
+nod|1|Node!41@
+pri|4|printHeapInDescending!26@printHeapInDescending!18@printHeapInDescending!34@printHeapInDescending!10@
+pro|2|product!19@product!27@
+q|4|q!11@q!19@q!27@q!35@
+que|1|query!42@
+res|1|result!43@
+roo|1|root!43@
+s|4|s!11@s!35@s!19@s!27@
+sam|1|sameError!19@
+seg|1|segments!19@
+st|4|st!35@st!11@st!19@st!27@
+sum|3|summation!19@summation!27@summation!35@
+sym|12|symbol!35@SymbolDictObject!17@symbolMap!11@symbolMap!19@symbol!27@symbolMap!27@symbolMap!35@symbolObject!27@SymbolDictObject!25@symbol!19@symbolObject!19@symbol!11@
+tim|13|time!35@timeList!19@timequery!27@time!11@timequery!35@time!19@timequery!19@timeMap!35@timeseries!19@timequery!11@timeList!27@timeMap!11@time!27@
+val|1|value!19@
+x|1|x!43@
+-- END TREE
+-- START TREE 2
+8
+__i|3|__init__!6&18@__init__!6&26@__init__!7&42@
+cou|1|count!8&43@
+key|2|keys!9&19@keys!9&27@
+las|2|lastTime!9&19@lastTime!9&27@
+lef|1|left!8&43@
+min|2|minTime!9&27@minTime!9&19@
+rig|1|right!8&43@
+tim|2|timeList!9&19@timeList!9&27@
+-- END TREE

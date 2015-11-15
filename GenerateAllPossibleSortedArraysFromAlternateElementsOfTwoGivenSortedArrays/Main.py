@@ -1,6 +1,5 @@
 # URL : http://www.geeksforgeeks.org/generate-all-possible-sorted-arrays-from-alternate-elements-of-two-given-arrays/
 from copy import deepcopy
-from pcapparser.config import out
 def generatePossibleSortedArraysUtilB(a, b, ai, aj, bi, bj, element):
     for i in xrange(bi, bj + 1):
         if b[i] >= element:

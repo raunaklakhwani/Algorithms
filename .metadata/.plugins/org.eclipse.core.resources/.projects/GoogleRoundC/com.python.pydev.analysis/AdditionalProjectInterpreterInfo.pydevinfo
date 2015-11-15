@@ -1,0 +1,33 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/GoogleRoundC/com.python.pydev.analysis/v2_indexcache
+File1|1446987713000000000|/Users/ronaklakhwani/Desktop/Algorithms/GoogleRoundC/File1.py
+GoogleTemplate|1446979907000000000|/Users/ronaklakhwani/Desktop/Algorithms/GoogleRoundC/GoogleTemplate.py
+-- END DISKCACHE
+-- START DICTIONARY
+4
+1=File1
+3=Node
+2=GoogleTemplate
+4=Node.__init__
+-- END DICTIONARY
+-- START TREE 1
+8
+c|1|c!11@
+cal|1|calcTime!18@
+j|1|j!11@
+new|1|newAns!19@
+nod|1|Node!17@
+rec|1|recurse1!18@
+s|1|s!11@
+x|1|x!11@
+-- END TREE
+-- START TREE 2
+6
+__i|1|__init__!3&18@
+__r|1|__repr__!3&18@
+h|1|h!4&19@
+iso|1|isOpp!4&19@
+v|1|v!4&19@
+x|1|x!4&19@
+-- END TREE

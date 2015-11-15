@@ -1,0 +1,39 @@
+class Solution(object):
+    def findKthLargest(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        
+        def swap(i,j,nums):
+            nums[i],nums[j] = nums[j],nums[i]
+        
+        def partition(nums,s,e):
+            key = nums[s]
+            start = s + 1
+            
+            j = start
+            for i in xrange(start,e):
+                print nums[i],nums[j]
+                if key > nums[i]:
+                    swap(i,j,nums)
+                    j += 1
+            else:
+                swap(j-1,s,nums)
+            
+            return j - 1
+            
+        partition(nums, 0, len(nums))
+            
+        
+            
+                    
+                
+                
+                
+        
+        
+if __name__ == '__main__':
+    s = Solution()
+    s.findKthLargest([5,8,7,1,3,4], 3)

@@ -1,0 +1,4 @@
+s = "how are you"
+
+for w in s.split():
+    

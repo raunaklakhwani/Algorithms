@@ -3265,9 +3265,6 @@ pip._vendor.cachecontrol.filewrapper|/Library/Python/2.7/site-packages/pip/_vend
 pip._vendor.cachecontrol.heuristics|/Library/Python/2.7/site-packages/pip/_vendor/cachecontrol/heuristics.py
 pip._vendor.cachecontrol.serialize|/Library/Python/2.7/site-packages/pip/_vendor/cachecontrol/serialize.py
 pip._vendor.cachecontrol.wrapper|/Library/Python/2.7/site-packages/pip/_vendor/cachecontrol/wrapper.py
-pip._vendor.certifi.__init__|/Library/Python/2.7/site-packages/pip/_vendor/certifi/__init__.py
-pip._vendor.certifi.__main__|/Library/Python/2.7/site-packages/pip/_vendor/certifi/__main__.py
-pip._vendor.certifi.core|/Library/Python/2.7/site-packages/pip/_vendor/certifi/core.py
 pip._vendor.colorama.__init__|/Library/Python/2.7/site-packages/pip/_vendor/colorama/__init__.py
 pip._vendor.colorama.ansi|/Library/Python/2.7/site-packages/pip/_vendor/colorama/ansi.py
 pip._vendor.colorama.ansitowin32|/Library/Python/2.7/site-packages/pip/_vendor/colorama/ansitowin32.py
@@ -3440,9 +3437,7 @@ pip.commands.list|/Library/Python/2.7/site-packages/pip/commands/list.py
 pip.commands.search|/Library/Python/2.7/site-packages/pip/commands/search.py
 pip.commands.show|/Library/Python/2.7/site-packages/pip/commands/show.py
 pip.commands.uninstall|/Library/Python/2.7/site-packages/pip/commands/uninstall.py
-pip.commands.unzip|/Library/Python/2.7/site-packages/pip/commands/unzip.py
 pip.commands.wheel|/Library/Python/2.7/site-packages/pip/commands/wheel.py
-pip.commands.zip|/Library/Python/2.7/site-packages/pip/commands/zip.py
 pip.compat.__init__|/Library/Python/2.7/site-packages/pip/compat/__init__.py
 pip.compat.dictconfig|/Library/Python/2.7/site-packages/pip/compat/dictconfig.py
 pip.download|/Library/Python/2.7/site-packages/pip/download.py
@@ -3457,7 +3452,6 @@ pip.pep425tags|/Library/Python/2.7/site-packages/pip/pep425tags.py
 pip.req.__init__|/Library/Python/2.7/site-packages/pip/req/__init__.py
 pip.req.req_file|/Library/Python/2.7/site-packages/pip/req/req_file.py
 pip.req.req_install|/Library/Python/2.7/site-packages/pip/req/req_install.py
-pip.req.req_requirement|/Library/Python/2.7/site-packages/pip/req/req_requirement.py
 pip.req.req_set|/Library/Python/2.7/site-packages/pip/req/req_set.py
 pip.req.req_uninstall|/Library/Python/2.7/site-packages/pip/req/req_uninstall.py
 pip.status_codes|/Library/Python/2.7/site-packages/pip/status_codes.py

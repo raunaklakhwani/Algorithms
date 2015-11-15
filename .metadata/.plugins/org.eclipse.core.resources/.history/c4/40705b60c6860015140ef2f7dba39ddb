@@ -1,0 +1,82 @@
+# Complete the function below.
+import sys
+sys.setrecursionlimit(10000000)
+
+def  maximum_minimum(arr, m):
+    #m1 = maximum(arr, m, 0, {})
+    #m2 = minimum(arr, m, 0, {})
+    m1,m2 = myMaximum(arr,m)
+    print m1,m2
+    return str(m1) + " " + str(m2)
+    
+    #print m2
+    
+def getMaxMin(temp,temp1,i,j):
+    
+    m1 = float("-inf")
+    m2 = float("inf")
+    for k in xrange(i,j):
+        m1 = max(m1,temp[k])
+        m2 = min(m2,temp1[k])
+        
+    return m1,m2
+        
+    
+    
+            
+    
+        
+
+
+def myMaximum(arr,m):
+    N = len(arr)
+    temp = [float("-inf")] * len(arr)
+    temp[-1] = arr[-1] if arr[-1] > 0 else 0
+    
+    temp1 = [float("inf")] * len(arr)
+    temp1[-1] = arr[-1] if arr[-1] < 0 else 0
+    
+    for i in xrange(len(arr) - 2,-1,-1):
+        
+        m1,m2 = getMaxMin(temp, temp1, i+1, (i+m+1) if (i + m + 1) < N else N)
+        
+        inc = arr[i] + (temp[i + m + 1] if (i + m + 1) < N else 0)
+        #exc = max(temp[i+1:i+m+1])
+        exc = m1
+        temp[i] = max(inc,exc)
+        
+        inc1 = arr[i] + (temp1[i + m + 1] if (i + m + 1) < N else 0)
+        #exc1 = min(temp1[i+1:i+m+1])
+        exc1 = m2
+        temp1[i] = min(inc1,exc1)
+        
+        
+        
+    print temp,temp1
+        
+    return temp[0],temp1[0]
+    
+    
+
+def maximum(arr,m,index,cache):
+    if cache.get(index) is not None:
+        return cache[index]
+    elif index >= len(arr):
+        return 0
+    else:
+        x = maximum(arr,m,index + 1,cache)
+        y = arr[index] + maximum(arr,m,index + m + 1,cache)
+        cache[index] = max(x,y)
+        return cache[index]
+        
+        
+def minimum(arr,m,index,cache):
+    if cache.get(index) is not None:
+        return cache[index]
+    elif index >= len(arr):
+        return 0
+    else:
+        x = minimum(arr,m,index + 1,cache)
+        y = arr[index] + maximum(arr,m,index + m + 1,cache)
+        cache[index] = min(x,y)
+        return cache[index]

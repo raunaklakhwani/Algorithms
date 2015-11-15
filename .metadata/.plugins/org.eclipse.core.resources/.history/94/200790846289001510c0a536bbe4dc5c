@@ -1,0 +1,14 @@
+from collections import deque
+words = ["a","b","ba","bca","bda","bdca"]
+
+words.sort(key = lambda item:len(item),reverse = True)
+
+
+def recurse(words,index,cache):
+    if cache.get(index) is not None:
+        return cache[index]
+    else:
+        l = deque(words[index])
+        
+        
+

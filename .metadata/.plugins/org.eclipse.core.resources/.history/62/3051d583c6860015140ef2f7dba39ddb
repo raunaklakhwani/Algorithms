@@ -1,0 +1,8 @@
+
+while True:
+    try:
+        fileName = raw_input()
+        
+        
+    except EOFError:
+        break

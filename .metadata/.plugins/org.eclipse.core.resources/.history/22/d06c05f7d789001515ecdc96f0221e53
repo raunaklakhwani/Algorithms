@@ -1,0 +1,24 @@
+class Solution(object):
+    
+    def findMedianSortedArrays(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: float
+        """
+        
+        
+        
+        la = len(nums1)
+        lb = len(nums2)
+        totalLength = la + lb
+        
+        if totalLength & 1:
+            k = totalLength << 1
+        else:
+            k1 = totalLength << 1
+            k2 = k1 + 1
+            
+            
+        
+        

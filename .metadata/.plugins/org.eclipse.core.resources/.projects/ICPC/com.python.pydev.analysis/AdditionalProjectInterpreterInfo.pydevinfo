@@ -1,0 +1,25 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/ICPC/com.python.pydev.analysis/v2_indexcache
+Key_Task|1444368194000000000|/Users/ronaklakhwani/Desktop/Algorithms/ICPC/Key_Task.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=Key_Task
+-- END DICTIONARY
+-- START TREE 1
+10
+adj|1|adj!11@
+bre|1|breakFlag!11@
+li|1|li!11@
+mas|1|mask!11@
+nex|2|nextX!11@nextY!11@
+nma|1|nmask!11@
+q|1|q!11@
+si|1|si!11@
+sj|1|sj!11@
+vis|1|visited!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

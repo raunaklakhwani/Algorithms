@@ -1,11 +1,11 @@
-N = input()
-hist = map(int,raw_input().split())
+N = 1
+hist = [2,3,4,5,6]
 s = []
 
 maxArea = 0
 
 i = 0
-while i<len(hist):
+while i < len(hist):
     h = hist[i]
     if len(s) == 0:
         s.append(i)

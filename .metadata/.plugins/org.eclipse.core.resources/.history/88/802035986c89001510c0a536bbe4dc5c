@@ -1,0 +1,4 @@
+N,K = map(int,raw_input().split())
+li = list(raw_input())
+
+

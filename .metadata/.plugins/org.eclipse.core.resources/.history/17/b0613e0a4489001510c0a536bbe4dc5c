@@ -1,0 +1,12 @@
+from collections import defaultdict
+import re
+if __name__ == '__main__':
+    worddict = defaultdict(int)
+    with open("apple-fruit.txt") as f:
+        while True:
+            try:
+                line = f.readline()
+                if len(line):
+                    for word in re.split("\W+",line.upper())
+            
+    

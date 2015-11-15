@@ -1,0 +1,73 @@
+from math import ceil, floor
+class Solution(object):
+    def fullJustify(self, words, maxWidth):
+        """
+        :type words: List[str]
+        :type maxWidth: int
+        :rtype: List[str]
+        """
+        
+        s = 0
+        e = len(words)
+        curr = 0
+        c = 0
+        
+        st = 0
+        res = []
+        while s < e:
+            c += 1
+            curr += len(words[s])
+            s += 1
+            if curr + c - 1 < maxWidth:
+                continue
+            else:
+                c -= 1
+                s -= 1
+                
+                
+                totalWords = c
+                es = s
+                spaces = float(maxWidth - curr)
+                line = []
+                
+                c = 0
+                curr = 0
+                
+                if s < e:
+                    for i in xrange(st, es + 1):
+                        line.append(words[i])
+                        if c != 0:
+                            space = int(ceil(spaces / (totalWords-1)))
+                            line.append(space * " ")
+                            spaces -= space
+                            totalWords -= 1
+                    res.append("".join(line))
+                else:
+                    for i in xrange(st, es + 1):
+                        line.append(words[i])
+                        line.append(" ")
+                    del line[-1]
+                    res.append("".join(line))
+        else:
+            line = []
+            for i in xrange(s, e + 1):
+                line.append(words[st])
+                line.append(" ")
+            del line[-1]
+            res.append("".join(line))
+            
+                    
+        return res
+                    
+                
+                
+                
+            
+            
+                
+                
+                
+if __name__ == '__main__':
+    s = Solution()
+    words = ["This", "is", "an", "example", "of", "text", "justification."]
+    print s.fullJustify(words, 16)

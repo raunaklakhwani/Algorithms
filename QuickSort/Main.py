@@ -1,5 +1,5 @@
 import random
-input = [2, 4, 1, 3, 5,-1,13,13]
+input = [2, 4, 1, 3, 5, -1, 13, 13]
 
 def swap(indexA, indexB) :
     '''
@@ -47,3 +47,6 @@ def quickSort(start, end) :
 if __name__ == '__main__':
     quickSort(0, len(input) - 1)
     print input
+    
+    
+

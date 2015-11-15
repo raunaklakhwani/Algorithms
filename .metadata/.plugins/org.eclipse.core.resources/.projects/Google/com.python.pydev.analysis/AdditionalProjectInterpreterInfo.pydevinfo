@@ -1,0 +1,40 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/Google/com.python.pydev.analysis/v2_indexcache
+Google5|1444223083000000000|/Users/ronaklakhwani/Desktop/Algorithms/Google/Google5.py
+Google3|1443718304000000000|/Users/ronaklakhwani/Desktop/Algorithms/Google/Google3.py
+Google4|1444187504000000000|/Users/ronaklakhwani/Desktop/Algorithms/Google/Google4.py
+Google1|1443676315000000000|/Users/ronaklakhwani/Desktop/Algorithms/Google/Google1.py
+Google2|1444221033000000000|/Users/ronaklakhwani/Desktop/Algorithms/Google/Google2.py
+-- END DISKCACHE
+-- START DICTIONARY
+7
+6=Node
+5=Google5
+2=Google3
+3=Google4
+7=Node.__init__
+1=Google1
+4=Google2
+-- END DICTIONARY
+-- START TREE 1
+12
+get|7|getSubsetCountNaive!10@getRootNode!18@getSubsetCountUtil!10@getTwoEqualSets!26@getSmartCompressionList!34@getCompressedListNaive!34@getSubsetCount!10@
+h|1|h!43@
+i|1|i!43@
+inp|1|inp!35@
+j|1|j!43@
+min|2|minIndex!43@minimum!43@
+n|1|n!43@
+nod|1|Node!17@
+pos|2|postorder!18@postorderIterative!18@
+res|1|result!43@
+s1|1|s1!43@
+v|1|v!43@
+-- END TREE
+-- START TREE 2
+3
+__i|1|__init__!6&18@
+chi|1|childs!7&19@
+dat|1|data!7&19@
+-- END TREE

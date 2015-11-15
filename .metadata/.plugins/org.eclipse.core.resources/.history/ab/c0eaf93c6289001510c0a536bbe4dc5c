@@ -1,0 +1,5 @@
+words = ["a","b","ba","bca","bda","bdca"]
+
+words.sort(key = lambda item:len(item),reverse = True)
+print words
+

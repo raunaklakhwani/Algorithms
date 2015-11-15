@@ -1,0 +1,19 @@
+class Solution(object):
+    def addDigits(self, num):
+        """
+        :type num: int
+        :rtype: int
+        """
+        ans = 0
+        while len(str(num)) > 1:
+            ans = sum(map(int,list(str(num))))
+            num = ans
+            print ans
+        
+        return ans
+            
+        
+        
+if __name__ == '__main__':
+    s = Solution()
+    print s.addDigits(385)

@@ -1,0 +1,17 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/Codenation/com.python.pydev.analysis/v2_indexcache
+ColoringProblem|1446953498000000000|/Users/ronaklakhwani/Desktop/Algorithms/Codenation/ColoringProblem.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=ColoringProblem
+-- END DICTIONARY
+-- START TREE 1
+2
+dfs|1|dfs!10@
+isv|1|isValid!10@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

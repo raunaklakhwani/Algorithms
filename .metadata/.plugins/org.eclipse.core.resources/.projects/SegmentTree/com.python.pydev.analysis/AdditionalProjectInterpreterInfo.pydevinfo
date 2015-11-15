@@ -1,19 +1,43 @@
 -- VERSION_4
 -- START DISKCACHE_2
 /Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/SegmentTree/com.python.pydev.analysis/v2_indexcache
-MainSum|1438399167000000000|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/MainSum.py
+LazyPropagation|1442672295000000000|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/LazyPropagation.py
+MainSum|1442669757000000000|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/MainSum.py
 MainMin|1438397038000000000|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/MainMin.py
+persistentsegmenttree|1446359495000000000|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/persistentsegmenttree.py
+2DSegmentTree|1445196902000000000|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/2DSegmentTree.py
 -- END DISKCACHE
 -- START DICTIONARY
-2
-1=MainSum
-2=MainMin
+7
+4=LazyPropagation
+6=Node
+2=MainSum
+3=MainMin
+7=Node.__init__
+5=persistentsegmenttree
+1=2DSegmentTree
 -- END DICTIONARY
 -- START TREE 1
-2
-get|8|getSegmentTreeUtil!10@getMinimumUtil!18@getSum!10@getSegmentTree!18@getSegmentTree!10@getSumUtil!10@getSegmentTreeUtil!18@getMinimum!18@
-upd|4|updateValueUtil!10@updateValue!18@updateValue!10@updateValueUtil!18@
+14
+bui|1|buildSegmentTree!10@
+get|12|getSegmentTreeUtil!18@getMinimumUtil!26@getSegmentTree!34@getSum!18@getSum!34@getSegmentTreeUtil!34@getSegmentTree!26@getSumUtil!34@getSegmentTree!18@getSumUtil!18@getSegmentTreeUtil!26@getMinimum!26@
+ind|1|indices!43@
+inp|1|inp!11@
+ins|1|insert!42@
+li|1|li!43@
+max|1|maximum!43@
+nod|1|Node!41@
+que|1|query!42@
+res|1|result!43@
+roo|1|root!43@
+seg|1|seg!11@
+upd|8|updateRangeUtil!34@updateValueUtil!18@updateValue!26@updateValue!34@updateValue!18@updateRange!34@updateSegmentTreeUtil!34@updateValueUtil!26@
+x|1|x!43@
 -- END TREE
 -- START TREE 2
-0
+4
+__i|1|__init__!6&42@
+cou|1|count!7&43@
+lef|1|left!7&43@
+rig|1|right!7&43@
 -- END TREE

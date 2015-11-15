@@ -1,0 +1,49 @@
+'''
+5
+acb
+abc
+dce
+edc
+aab
+
+7
+dcg
+gcd
+dgc
+xyz
+yxz
+iii
+cgd
+'''
+
+from collections import defaultdict
+N = input()
+h = defaultdict(list)
+count = 1
+c = set([])
+for _ in xrange(N):
+    s = raw_input()
+    s1 = sorted(list(s))
+    ls = "".join(s1)
+    if h.get(ls) is None:
+        h[ls] = [1,s]
+    else:
+        h[ls][0] += 1
+        if h[ls][1] > s:
+            h[ls][1] = s
+        c.add(ls)
+print h
+ans = 0
+res = None
+for key in c:
+    ans += h[key][0]
+    if res is None:
+        res = h[key][1]
+    elif res > h[key][1]:
+        res = h[key][1]
+            
+print ans
+print res
+    
+        
+    

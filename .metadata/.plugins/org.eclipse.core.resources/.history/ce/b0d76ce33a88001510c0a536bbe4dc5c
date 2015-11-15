@@ -1,0 +1,31 @@
+from heapq import heappush,heappop
+for _ in xrange(input()):
+    N,G = map(int,raw_input().split())
+    li = map(int,raw_input().split())
+    li.sort(reverse = True)
+    s1 = s2 = 0
+    
+    
+    for i in xrange(N):
+        if s1 + li[i] > G and s2 + li[i] > G:
+            print "NO"
+            break
+        elif s1 + li[i] > G:
+            s2 += li[i]
+        elif s2 + li[i] > G:
+            s1 += li[i]
+        else:
+            s1 += li[i]
+    else:
+        print "YES"
+        
+        
+def recurse(s1,s2,i,li):
+    
+    
+            
+    
+    
+        
+        
+        

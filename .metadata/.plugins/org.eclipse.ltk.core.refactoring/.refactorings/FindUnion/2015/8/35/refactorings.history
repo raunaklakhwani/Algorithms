@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;FindUnion/QuickFind&apos; to &apos;QuickFind.py&apos;" description="Rename resource &apos;QuickFind&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="QuickFind" name="QuickFind.py" stamp="1440670203874" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;FindUnion/QuickUnionWithSize&apos; to &apos;QuickUnionWithSize.py&apos;" description="Rename resource &apos;QuickUnionWithSize&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="QuickUnionWithSize" name="QuickUnionWithSize.py" stamp="1440671731261" updateReferences="true"/>
+</session>

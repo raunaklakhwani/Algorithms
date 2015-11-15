@@ -1,0 +1,40 @@
+class Solution(object):
+    def combinationSum3(self, k, n):
+        """
+        :type k: int
+        :type n: int
+        :rtype: List[List[int]]
+        """
+        
+        visited = [False] * 9
+        main = []
+        #main = set([])
+        self.recurse(n, k, main, [], visited,1)
+        #x = sorted(list(main))
+        #for a in x:
+        #    a = list(a)
+        print main
+        
+        
+    
+    def recurse(self, n, k, main, sub, visited,xi):
+        # print n,k,sub
+        if n == 0 and k == 0:
+            #main.add(sub[:])
+            main.append(sub[:])
+        elif k == 0 or n < 0:
+            return
+        for i in xrange(xi, 10):
+            if not visited[i - 1]:
+                visited[i - 1] = True
+                sub.append(i)
+                self.recurse(n - i, k - 1, main, sub, visited,i + 1)
+                visited[i - 1] = False
+                del sub[-1]
+            # print main
+                
+        
+if __name__ == '__main__':
+    s = Solution()
+    s.combinationSum3(9, 45)
+    #s.combinationSum3(4, 24)

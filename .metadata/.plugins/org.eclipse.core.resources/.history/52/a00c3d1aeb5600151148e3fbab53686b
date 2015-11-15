@@ -1,0 +1,35 @@
+for _ in xrange(1):
+    s = "10 6665 6663 6663 6666 6666 6662 6664 6662 6664 6665"
+    li = map(int, s.split())
+    del li[0]
+    if len(li):
+        minimum = float("inf")
+        li.sort()
+        print li
+        while len(li):
+            m = 1
+            s = []
+            visited = {}
+            for i in xrange(1, len(li)):
+                if not visited.get(li[i], False):
+                    visited[li[i]] = True
+                    if li[i - 1] + 1 == li[i]:
+                        m += 1
+                    else:
+                        if m < minimum:
+                            minimum = m 
+                        m = 1
+                else:
+                    s.append(li[i])
+                    
+            if m < minimum:
+                minimum = m
+            li = s
+            
+        print minimum
+            
+            
+            
+        
+    else:
+        print 0

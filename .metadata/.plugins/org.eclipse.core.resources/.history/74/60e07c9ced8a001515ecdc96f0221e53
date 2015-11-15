@@ -1,0 +1,47 @@
+class Solution(object):
+    def isMatch(self, s, p):
+        """
+        :type s: str
+        :type p: str
+        :rtype: bool
+        """
+        
+        lp = len(p)
+        ls = len(s)
+        last = [False] * (lp + 1)
+        curr = [False] * (lp + 1)
+        dp[0] = True
+        
+        
+        #Initialization
+        totalChars = 0
+        for i in xrange(1,lp + 1):
+            if p[i-1] == "." or p[i-1] != "*":
+                dp[i] = False
+                totalChars += 1
+            elif p[i-1] == "*":
+                totalChars -= 1
+                if totalChars == 0:
+                    dp[i] = True
+                else:
+                    dp[i] = False
+                    
+        
+        for i in xrange(1,ls + 1):
+            for j in xrange(1,lp + 1):
+                if (s[i-1] == p[j-1]) or p[j-1] == ".":
+                    dp[i][j] = dp[i-1][j-1]
+                elif p[j-1] == "*":
+                    dp[i][j] = dp[i][j-2] # match 0 time
+                    if (s[i-1] == p[j-2]) or p[j-2] == ".":
+                        dp[i][j] = dp[i][j] or dp[i-1][j-2] # match 1 time
+                        dp[i][j] = dp[i][j] or dp[i-1][j] # match multiple time
+        
+        print dp
+                    
+                
+            
+        
+if __name__ == '__main__':
+    s = Solution()
+    s.isMatch("aaa", "ab*")

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GraphHackerRank/Kruskals&apos; to &apos;Kruskals.py&apos;" description="Rename resource &apos;Kruskals&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Kruskals" name="Kruskals.py" stamp="1440868077960" updateReferences="true"/>
+</session>

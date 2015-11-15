@@ -1,0 +1,73 @@
+from heapq import heappush, heappop
+class Node:
+    def __init__(self, start, end, height, index):
+        self.start = start
+        self.end = end
+        self.heigth = height
+        self.index = index
+        self.processing = None
+
+class Solution(object):
+    def getSkyline(self, buildings):
+        """
+        :type buildings: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        print
+        
+        N = len(buildings)
+        heap = []
+        h = {}
+        for i in xrange(N):
+            l, r, h = buildings[i]
+            node = Node(l, r, h, i)
+            h[i] = node
+            heappush(heap, (l, node))
+            heappush(heap, (r, node))
+        
+        res = [] 
+        currHeight = None 
+        heights = []
+        while len(heap):
+            x, node = heappop(heap)
+            
+            if node.processing == True:
+                node.processing = False
+                while len(heights):
+                    top = heights.pop()
+                    if top.processing == True:
+                        currHeight = top
+                        break
+                else:
+                    currHeight = None
+                    res.append((x, 0))
+            elif node.processing is None:
+                node.processing = True
+                if currHeight is None:
+                    currHeight = node
+                    res.append((x,node))
+                    heights.append(node)
+                elif currHeight.heigth < node.heigth:
+                    res.append((x,node))
+                    currHeight = node
+                    heights.append(node)
+                    
+                    
+                        
+                
+                
+                
+                    
+            
+            
+            
+        
+        
+        
+        
+        
+        
+if __name__ == '__main__':
+    s = Solution()
+    print s.getSkyline([[2, 9, 10], [3, 7, 15], [5, 12, 12], [15, 20, 10], [19, 24, 8]])
+    

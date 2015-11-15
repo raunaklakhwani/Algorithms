@@ -1,0 +1,73 @@
+
+
+
+
+#lang = raw_input()
+input = ""
+code = ""
+#===============================================================================
+# code = ""
+# input=""
+# while True:
+#     try:
+#         s = raw_input()
+#         if s == "#" * 15:
+#             break
+#         code += s
+#     except EOFError:
+#         break
+#         
+# while True:
+#     try:
+#         s = raw_input()
+#         input += s
+#     except EOFError:
+#         break
+#     
+#     
+#===============================================================================
+
+code = '''
+class Solution {
+    public static void main(String args[]){
+        String s = null;
+        System.out.println(s.length());
+    }
+}
+'''
+
+#cmd = "curl -sX POST http://api.hackerrank.com/checker/submission.json -d 'source=" + code + "&lang=3" + "&testcases=['1']&api_key=hackerrank|180512-500|492c7e2269c1355e2b97f92e0754bd6c46d166e7'"    
+
+
+d = {}
+d['source'] = code
+d['lang'] = "3"
+d['testcases'] = '["1"]'
+d['api_key'] = "hackerrank|180512-500|492c7e2269c1355e2b97f92e0754bd6c46d166e7"
+url = 'http://api.hackerrank.com/checker/submission.json'
+
+
+import requests
+import json
+headers = {'Content-Type': 'application/json'}
+r =  requests.post(url,data = d)
+#print r.reason
+#print r.content
+#print r.raw
+
+res = json.loads(r.content)
+print res
+
+
+
+
+
+
+    
+#print code
+#print input
+
+
+
+        
+        

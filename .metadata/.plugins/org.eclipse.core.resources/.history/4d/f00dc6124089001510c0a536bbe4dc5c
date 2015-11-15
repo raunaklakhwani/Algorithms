@@ -1,0 +1,6 @@
+from collections import defaultdict
+if __name__ == '__main__':
+    fruitdict = defaultdict(int)
+    computerdict = defaultdict(int)
+    with open("apple-fruit") as f:
+        print

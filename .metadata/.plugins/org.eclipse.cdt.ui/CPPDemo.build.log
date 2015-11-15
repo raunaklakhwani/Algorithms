@@ -1,0 +1,25 @@
+10:53:54 **** Incremental Build of configuration Debug for project CPPDemo ****
+make all 
+Building file: ../src/CPPDemo.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPDemo.d" -MT"src/CPPDemo.d" -o "src/CPPDemo.o" "../src/CPPDemo.cpp"
+../src/CPPDemo.cpp:9:14: warning: expression result unused [-Wunused-value]
+    }while(s(90),4);
+             ^~
+../src/CPPDemo.cpp:3:14: note: expanded from macro 's'
+#define s(x) x
+             ^
+../src/CPPDemo.cpp:6:14: warning: unused variable 'n' [-Wunused-variable]
+    int m=14,n=4;
+             ^
+2 warnings generated.
+Finished building: ../src/CPPDemo.cpp
+ 
+Building target: CPPDemo
+Invoking: MacOS X C++ Linker
+g++  -o "CPPDemo"  ./src/CPPDemo.o   
+Finished building target: CPPDemo
+ 
+
+10:53:54 Build Finished (took 227ms)
+

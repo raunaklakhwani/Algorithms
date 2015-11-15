@@ -1,0 +1,10 @@
+'''
+2
+ababa
+aba
+vnssnssnssnssnssnssnssnssnssnssnssnssnssnssnssnssn
+nssnssns
+'''
+
+for _ in xrange(input()):
+    

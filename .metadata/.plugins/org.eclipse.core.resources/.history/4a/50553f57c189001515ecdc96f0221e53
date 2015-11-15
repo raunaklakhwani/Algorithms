@@ -1,0 +1,100 @@
+class Solution(object):
+    def isMatch(self, s, p):
+        """
+        :type s: str
+        :type p: str
+        :rtype: bool
+        """
+        
+        i = 0
+        j = 0
+        starIndex = -1
+        iindex = -1
+        lasti = -1
+        lastj = -1
+        
+        stack = []
+        
+        while i < len(s):
+            if j < len(p) and p[j] == s[i]:
+                if j + 1 < len(p) and p[j+1] != "*":
+                    i += 1
+                    j += 1
+                elif j + 1 < len(p) and p[j+1] == "*":
+                    lastj = p[j]
+                    starIndex = j + 1
+                    iindex = i
+                    stack.append((lastj,starIndex,iindex))
+                    j += 2
+                else:
+                    i += 1
+                    j += 1
+            elif j < len(p) and p[j] == ".":
+                if j + 1 < len(p) and p[j+1] != "*":
+                    i += 1
+                    j += 1
+                elif j + 1 < len(p) and p[j+1] == "*":
+                    lastj = p[j]
+                    starIndex = j + 1
+                    iindex = i
+                    stack.append((lastj,starIndex,iindex))
+                    j += 2
+                else:
+                    i += 1
+                    j += 1
+            elif j < len(p):
+                if j + 1 < len(p) and p[j+1] == "*":
+                    lastj = p[j]
+                    starIndex = j + 1
+                    iindex = i
+                    stack.append((lastj,starIndex,iindex))
+                    j += 2
+                elif len(stack) > 0:
+                    lastj,starIndex,iindex = stack[-1]
+                    if lastj == ".":
+                        j = starIndex + 1
+                        i = iindex + 1
+                        iindex += 1
+                    elif lastj == s[iindex]:
+                        j = starIndex + 1
+                        i = iindex + 1
+                        iindex += 1
+                    else:
+                        stack.pop()
+                else:
+                    return False
+            elif starIndex != -1:
+                if lastj == ".":
+                    j = starIndex + 1
+                    i = iindex + 1
+                    iindex += 1
+                elif lastj == s[iindex]:
+                    j = starIndex + 1
+                    i = iindex + 1
+                    iindex += 1
+                else:
+                    return False
+            else:
+                return False
+        
+        #print j        
+        #print p[j:]
+        while j < len(p):
+            if j + 1 < len(p) and p[j+1] == "*":
+                j += 2
+            else:
+                return False
+        
+        return j == len(p)
+                
+                
+                
+if __name__ == '__main__':
+    s = Solution()
+    print s.isMatch("a", ".*")
+    print s.isMatch("aab", "c*a*b")
+    print s.isMatch("a", "b")
+    print s.isMatch("a", "aa")
+    print s.isMatch("aa", "aa")
+    print s.isMatch("aa", "a")
+    print s.isMatch("aaa", "ab*a*c*a")

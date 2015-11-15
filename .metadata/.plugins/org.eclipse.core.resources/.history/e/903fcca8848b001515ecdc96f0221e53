@@ -1,0 +1,47 @@
+'''
+2
+1 3 2
+3 2 5
+'''
+
+from itertools import permutations
+
+boxes = input()
+d = []
+
+
+for i in xrange(boxes):
+    d.append(map(int,raw_input().split()))
+    
+print d
+
+ans = []    
+for box in d:
+    for b in permutations(box):
+        if b[0] >= b[1]:
+            ans.append(b)
+            
+            
+ans.sort(key = lambda item: item[0] * item[1],reverse = True)
+
+
+T = [] 
+m = [] 
+
+for i in xrange(len(ans)):
+    T.append(ans[i][2])
+    m.append(i)
+    
+print T,m
+
+
+for i in xrange(len(ans)):
+    for j in xrange(i):
+        
+
+
+
+
+
+
+    

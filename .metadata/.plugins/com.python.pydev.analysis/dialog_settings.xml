@@ -1,17 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="SearchIndexPage">
+		<item value="12" key="HISTORY_SIZE"/>
+		<section name="HISTORY11">
+			<item value="Heap" key="textPattern"/>
+			<item value="2" key="scope"/>
+			<item value="" key="scopeData"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY2">
+			<item value="*suffix*" key="textPattern"/>
+			<item value="2" key="scope"/>
+			<item value="" key="scopeData"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY3">
+			<item value="histogram" key="textPattern"/>
+			<item value="2" key="scope"/>
+			<item value="" key="scopeData"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY10">
+			<item value="http://www.careercup.com/question?id=5084838654640128" key="textPattern"/>
+			<item value="2" key="scope"/>
+			<item value="" key="scopeData"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY0">
+			<item value="suffix" key="textPattern"/>
+			<item value="2" key="scope"/>
+			<item value="" key="scopeData"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY1">
+			<item value="suffix*" key="textPattern"/>
+			<item value="2" key="scope"/>
+			<item value="" key="scopeData"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY9">
+			<item value="http://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/" key="textPattern"/>
+			<item value="2" key="scope"/>
+			<item value="" key="scopeData"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY8">
+			<item value="i &amp; -i" key="textPattern"/>
+			<item value="2" key="scope"/>
+			<item value="" key="scopeData"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY5">
+			<item value="ind = ind + (ind &amp; -ind)" key="textPattern"/>
+			<item value="0" key="scope"/>
+			<item value="Test3" key="scopeData"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY4">
+			<item value="Binary Indexed" key="textPattern"/>
+			<item value="2" key="scope"/>
+			<item value="" key="scopeData"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY7">
+			<item value="i &amp; -i" key="textPattern"/>
+			<item value="0" key="scope"/>
+			<item value="" key="scopeData"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY6">
+			<item value="i &amp; -i" key="textPattern"/>
+			<item value="0" key="scope"/>
+			<item value="Test3" key="scopeData"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
 	</section>
 	<section name="com.python.pydev.analysis.actions.GlobalsTwoPanelElementSelector2">
 		<item value="true" key="ShowStatusLine"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode/&gt;&#x0A;&lt;/History&gt;" key="History"/>
 		<section name="DialogBoundsSettings">
-			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="575" key="DIALOG_WIDTH"/>
 			<item value="117" key="DIALOG_Y_ORIGIN"/>
 			<item value="420" key="DIALOG_X_ORIGIN"/>
-			<item value="500" key="DIALOG_HEIGHT"/>
-			<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
+			<item value="438" key="DIALOG_HEIGHT"/>
+			<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>
 </section>

@@ -1,0 +1,34 @@
+from collections import defaultdict
+if __name__ == '__main__':
+    fruitdict = defaultdict(int)
+    computerdict = defaultdict(int)
+    with open("apple-fruit.txt") as f:
+        while True:
+            line = f.readline()
+            if len(line):
+                for word in line.split():
+                    fruitdict[word] += 1
+            else:
+                break
+            
+    with open("apple-computers.txt") as f:
+        while True:
+            line = f.readline()
+            if len(line):
+                for word in line.split():
+                    computerdict[word] += 1
+            else:
+                break
+    
+    x = sorted(fruitdict.iteritems(),key = lambda item:item[1])
+    
+    for word in x[:200]:
+        if word in computerdict:
+            del fruitdict[word]
+            del computerdict[word]
+            
+            
+    N = input() 
+    for _ in xrange(N):
+        line = raw_input()
+        if "apple" in line or "apples" in line or "APPLES" in line.upper():

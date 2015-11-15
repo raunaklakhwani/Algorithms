@@ -61,6 +61,6 @@ if __name__ == '__main__':
     inp = [5, 3, 7, 8, 9, 2]
     seg = getSegmentTree(inp)
     print seg
-    print getSum(inp, seg, 0, 4)
+    print getSum(inp, seg, 1, 3)
     updateValue(inp, seg, 2, -1)
     print seg

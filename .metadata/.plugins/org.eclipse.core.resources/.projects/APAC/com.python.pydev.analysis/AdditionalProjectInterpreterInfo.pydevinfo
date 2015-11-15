@@ -1,0 +1,37 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/APAC/com.python.pydev.analysis/v2_indexcache
+HairCut|1442513083000000000|/Users/ronaklakhwani/Desktop/Algorithms/APAC/HairCut.py
+gCube|1442393642000000000|/Users/ronaklakhwani/Desktop/Algorithms/APAC/gCube.py
+BadHorse|1442467541000000000|/Users/ronaklakhwani/Desktop/Algorithms/APAC/BadHorse.py
+Mushroom_Monster|1442485846000000000|/Users/ronaklakhwani/Desktop/Algorithms/APAC/Mushroom_Monster.py
+GoogolStrings|1442384869000000000|/Users/ronaklakhwani/Desktop/Algorithms/APAC/GoogolStrings.py
+Captain_Hammer|1442469811000000000|/Users/ronaklakhwani/Desktop/Algorithms/APAC/Captain_Hammer.py
+-- END DISKCACHE
+-- START DICTIONARY
+6
+3=HairCut
+5=gCube
+2=BadHorse
+6=Mushroom_Monster
+4=GoogolStrings
+1=Captain_Hammer
+-- END DICTIONARY
+-- START TREE 1
+12
+cal|1|calAngle!11@
+che|1|checkBipartite!18@
+dfs|1|dfs!18@
+get|8|getLCMList!26@getLCM!26@getCycleLength!26@getCharacter!34@getBarberNumberUtil!26@getIdFromDict!18@getDegreeAngle!10@getBarberNumber!26@
+l|1|l!43@
+li|1|li!43@
+met|2|method1!50@method2!50@
+out|1|out!43@
+p|1|p!43@
+pa|1|pa!43@
+pre|1|pre!43@
+res|1|result!43@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

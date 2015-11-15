@@ -1,0 +1,10 @@
+lang = raw_input()
+
+code = ""
+while True:
+    try:
+        s = raw_input()
+        if s == "#" * 15
+        code += s
+        
+        

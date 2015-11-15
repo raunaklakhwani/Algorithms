@@ -1,0 +1,15 @@
+a, b = raw_input().split(' ')
+b = int(b)
+c = raw_input().split(' ')
+d = ''
+for i in range(b):
+    e = 0
+    f = 0
+    for j in range(4):
+        if c[i][j] == a[j]:
+            e += 1
+        elif c[i][j] in a:
+            f += 1
+    e, f = str(e), str(f)
+    d += ' ' + e + '-' + f
+print d[1::]

@@ -1,0 +1,17 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/MergeOverlappingIntervals/com.python.pydev.analysis/v2_indexcache
+MergeOverlappingIntervals|1443676378000000000|/Users/ronaklakhwani/Desktop/Algorithms/MergeOverlappingIntervals/MergeOverlappingIntervals.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=MergeOverlappingIntervals
+-- END DICTIONARY
+-- START TREE 1
+2
+get|1|getMergedIntervals!10@
+iso|1|isOverlap!10@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

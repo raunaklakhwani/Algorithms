@@ -1,0 +1,42 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/DirectI/com.python.pydev.analysis/v2_indexcache
+SetBits|1442142323000000000|/Users/ronaklakhwani/Desktop/Algorithms/DirectI/SetBits.py
+Directi3|1443623352000000000|/Users/ronaklakhwani/Desktop/Algorithms/DirectI/Directi3.py
+Directi2|1443605714000000000|/Users/ronaklakhwani/Desktop/Algorithms/DirectI/Directi2.py
+Direct11|1443604651000000000|/Users/ronaklakhwani/Desktop/Algorithms/DirectI/Direct11.py
+-- END DISKCACHE
+-- START DICTIONARY
+6
+3=Directi3
+1=SetBits
+4=Directi2
+6=BitArray.__init__
+5=BitArray
+2=Direct11
+-- END DICTIONARY
+-- START TREE 1
+14
+bit|2|bit!11@BitArray!9@
+cal|1|calculated!19@
+che|1|checkEqual!18@
+cur|1|currentBit!11@
+d|1|d!19@
+dfs|1|dfs!18@
+get|2|getAns!26@get!34@
+h|1|h!11@
+ind|1|index!19@
+li|1|li!11@
+pro|1|processByte!10@
+s|1|s!19@
+tog|1|toggle!10@
+vis|1|visited!19@
+-- END TREE
+-- START TREE 2
+5
+__i|1|__init__!5&10@
+byt|1|bytes!6&11@
+get|1|getBit!5&10@
+set|1|setBit!5&10@
+siz|1|size!6&11@
+-- END TREE

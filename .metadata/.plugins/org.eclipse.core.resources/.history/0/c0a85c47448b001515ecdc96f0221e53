@@ -1,0 +1,12 @@
+'''
+2
+ababa
+aba
+vnssnssnssnssnssnssnssnssnssnssnssnssnssnssnssnssn
+nssnssns
+'''
+
+for _ in xrange(input()):
+    s = raw_input()
+    z = raw_input()
+    

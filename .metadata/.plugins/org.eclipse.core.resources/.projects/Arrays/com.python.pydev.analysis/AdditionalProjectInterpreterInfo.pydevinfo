@@ -1,0 +1,92 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/Arrays/com.python.pydev.analysis/v2_indexcache
+CheckForMajorityElementInASortedArray|1441517573000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/CheckForMajorityElementInASortedArray.py
+SmallestSubarrayWithSumGreaterThanAGivenValue|1441430086000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/SmallestSubarrayWithSumGreaterThanAGivenValue.py
+MaximumSumSuchThatNoTwoElementsAreAdjacent|1441513267000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/MaximumSumSuchThatNoTwoElementsAreAdjacent.py
+PairSumClosestToX|1441363822000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/PairSumClosestToX.py
+SortAnArrayAccordingToOrderDefinedByAnotherArray|1441422248000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/SortAnArrayAccordingToOrderDefinedByAnotherArray.py
+KLargestElemetsInAnArray|1441518119000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/KLargestElemetsInAnArray.py
+FindTheRowWithMaximumOnes|1441463421000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/FindTheRowWithMaximumOnes.py
+OnlinePalindrome|1443090471000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/OnlinePalindrome.py
+MaximumOfAllSubarrayOfSizeK|1441605302000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/MaximumOfAllSubarrayOfSizeK.py
+MaximumSumPathInTwoArrays|1446545149000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/MaximumSumPathInTwoArrays.py
+ClosestPairFromTwoSortedArrays|1441416684000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/ClosestPairFromTwoSortedArrays.py
+FindIfThereIsASubarrayWith0Sum|1441430939000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/FindIfThereIsASubarrayWith0Sum.py
+MaxSubArraySum|1441453092000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/MaxSubArraySum.py
+IndexOf)ToBeReplaced|1441366621000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/IndexOf)ToBeReplaced.py
+FloorAndCeilingInASortedArray|1441520637000000000|/Users/ronaklakhwani/Desktop/Algorithms/Arrays/FloorAndCeilingInASortedArray.py
+-- END DISKCACHE
+-- START DICTIONARY
+15
+3=CheckForMajorityElementInASortedArray
+6=SmallestSubarrayWithSumGreaterThanAGivenValue
+11=MaximumSumSuchThatNoTwoElementsAreAdjacent
+7=PairSumClosestToX
+12=SortAnArrayAccordingToOrderDefinedByAnotherArray
+10=KLargestElemetsInAnArray
+1=FindTheRowWithMaximumOnes
+2=OnlinePalindrome
+15=MaximumOfAllSubarrayOfSizeK
+13=ClosestPairFromTwoSortedArrays
+8=MaximumSumPathInTwoArrays
+4=MaxSubArraySum
+5=FindIfThereIsASubarrayWith0Sum
+14=IndexOf)ToBeReplaced
+9=FloorAndCeilingInASortedArray
+-- END DICTIONARY
+-- START TREE 1
+49
+N|0|
+a1|0|
+a2|0|
+a3|0|
+a4|0|
+ans|0|
+c|1|c!11@
+cha|1|chance!19@
+che|2|checkMaximumElement!26@checkMaximumElementUtil!26@
+col|1|col!11@
+cor|0|
+cur|3|currSum!35@currSum!43@currSum!51@
+ele|1|element!11@
+end|1|end!59@
+fin|1|finalSum!67@
+fir|2|Firstlength!19@first!19@
+fsu|1|fSum!67@
+get|3|getFloor!74@getLargestKElement!82@getMaximumSum!90@
+gue|0|
+h|1|h!99@
+i|3|i!67@i!51@i!107@
+inp|16|inp!99@inp1!67@inp!51@inp!107@inp!67@inp1!99@inp!27@inp!75@inp!83@inp1!107@inp!43@inp!91@inp!115@inp!35@inp!59@inp!123@
+j|3|j!51@j!67@j!107@
+k|2|k!123@k!83@
+lef|1|leftIndex!115@
+li|1|li!11@
+m|2|m!19@m!43@
+max|3|maximum!115@maxSum!35@maximum!11@
+min|1|minimum!51@
+myb|1|myBisect_left!74@
+myc|1|myCompare!98@
+neg|2|negative!107@negative!59@
+p|0|
+pai|1|pair!107@
+par|1|partition!98@
+pos|2|positive!59@positive!107@
+pri|1|printMaxInAWindow!122@
+qui|2|quickSort!98@quickSortUtil!98@
+r|1|r!11@
+res|0|
+rig|1|rightIndex!115@
+row|1|row!11@
+s|1|s!19@
+sec|2|secondLength!19@second!19@
+ssu|1|sSum!67@
+sta|1|start!59@
+sum|1|sum!59@
+x|5|x!27@x!107@x!51@x!75@x!59@
+zer|2|zeroIndex!115@zeroFound!115@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

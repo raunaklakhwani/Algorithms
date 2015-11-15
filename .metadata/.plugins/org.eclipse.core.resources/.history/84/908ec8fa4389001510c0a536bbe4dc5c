@@ -1,0 +1,9 @@
+from collections import defaultdict
+import re
+if __name__ == '__main__':
+    worddict = defaultdict(int)
+    with open("apple-fruit.txt") as f:
+        while True:
+            line = f.readline()
+            
+    

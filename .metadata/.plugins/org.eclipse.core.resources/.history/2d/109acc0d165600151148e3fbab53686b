@@ -1,0 +1,17 @@
+from bisect import bisect_left
+N = 3
+li = [5, 8, 14]
+P, Q = 4, 9
+li.sort()
+maximum = float("-inf")
+maximumI = None
+for i in xrange(P, Q + 1):
+    ind = bisect_left(li, i)
+    if ind > 0 and ind < len(li) - 1:
+        minimum = min(abs(i - li[ind - 1]), abs(i - li[ind]))
+        if minimum > maximum:
+            maximum = minimum
+            maximumI = i
+
+print maximumI
+        
