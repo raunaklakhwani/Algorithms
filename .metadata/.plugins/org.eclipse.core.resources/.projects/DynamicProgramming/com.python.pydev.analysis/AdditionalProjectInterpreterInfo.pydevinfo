@@ -1,15 +1,36 @@
 -- VERSION_4
 -- START DISKCACHE_2
 /Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/DynamicProgramming/com.python.pydev.analysis/v2_indexcache
+ArrangeTheBulls|1448015782000000000|/Users/ronaklakhwani/Desktop/Algorithms/DynamicProgramming/ArrangeTheBulls.py
+BoxStacking|1447584108000000000|/Users/ronaklakhwani/Desktop/Algorithms/DynamicProgramming/BoxStacking.py
+CornFields|1448019654000000000|/Users/ronaklakhwani/Desktop/Algorithms/DynamicProgramming/CornFields.py
 CollectMaximumPointsInAGrid|1439537023000000000|/Users/ronaklakhwani/Desktop/Algorithms/DynamicProgramming/CollectMaximumPointsInAGrid.py
 -- END DISKCACHE
 -- START DICTIONARY
-1
-1=CollectMaximumPointsInAGrid
+4
+3=ArrangeTheBulls
+1=BoxStacking
+2=CornFields
+4=CollectMaximumPointsInAGrid
 -- END DICTIONARY
 -- START TREE 1
-1
-get|2|getMaximumPointsInAGrid!10@getMaximumPointsInAGridUtil!10@
+16
+T|1|T!11@
+ans|3|ans!19@ans!11@ans!27@
+bit|2|bitnum!27@bit!19@
+box|1|boxes!11@
+cur|2|curr!27@curr!19@
+d|1|d!11@
+far|1|farms!19@
+fou|1|found!19@
+get|4|getMaximumPointsInAGrid!34@getResult!26@getMaximumPointsInAGridUtil!34@getResult!18@
+las|2|last!27@last!19@
+m|1|m!11@
+mas|1|mask!27@
+num|2|num!19@num!27@
+p|2|p!27@p!19@
+peo|1|people!27@
+x|1|x!19@
 -- END TREE
 -- START TREE 2
 0

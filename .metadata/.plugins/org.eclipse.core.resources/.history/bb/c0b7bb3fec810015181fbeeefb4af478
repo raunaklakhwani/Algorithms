@@ -1,4 +1,0 @@
-s = "how are you"
-
-for w in s.split():
-    print w[::-1].upper()

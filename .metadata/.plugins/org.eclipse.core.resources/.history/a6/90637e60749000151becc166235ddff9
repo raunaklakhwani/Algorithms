@@ -1,0 +1,25 @@
+# URL : http://www.spoj.com/problems/GNY07H/
+
+N = 35
+x = [0] * N
+a = [0] * N
+b = [0] * N
+c = [0] * N
+d = [0] * N
+
+x[0], x[1] = 1, 0
+a[0], a[1] = 0, 1
+b[0], b[1] = 0, 1
+c[0], c[1] = 0, 1
+d[0], d[1] = 0, 1
+
+for i in xrange(2, N):
+    x[i] = x[i - 2] + a[i - 1] + b[i - 1] + c[i - 1] + d[i - 1]
+    a[i] = x[i - 1] + a[i - 2]
+    b[i] = x[i - 1] + b[i - 2]
+    c[i] = x[i - 1] + c[i - 2]
+    d[i] = x[i - 1] + d[i - 2]
+    
+print x
+ 
+    

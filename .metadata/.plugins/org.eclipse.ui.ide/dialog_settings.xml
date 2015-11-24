@@ -5,18 +5,22 @@
 		<item value="664" key="DIALOG_X_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
-		<item value="true" key="ShowStatusLine"/>
-		<item value="false" key="ShowDerived"/>
 		<item value="false" key="FilterByLocation"/>
+		<item value="false" key="ShowDerived"/>
+		<item value="true" key="ShowStatusLine"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/Tree/Morris.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Tree/PrintAncestors.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Tree/LCA.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Test/Example25.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/GraphHackerRank/FordFulkersonMaxFlow.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SuffixArray/SuffixArrayConstruction.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Arrays/OnlinePalindrome.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/FindUnion/QuickUnionWithSizePathCompression.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Treaps/Treaps.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MergeSort/MergeSort.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MergeOverlappingIntervals/MergeOverlappingIntervals.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Arrays/KLargestElemetsInAnArray.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SampleCodeTest/Test.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TestJava/src/Code.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/IntervalScheduling/src/CandidateCode.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/InversionCount/Inversion.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TestJava/src/MaxXorSubsequence.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Arrays/MaximumSumPathInTwoArrays.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MaximalBipartiteMatching/MaximalBipartiteMatching.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SampleCodeTest/Test1.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/CounterCode2015/Test.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Questions2014-2015/MaximumContinousSumSoThatNoElementsContributingToSumAreRepeated.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SuffixArray/SuffixArrayWithLCP1.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/CounterCode2015/Test1.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/GoogleRoundC/GoogleTemplate.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/GoogleRoundC/fourth.txt&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/Tree/Morris.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Tree/PrintAncestors.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Tree/LCA.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/GraphHackerRank/FordFulkersonMaxFlow.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SuffixArray/SuffixArrayConstruction.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Arrays/OnlinePalindrome.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Treaps/Treaps.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MergeSort/MergeSort.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MergeOverlappingIntervals/MergeOverlappingIntervals.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Arrays/KLargestElemetsInAnArray.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TestJava/src/Code.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/IntervalScheduling/src/CandidateCode.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/InversionCount/Inversion.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TestJava/src/MaxXorSubsequence.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Arrays/MaximumSumPathInTwoArrays.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MaximalBipartiteMatching/MaximalBipartiteMatching.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/CounterCode2015/Test.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Questions2014-2015/MaximumContinousSumSoThatNoElementsContributingToSumAreRepeated.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SuffixArray/SuffixArrayWithLCP1.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/GoogleRoundC/GoogleTemplate.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/GoogleRoundC/fourth.txt&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/FindUnion/QuickUnionWithSizePathCompression.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Tree/TreeUsingPreorderPostorder.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/Test/Example25.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SampleCodeTest/Test.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SampleCodeTest/Test1.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/BinaryIndexedTree/binaryIndexedTree.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/CounterCode2015/Test1.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/MachineLearning/Test.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SegmentTree/FrequentValuesInASortedArray.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TestJava/src/Solution1.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/SuffixArray/SuffixArrayWithLCP2.py&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
 		<section name="DialogBoundsSettings">
 			<item value="488" key="DIALOG_WIDTH"/>
 			<item value="117" key="DIALOG_Y_ORIGIN"/>
-			<item value="432" key="DIALOG_HEIGHT"/>
 			<item value="420" key="DIALOG_X_ORIGIN"/>
+			<item value="432" key="DIALOG_HEIGHT"/>
 			<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
 		</section>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
 	</section>
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
@@ -27,10 +31,6 @@
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
-		</list>
-	</section>
-	<section name="WORKBENCH_SETTINGS">
-		<list key="ENABLED_TRANSFERS">
 		</list>
 	</section>
 	<section name="NewWizardAction">

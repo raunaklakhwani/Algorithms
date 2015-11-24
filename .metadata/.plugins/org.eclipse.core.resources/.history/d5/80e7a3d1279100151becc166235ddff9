@@ -1,0 +1,8 @@
+URL = ""
+index = 0
+urls = ["http://effbot.org/zone/thread-synchronization.htm"]
+urlDict = {}
+
+
+
+

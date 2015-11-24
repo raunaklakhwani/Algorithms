@@ -1,4 +1,0 @@
-lang = raw_input()
-
-while True:
-    

@@ -3,7 +3,7 @@
 /Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/SampleCodeTest/com.python.pydev.analysis/v2_indexcache
 Test|1444673977000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/Test.py
 Test1|1446545099000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/Test1.py
-Sample|1444673640000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/Sample.py
+Sample|1447837757000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/Sample.py
 track_multiple_clients|1444673109000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/track_multiple_clients.py
 -- END DISKCACHE
 -- START DICTIONARY
@@ -17,14 +17,14 @@ track_multiple_clients|1444673109000000000|/Users/ronaklakhwani/Desktop/Algorith
 13
 __a|4|__author__!11@__author__!19@__author__!27@__author__!35@
 __c|4|__copyright__!11@__copyright__!27@__copyright__!35@__copyright__!19@
-col|1|color_generator!10@
+col|2|color_generator!10@color_generator!18@
 con|4|config!11@config!35@config!19@config!27@
 get|12|get_useful_data_from_json!26@get_response!26@get_useful_data_from_json!18@get_useful_data_from_json!34@get_response!18@get_useful_data_from_XML!18@get_useful_data_from_XML!10@get_useful_data_from_XML!34@get_response!10@get_useful_data_from_XML!26@get_useful_data_from_json!10@get_response!34@
-mac|4|mac!35@mac!19@mac!27@macs!11@
+mac|4|mac!35@mac!27@macs!19@macs!11@
 mse|4|mse_ip!27@mse_ip!19@mse_ip!11@mse_ip!35@
 par|4|parse_date!26@parse_date!10@parse_date!34@parse_date!18@
 pas|4|password!27@password!35@password!19@password!11@
-plo|12|plotData!34@plotly_api_key!35@plotly_username!27@plotly_api_key!19@plotly_username!11@plotly_username!35@plotData!18@plotly_api_key!11@plot_data!10@plotData!26@plotly_api_key!27@plotly_username!19@
+plo|12|plotData!34@plotly_api_key!35@plotly_username!27@plotly_api_key!19@plotly_username!11@plotly_username!35@plotly_api_key!11@plot_data!10@plotData!26@plotly_api_key!27@plotly_username!19@plot_data!18@
 res|4|response_format!11@response_format!27@response_format!35@response_format!19@
 url|8|url_prefix!11@url_prefix!27@url_suffix!27@url_prefix!35@url_suffix!35@url_suffix!19@url_suffix!11@url_prefix!19@
 use|4|username!27@username!11@username!19@username!35@

@@ -1,0 +1,34 @@
+URL = ""
+index = 54321
+urls = ["http://effbot.org/zone/thread-synchronization.htm","https://leetcode.com/problems/word-ladder-ii/","https://websim.worldquantchallenge.com/messages#announcement-tab"]
+
+
+urlDict = {}
+
+for url in urls:
+    urlDict[index] = url
+    index += 1
+    
+char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+def getCode(num):
+    print
+    s = []
+    while num:
+        a = num % 62
+        s.append(char[a])
+        num = num / 62
+        
+    return "".join(s[::-1])
+
+def getNum(code):
+    res = 0
+    for c in code:
+        if c >= 'a' and c <= 'z':
+            res = res * 62 + ord(c) - 97
+        elif c >= 'A' and c <= 'Z':
+            res = res * 62 + ord(c) - 65 + 26
+        elif c >= 'a' and c <= 'z':
+            res = res * 62 + ord(c) - 97
+    
+    

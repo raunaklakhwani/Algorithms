@@ -3,6 +3,7 @@ __copyright__ = "2015 Cisco Systems, Inc."
 
 # General Imports
 from datetime import datetime
+import random
 
 # configuration
 import configparser
@@ -17,6 +18,7 @@ from bs4 import BeautifulSoup
 # Imports for reading the json response
 import json
 
+
 # Imports for plotting the graph
 import plotly.plotly as py
 import plotly.tools as tls
@@ -30,12 +32,12 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 # Read config Starts
 config = configparser.ConfigParser()
-config.read("config.ini")
+config.read("config1.ini")
 mse_ip = config.get('mse', 'mse_ip')
 username = config.get('mse', 'username')
 password = config.get('mse', 'password')
 url_suffix = config.get('mse', 'url_suffix')
-mac = config.get('local', 'mac')
+macs = config.get('local', 'macs').split(",")
 response_format = config.get('local', 'response_format')
 plotly_username = config.get('plotly', 'plotly_username')
 plotly_api_key = config.get('plotly', 'plotly_api_key')
@@ -52,21 +54,16 @@ Username and Password are used to access the CMX API.
 def get_response(URL, username, password, response_format):
     '''
      Returns the response in the form of dict where keys are isError and others.
-     if isError is True then dict contains the other keys such as data which contains the description of the message
-     if isError is False then dict contains the other keys such as width,length,data.
+     If isError is True then dict contains the other keys such as data which contains the description of the message
+     If isError is False then dict contains the other keys such as width,length,data.
     '''
     print (URL)
     response_dict = {}
     try :
-        conn = HTTPPasswordMgrWithDefaultRealm()
-        conn.add_password(None, URL, username, password)
-        handler = HTTPBasicAuthHandler(conn)
-        opener = build_opener(handler)
-        opener.addheaders = [('Accept', 'application/' + response_format)]
-        install_opener(opener)
-        page = urlopen(URL).read()
+        with open("MultipleData1.json") as f:
+            page = f.read()
+            print
         if len(page):
-            page = page.decode('utf-8')
             if response_format == "xml" :
                 data_dict = get_useful_data_from_XML(page)
             elif response_format == "json":
@@ -74,11 +71,11 @@ def get_response(URL, username, password, response_format):
             data_dict['isError'] = False
             return data_dict
         else:
-            response_dict['data'] = mac + " MAC NOT FOUND"
+            response_dict['data'] = "No Response Returned"
             response_dict['isError'] = True
             return response_dict
     except URLError as e:
-        response_dict['data'] = "Either URL is malformed or " + mac + " address is not found in the CMX environment"
+        response_dict['data'] = "URL is malformed"
         response_dict['isError'] = True
         return response_dict
 
@@ -101,17 +98,19 @@ def get_useful_data_from_json(json_response):
     3. data contains the list of tuples where tuples are in the format (lastlocatedtime,x,y)
     All the above three are returned only when you get location from the json_response otherwise an empty dict is returned
     '''
-    data = []
+    data = {}
     json_dict = json.loads(json_response)
     if len(json_dict['Locations']['entries']) > 0:
         width = json_dict['Locations']['entries'][0]['MapInfo']['Dimension']['width']
         length = json_dict['Locations']['entries'][0]['MapInfo']['Dimension']['length']
 
         for wirelessclientlocation in json_dict['Locations']['entries']:
-            x = wirelessclientlocation["MapCoordinate"]["x"]
-            y = wirelessclientlocation["MapCoordinate"]["y"]
-            lastlocatedtime = parse_date(wirelessclientlocation["Statistics"]["lastLocatedTime"])
-            data.append((lastlocatedtime, x, y))
+            mac = wirelessclientlocation["macAddress"]
+            if mac in macs:
+                x = wirelessclientlocation["MapCoordinate"]["x"]
+                y = wirelessclientlocation["MapCoordinate"]["y"]
+                lastlocatedtime = parse_date(wirelessclientlocation["Statistics"]["lastLocatedTime"])
+                data.setdefault(mac, []).append((lastlocatedtime, x, y))
         return {"width" : width, "length":length, "data":data}
     else :
         return {}
@@ -124,20 +123,23 @@ def get_useful_data_from_XML(xml):
     Parses the xml and returns the dict with keys as width, length and the data
     1. width contains the value of the width
     2. length contains the value of the length
-    3. data contains the list of tuples where tuples are in the format (lastlocatedtime,x,y)
+    3. data is in the form of dictionaries containing key as macaddress(provided above in congiguration section)
+    and the corresponding values as list of tuples where tuples are in the format (lastlocatedtime,x,y)
     All the above three are returned only when you get location from the jsonResponse otherwise an empty dict is returned
     '''
-    data = []
+    data = {}
     xml_format = BeautifulSoup(xml)
     wirelessclientlocations = xml_format.find_all("wirelessclientlocation")
     if len(wirelessclientlocations) > 0:
         width = xml_format.locations.wirelessclientlocation.mapinfo.dimension['width']
         length = xml_format.locations.wirelessclientlocation.mapinfo.dimension['length']
         for wirelessclientlocation in wirelessclientlocations:
-            x = wirelessclientlocation.mapcoordinate['x']
-            y = wirelessclientlocation.mapcoordinate['y']
-            lastlocatedtime = parse_date(wirelessclientlocation.statistics['lastlocatedtime'])
-            data.append((lastlocatedtime, x, y))
+            mac = wirelessclientlocation["macaddress"]
+            if mac in macs:
+                x = wirelessclientlocation.mapcoordinate['x']
+                y = wirelessclientlocation.mapcoordinate['y']
+                lastlocatedtime = parse_date(wirelessclientlocation.statistics['lastlocatedtime'])
+                data.setdefault(mac, []).append((lastlocatedtime, x, y))
         return {"width" : width, "length":length, "data":data}
     else:
         return {}
@@ -145,35 +147,10 @@ def get_useful_data_from_XML(xml):
 '''
 Method which reads the dict and renders the response on to the Plotly framework.
 '''
-def plotData(data_dict):
+def plot_data(data_dict):
     '''
     Plots the data on the Plotly Framework.
     '''
-    pData = data_dict['data']
-    pData = sorted(pData, key=lambda x:x[0])
-    
-    processed_data = Scatter(
-        x=[x[1] for x in pData],
-        y=[y[2] for y in pData],
-        mode='lines + text',
-        text=list(range(1, len(pData) + 1)),
-        name=mac,
-        marker=Marker(color="red"),
-        opacity="0.5",
-        legendgroup = mac,
-    )
-    
-    startAndEndData = Scatter(
-        x=[pData[0][1], pData[-1][1]],
-        y=[pData[0][2], pData[-1][2]],
-        mode='markers',
-        marker=Marker(color="red", size="6"),
-        showlegend=False,
-        name = mac,
-        text=["Start point", "End point"],
-        legendgroup = mac,
-    )
-    
     py.sign_in(plotly_username, plotly_api_key)
     tls.set_credentials_file(username=plotly_username,
                                  api_key=plotly_api_key)
@@ -222,19 +199,59 @@ def plotData(data_dict):
                     title="Y co-ordinate"
                     )
                 )
-    data = Data([processed_data,startAndEndData])
+    mac_history_data = data_dict['data']
+    processed_data = []
+    for mac, p_data in mac_history_data.items():
+        if len(p_data):
+            p_data = sorted(p_data, key=lambda x:x[0])
+            color = color_generator()
+            plot_data = Scatter(
+                x=[x[1] for x in p_data],
+                y=[y[2] for y in p_data],
+                mode='lines + text',
+                text=list(range(1, len(p_data) + 1)),
+                name=mac,
+                marker=Marker(color=color),
+                opacity="0.6",
+                legendgroup = mac,
+            )
+            processed_data.append(plot_data)
+            
+            startAndEndData = Scatter(
+            x=[p_data[0][1], p_data[-1][1]],
+            y=[p_data[0][2], p_data[-1][2]],
+            mode='markers',
+            marker=Marker(color=color, size="6"),
+            showlegend=False,
+            text=["Start point " + mac, "End point " + mac],
+            legendgroup=mac,
+            )
+            processed_data.append(startAndEndData)
+    data = Data(processed_data)
     fig = Figure(data=data, layout=layout)
     py.plot(fig, filename='Sample Code For History Of Clients ')
+
+'''
+Returns the random color in the form of hexadecimal numbers in the format #XXXXXX
+'''
+def color_generator():
+    def r():
+        '''
+        Returns the random hexadecimal number between 0-255 in the form of XX
+        '''
+        hex_random = hex(random.randint(0, 255))[2:]
+        return hex_random if len(hex_random) >= 2 else hex_random + "0"
+    return "#" + r() + r() + r()
 
 '''
 Main Method to Invoke the Application
 '''
 if __name__ == '__main__':
-    URL = url_prefix + mse_ip + url_suffix + mac
+    URL = url_prefix + mse_ip + url_suffix
     data_dict = get_response(URL, username, password, response_format)
     if data_dict['isError'] == False:
         if len(data_dict['data']) > 0:
-            plotData(data_dict)
+            plot_data(data_dict)
         else:
             print('No clients found')
     else:

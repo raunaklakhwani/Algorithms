@@ -1,8 +1,0 @@
-int main(int argc, char **argv) {
-	int x = 5;
-	int *y = &x;
-	(*y)++;
-	printf("%d",&x)
-	return 0;
-
-}

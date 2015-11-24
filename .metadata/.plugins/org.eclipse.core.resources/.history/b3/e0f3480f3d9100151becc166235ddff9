@@ -1,0 +1,6 @@
+package package1;
+import File1
+
+public class File3 extends File1{
+
+}

@@ -1,0 +1,17 @@
+URL = ""
+index = 54321
+urls = ["http://effbot.org/zone/thread-synchronization.htm","https://leetcode.com/problems/word-ladder-ii/","https://websim.worldquantchallenge.com/messages#announcement-tab"]
+
+
+urlDict = {}
+
+for url in urls:
+    urlDict[index] = url
+    index += 1
+    
+char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+def getCode(num):
+    print
+    while num:
+        print

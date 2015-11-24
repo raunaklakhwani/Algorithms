@@ -1,0 +1,43 @@
+'''
+5 5
+REYEE
+EEREE
+EREEE
+EEERR
+REREE
+'''
+import sys
+sys.setrecursionlimit(100000)
+N,M = map(int,raw_input().split())
+li = []
+for i in xrange(M):
+    li.append(raw_input())
+start = None    
+for i in xrange(N):
+    if li[0][i] == "Y":
+        start = i
+        break
+
+def recurse(li,x,y,adj):
+    #print x,y
+    if x == len(li) - 1:
+        return True
+    for a,b in adj:
+        nx = x + a
+        ny = y + b
+        if nx >= 0 and nx < len(li) and ny >= 0 and ny < len(li[0]) and li[nx][ny] != "R" and li[nx-1][ny] != "R":
+            res = recurse(li,nx,ny,adj)
+            if res:
+                return True
+    
+    return False
+
+adj = [(1,0),(1,1),(1,-1)]
+if start is not None:
+    res = recurse(li, 0, start, adj)
+    print "YES" if res else "NO"
+else:
+    print "YES"
+    
+    
+

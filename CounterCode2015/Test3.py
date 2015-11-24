@@ -1,34 +1,31 @@
-mod = 10 ** 9 + 7
-import sys
-sys.setrecursionlimit(10000)
+'''
+10 5
+ababcabccc
+1 2
+1 3
+2 3
+3 5
+8 8
+'''
 
-def combination(n,r):
-    num = 1
-    denom = 1
-    
-    for i in xrange(1 , min(n-r,r) + 1):
-        num = num * n
-        n -= 1
-        denom = denom * i
+N,M = map(int,raw_input().split())
+s = raw_input()
 
-    return num // denom
-        
-
-    
-a = input()
-b = input()
-
-if a < b:
-    a,b = b,a
-    
-
-   
-result = 0
-if a == 25 and b < 24:
-    result = combination(a + b - 1,b) % mod
-elif b >= 24 and (a - b) == 2:
-    result = (pow(2,a-26,mod) * (combination(48,24) % mod)) % mod
-    
-print result
-    
+for _ in xrange(M):
+    c = 2
+    a,b = map(int,raw_input().split())
+    print a,b,
+    q = s[a-1:b]
+    print s[a-1:b],
+    while True:
+        try:
+            x = s.index(q * c,a-1,len(s))
+            if x == a - 1:
+                c += 1
+            else:
+                print c - 1
+                break
+        except ValueError:
+            print c - 1
+            break
     

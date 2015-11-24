@@ -1,50 +1,47 @@
-'''
-2
-1 2 4
-3 2 5
-'''
-
-from itertools import permutations
-
-boxes = input()
-d = []
+URL = ""
+index = 54321
+urls = ["http://effbot.org/zone/thread-synchronization.htm","https://leetcode.com/problems/word-ladder-ii/","https://websim.worldquantchallenge.com/messages#announcement-tab"]
 
 
-for i in xrange(boxes):
-    d.append(map(int,raw_input().split()))
+urlDict = {}
+
+
     
-#print d
+char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
-ans = []    
-for box in d:
-    for b in permutations(box):
-        if b[0] >= b[1]:
-            ans.append(b)
+def getCode(num):
+    s = []
+    while num:
+        a = num % 62
+        s.append(char[a])
+        num = num / 62
+        
+    return "".join(s[::-1])
+
+def getNum(code):
+    res = 0
+    for c in code:
+        if c >= 'a' and c <= 'z':
+            res = res * 62 + ord(c) - 97
+        elif c >= 'A' and c <= 'Z':
+            res = res * 62 + ord(c) - 65 + 26
+        elif c >= '0' and c <= '9':
+            res = res * 62 + ord(c) - 48 + 52
             
+    return res
             
-ans.sort(key = lambda item: item[0] * item[1],reverse = True)
-
-#print ans
-T = [] 
-m = [] 
-
-for i in xrange(len(ans)):
-    T.append(ans[i][2])
-    m.append(i)
+surl = []
+for url in urls:
+    urlDict[index] = url
+    code = getCode(index)
+    surl.append(code)
+    index += 1
     
-#print T,m
+print surl
 
-
-for i in xrange(len(ans)):
-    for j in xrange(i):
-        if ans[i][0] < ans[j][0] and ans[i][1] < ans[j][1] and T[i] < T[j] + ans[i][2]:
-            T[i] = T[j] + ans[i][2] 
-            m[i] = j
-            
-print max(T)
-
-
-
-
-
+for su in surl:
+    ind = getNum(su)
+    print ind
+    print urlDict[ind]
+    
     

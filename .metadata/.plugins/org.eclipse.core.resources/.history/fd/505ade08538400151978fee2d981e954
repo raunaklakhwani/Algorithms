@@ -1,9 +1,0 @@
-s = "1523457"
-N = len(s)
-
-dp = [[0] * N for _ in xrange(N)]
-
-for i in xrange(N):
-    dp[i][i] = int(s[i])
-
-    

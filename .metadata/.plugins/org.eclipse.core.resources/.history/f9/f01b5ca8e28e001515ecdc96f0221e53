@@ -1,0 +1,45 @@
+'''
+2 10
+'''
+from _collections import defaultdict
+
+N, M = map(int, raw_input().split())
+
+
+
+
+def recurse(N, cache, ans, index, M):
+    if index == N + 1:
+        return ans % M
+    
+    for key in cache.keys():
+        a, b = key[0], key[1]
+        if a != -1:
+            if index ^ a <= (0 if b == -1 else b):
+                cache[(index ^ a, b)] += 1
+                ans = (ans + 1) % M
+        if b!= -1:
+            if (0 if a == -1 else a) <= index ^ b:
+                cache[(a, index ^ b)] += 1
+                ans = (ans + 1) % M
+        
+            
+        if a <= index:
+            cache[(a, index)] += 1
+            ans = (ans + 1) % M
+        
+        if b <= index:
+            cache[(b, index)] += 1
+            ans = (ans + 1) % M
+            
+            
+    return recurse(N, cache, ans, index + 1, M)
+
+cache = defaultdict(int)
+cache[(-1, -1)] = 1
+print recurse(N, cache, 1, 1, M)
+print cache
+    
+    
+    
+    

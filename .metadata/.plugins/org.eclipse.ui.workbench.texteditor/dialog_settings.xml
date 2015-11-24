@@ -2,35 +2,37 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="265" key="DIALOG_WIDTH"/>
-		<item value="32" key="DIALOG_Y_ORIGIN"/>
-		<item value="895" key="DIALOG_X_ORIGIN"/>
+		<item value="127" key="DIALOG_Y_ORIGIN"/>
+		<item value="998" key="DIALOG_X_ORIGIN"/>
 		<item value="399" key="DIALOG_HEIGHT"/>
 		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
 		<item value="false" key="casesensitive"/>
-		<item value="false" key="isRegEx"/>
+		<item value="true" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="node.v" key="selection"/>
+		<item value="graph" key="selection"/>
 		<list key="findhistory">
-			<item value="node.v"/>
-			<item value="Case"/>
-			<item value="check"/>
-			<item value="pr"/>
-			<item value="print"/>
-			<item value="add"/>
-			<item value="append"/>
-			<item value="00:00:2a:01:00:2"/>
+			<item value="graph"/>
+			<item value="cababb"/>
+			<item value="(14, 8, "/>
+			<item value=": 3"/>
+			<item value=": 4"/>
+			<item value=": 5"/>
+			<item value=": 2"/>
+			<item value="5"/>
 		</list>
 		<list key="replacehistory">
+			<item value="last"/>
+			<item value=""/>
+			<item value="[lastj,starIndex,iindex]"/>
 			<item value="velo[node.h]"/>
 			<item value="append"/>
 			<item value="timeInADay"/>
 			<item value="length"/>
 			<item value="po"/>
-			<item value="result"/>
 		</list>
 	</section>
 </section>

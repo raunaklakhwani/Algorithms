@@ -6571,6 +6571,8 @@ urlparse|/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/
 user|/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/user.py
 uu|/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/uu.py
 uuid|/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/uuid.py
+vboxapi.VirtualBox_constants|/Library/Python/2.7/site-packages/vboxapi/VirtualBox_constants.py
+vboxapi.__init__|/Library/Python/2.7/site-packages/vboxapi/__init__.py
 videoreader|/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/videoreader.py
 virtualenv|/Library/Python/2.7/site-packages/virtualenv.py
 virtualenv_support.__init__|/Library/Python/2.7/site-packages/virtualenv_support/__init__.py

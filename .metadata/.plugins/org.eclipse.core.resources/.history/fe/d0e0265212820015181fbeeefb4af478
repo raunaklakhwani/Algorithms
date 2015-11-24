@@ -1,7 +1,0 @@
-answer = input()
-guesses = input().split()
-for guess in guesses:
-    correct_numbers = [x for x in guess if x in answer and guess.index(x) != answer.index(x)]
-    correct_position = [y for y in guess if y in answer and guess.index(y) == answer.index(y)]
-    result = '{0}-{1}' .format(len(correct_position), len(correct_numbers))
-    print(result, end=' ')

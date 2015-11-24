@@ -1,5 +1,0 @@
-
-while True:
-    try:
-        fileName = raw_input()
-        

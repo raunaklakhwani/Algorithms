@@ -1,0 +1,23 @@
+-- VERSION_4
+-- START DISKCACHE_2
+/Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/Tiling/com.python.pydev.analysis/v2_indexcache
+3Tile|1448123863000000000|/Users/ronaklakhwani/Desktop/Algorithms/Tiling/3Tile.py
+4tile|1448130367000000000|/Users/ronaklakhwani/Desktop/Algorithms/Tiling/4tile.py
+-- END DISKCACHE
+-- START DICTIONARY
+2
+1=3Tile
+2=4tile
+-- END DICTIONARY
+-- START TREE 1
+6
+N|2|N!11@N!19@
+a|1|a!19@
+b|1|b!19@
+f|1|f!11@
+g|1|g!11@
+x|1|x!19@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

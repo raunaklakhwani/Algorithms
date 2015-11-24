@@ -4,40 +4,42 @@
 LazyPropagation|1442672295000000000|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/LazyPropagation.py
 MainSum|1442669757000000000|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/MainSum.py
 MainMin|1438397038000000000|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/MainMin.py
+FrequentValuesInASortedArray|1447950183000000000|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/FrequentValuesInASortedArray.py
 persistentsegmenttree|1446359495000000000|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/persistentsegmenttree.py
 2DSegmentTree|1445196902000000000|/Users/ronaklakhwani/Desktop/Algorithms/SegmentTree/2DSegmentTree.py
 -- END DISKCACHE
 -- START DICTIONARY
-7
-4=LazyPropagation
-6=Node
-2=MainSum
-3=MainMin
-7=Node.__init__
-5=persistentsegmenttree
+8
+3=LazyPropagation
+7=Node
+5=MainSum
+4=MainMin
+8=Node.__init__
+2=FrequentValuesInASortedArray
+6=persistentsegmenttree
 1=2DSegmentTree
 -- END DICTIONARY
 -- START TREE 1
 14
-bui|1|buildSegmentTree!10@
-get|12|getSegmentTreeUtil!18@getMinimumUtil!26@getSegmentTree!34@getSum!18@getSum!34@getSegmentTreeUtil!34@getSegmentTree!26@getSumUtil!34@getSegmentTree!18@getSumUtil!18@getSegmentTreeUtil!26@getMinimum!26@
-ind|1|indices!43@
+bui|2|buildSegmentTree!10@buildSegmentTree!18@
+get|13|getAns!18@getSegmentTree!26@getMinimumUtil!34@getSum!26@getSegmentTreeUtil!26@getSegmentTree!34@getSegmentTree!42@getSumUtil!42@getMinimum!34@getSegmentTreeUtil!42@getSum!42@getSumUtil!26@getSegmentTreeUtil!34@
+ind|1|indices!51@
 inp|1|inp!11@
-ins|1|insert!42@
-li|1|li!43@
-max|1|maximum!43@
-nod|1|Node!41@
-que|1|query!42@
-res|1|result!43@
-roo|1|root!43@
+ins|1|insert!50@
+li|1|li!51@
+max|1|maximum!51@
+nod|1|Node!49@
+que|2|query!18@query!50@
+res|1|result!51@
+roo|1|root!51@
 seg|1|seg!11@
-upd|8|updateRangeUtil!34@updateValueUtil!18@updateValue!26@updateValue!34@updateValue!18@updateRange!34@updateSegmentTreeUtil!34@updateValueUtil!26@
-x|1|x!43@
+upd|8|updateRangeUtil!26@updateValueUtil!42@updateValue!34@updateValue!26@updateValue!42@updateRange!26@updateSegmentTreeUtil!26@updateValueUtil!34@
+x|1|x!51@
 -- END TREE
 -- START TREE 2
 4
-__i|1|__init__!6&42@
-cou|1|count!7&43@
-lef|1|left!7&43@
-rig|1|right!7&43@
+__i|1|__init__!7&50@
+cou|1|count!8&51@
+lef|1|left!8&51@
+rig|1|right!8&51@
 -- END TREE

@@ -1,0 +1,11 @@
+package package1;
+
+import package2.*;
+
+public class File3 extends File1 {
+
+	public void print() {
+		System.out.println(c + d);
+	}
+
+}

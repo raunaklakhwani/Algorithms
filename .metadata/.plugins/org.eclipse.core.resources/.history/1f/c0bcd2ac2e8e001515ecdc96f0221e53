@@ -1,0 +1,95 @@
+class Solution(object):
+    def getSkyline(self, b):
+        """
+        :type buildings: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        
+        
+        def divide(b, s, e):
+            if s < e:
+                mid = s + ((e - s) >> 1)
+                r1 = divide(b, s, mid)
+                r2 = divide(b, mid + 1, e)
+                res = merge(r1, r2)
+                return res
+            elif s == e:
+                return [[b[s][0], b[s][2]], [b[s][1], 0]]
+            else:
+                return []
+                
+        def merge(r1, r2):
+            res = []
+            l = 0
+            r = 0
+            fh = 0
+            sh = 0
+            while l < len(r1) and r < len(r2):
+                if r1[l][0] < r2[r][0]:
+                    m = max(r1[l][1], sh)
+                    if len(res):
+                        if res[-1][1] != m:
+                            res.append([r1[l][0], m])
+                    else:
+                        res.append([r1[l][0], m])
+                    fh = r1[l][1]
+                    l += 1
+                elif r1[l][0] > r2[r][0]:
+                    m = max(r2[r][1], fh)
+                    if len(res):
+                        if res[-1][1] != m:
+                            res.append([r2[r][0], m])
+                    else:
+                        res.append([r2[r][0], m])
+                    
+                    sh = r2[r][1]
+                    r += 1
+                else:
+                    m = max(r1[l][1], r2[r][1])
+                    if len(res):
+                        if res[-1][1] != m:
+                            res.append([r2[r][0], m])
+                    else:
+                        res.append([r2[r][0], m])
+                    fh = r1[l][1]
+                    sh = r2[r][1]
+                    l += 1
+                    r += 1
+                    
+            while l < len(r1):
+                m = max(r1[l][1], sh)
+                if len(res):
+                    if res[-1][1] != m:
+                        res.append([r1[l][0], m])
+                else:
+                    res.append([r1[l][0], m])
+                fh = r1[l][1]
+                l += 1
+                
+            while r < len(r2):
+                m = max(r2[r][1], fh)
+                if len(res):
+                    if res[-1][1] != m:
+                        res.append([r2[r][0], m])
+                else:
+                    res.append([r2[r][0], m])
+                sh = r2[r][1]
+                r += 1
+                
+            return res
+                
+            
+        N = len(b)    
+        if N == 0:
+            return []
+        
+        result = divide(b, 0, N - 1)
+        # print result
+        return result
+    
+    
+if __name__ == '__main__':
+    s = Solution()
+    # print s.getSkyline([ [2, 9, 10], [3 , 7 , 15], [5, 12, 12], [15, 20, 10], [19, 24 , 8] ])
+    #print s.getSkyline([[1, 2, 1], [1, 2, 2], [1, 2, 3]])
+    print s.getSkyline([[0,2,3],[2,5,3]])
