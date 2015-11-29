@@ -1,0 +1,7 @@
+
+
+def recurse():
+    print
+
+
+N = 6

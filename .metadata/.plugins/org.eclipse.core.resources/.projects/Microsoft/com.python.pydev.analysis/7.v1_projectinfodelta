@@ -1,0 +1,8 @@
+INSTUPCountDistinctElementInWindowOfSizeK
+/Users/ronaklakhwani/Desktop/Algorithms/Microsoft/CountDistinctElementInWindowOfSizeK.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0
+li=1
+t=5
+m=4
+CountDistinctElementInWindowOfSizeK=2
+k=3

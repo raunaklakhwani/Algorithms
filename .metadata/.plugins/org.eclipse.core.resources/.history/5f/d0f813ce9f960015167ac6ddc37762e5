@@ -1,0 +1,5 @@
+# URL : http://www.geeksforgeeks.org/count-distinct-elements-in-every-window-of-size-k/
+li = [1, 2, 1, 3, 4, 2, 3]
+k = 4
+
+m = {}

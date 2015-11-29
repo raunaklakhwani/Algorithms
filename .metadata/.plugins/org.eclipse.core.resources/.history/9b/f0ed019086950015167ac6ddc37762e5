@@ -1,0 +1,35 @@
+l = [1,2,1]
+r = 2
+N = len(l)
+
+
+l.sort()
+
+
+
+def recurse(res,main,index,r,l,N):
+    if len(res) == r:
+        main.append(res[:])
+        return
+    
+    i = index
+    while index < N:
+        #include
+        temp = i
+        res.append(l[index])
+        while temp < Nl[index] == l[temp]:
+            temp += 1
+        
+        recurse(res, main, temp, r, l, N)
+        del res[-1]
+        
+        
+        #exclude
+        temp = i
+        while l[index] == l[temp]:
+            temp += 1
+        recurse(res, main, temp, r, l, N)
+        
+        
+        
+        

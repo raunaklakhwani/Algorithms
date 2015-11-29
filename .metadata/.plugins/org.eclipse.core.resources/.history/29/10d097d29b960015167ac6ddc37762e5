@@ -1,0 +1,14 @@
+li = [0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1]
+def swap(li, a, b):
+    li[a], li[b] = li[b], li[a]
+
+z = o = t = 0
+for i in xrange(len(li)):
+    if li[i] == 0:
+        swap(i, z)
+    elif i == 1:
+        print
+    else:
+        print 
+    
+    

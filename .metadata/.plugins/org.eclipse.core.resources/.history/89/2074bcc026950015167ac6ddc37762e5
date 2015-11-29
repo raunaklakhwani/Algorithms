@@ -1,0 +1,73 @@
+class Base {
+	int i;
+
+	public Base(int i) {
+		super();
+		this.i = i;
+	}
+
+}
+
+class Mythread1 extends Thread {
+	public static Integer i = 1;
+
+	int k;
+	Base b;
+
+	public Mythread1(Base shared, String name, int k) {
+		super(name);
+		this.b = shared;
+		this.k = k;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+		while (true) {
+			try {
+				// System.out.prb.intln(b.i);
+				// System.out.prb.intln(thb.is.getState());
+				synchronized (b.i) {
+					if (b.i <= 100) {
+						// System.out.prb.intln(thb.is.getName() +b.i);
+						if ((b.i & 1) == k) {
+							System.out.println(b.i);
+							b.i += 1;
+							b.notify();
+						} else {
+							b.wait();
+						}
+					} else {
+						break;
+					}
+				}
+
+			} catch (Exception e) {
+
+			}
+		}
+	}
+
+	public synchronized void print() {
+
+	}
+
+}
+
+public class EvenOdd {
+
+	public static void main(String[] args) throws Exception {
+		System.out.println("Ronak");
+		Base b = new Base(0);
+		Mythread1 even = new Mythread1(b, "Even", 0);
+		Mythread1 odd = new Mythread1(b, "Odd", 1);
+		odd.start();
+		even.start();
+
+		odd.join();
+		even.join();
+		System.out.println("End");
+	}
+
+}

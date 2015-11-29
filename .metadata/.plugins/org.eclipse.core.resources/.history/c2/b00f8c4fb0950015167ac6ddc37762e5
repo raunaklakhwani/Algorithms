@@ -1,0 +1,38 @@
+from pprint import pprint
+
+def funPal(s):
+    N = len(s)
+    dp = [[0] * N for _ in xrange(N)]
+    
+    for i in xrange(N):
+        dp[i][i] = 1
+        
+        
+    for l in xrange(2, N):
+        for i in xrange(N):
+            j = i + l - 1
+            if j >= N:
+                break
+            
+            if s[i] == s[j]:
+                dp[i][j] = 1 + dp[i + 1][j - 1]
+                
+    pprint(dp)
+    
+    for i in xrange(1,N-1):
+        
+                
+                
+                
+if __name__ == '__main__':
+    s = "ABCBA"
+    funPal(s)
+                
+     
+                
+    
+                
+            
+    
+    
+     

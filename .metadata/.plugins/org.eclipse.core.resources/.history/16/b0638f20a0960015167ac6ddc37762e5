@@ -1,0 +1,14 @@
+# URL : http://www.geeksforgeeks.org/count-distinct-elements-in-every-window-of-size-k/
+from collections import defaultdict
+li = [1, 2, 1, 3, 4, 2, 3]
+k = 4
+
+m = defaultdict(int)
+
+for i in xrange(k):
+    m[li[i]] += 1
+    
+print m
+
+
+    

@@ -1,0 +1,22 @@
+
+
+def recurse(N,m):
+    if N == 0 and m == 0:
+        return 1
+    elif N <= 0:
+        return 0 
+    elif m > N:
+        return 0
+    elif N == m:
+        return 1
+    elif m == 0:
+        return 0
+    else:
+        ans = 0
+        for i in xrange(1,N):
+            ans = ans + recurse(N - i, m - 1)
+    return ans
+
+
+N = 6
+print recurse(N, 4)

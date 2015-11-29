@@ -1,0 +1,9 @@
+
+
+def recurse(N,m):
+    if N <= 0:
+        return 0 
+    print
+
+
+N = 6

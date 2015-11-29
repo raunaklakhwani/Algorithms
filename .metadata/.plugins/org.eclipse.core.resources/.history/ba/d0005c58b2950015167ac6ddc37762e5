@@ -1,0 +1,51 @@
+from pprint import pprint
+
+def funPal(s):
+    N = len(s)
+    dp = [[0] * N for _ in xrange(N)]
+    
+    for i in xrange(N):
+        dp[i][i] = 1
+        if i + 1 < N:
+            dp[i][i + 1] = 2 if s[i] == s[i + 1] else 1
+        
+    
+        
+        
+    for l in xrange(3, N + 1):
+        for i in xrange(N):
+            j = i + l - 1
+            if j >= N:
+                break
+            
+            if s[i] == s[j]:
+                dp[i][j] = 2 + dp[i + 1][j - 1]
+            else:
+                dp[i][j] = max(dp[i+1][j],dp[i][j-1])
+                
+                
+    pprint(dp)
+    
+    ans = 0
+    for i in xrange(N-1):
+        ans = max(ans,dp[0][i] * dp[i+1][-1])
+    
+    print ans
+        
+        
+                
+                
+                
+if __name__ == '__main__':
+    s = "acdabpmpomp"
+    #s = "AAA"
+    funPal(s)
+                
+     
+                
+    
+                
+            
+    
+    
+     

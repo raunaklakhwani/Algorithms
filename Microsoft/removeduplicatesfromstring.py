@@ -1,0 +1,23 @@
+# remove duplicates from string in place
+from collections import defaultdict
+s = list("ABCBEGHBC")
+
+pi = 0
+i = 0
+m = defaultdict(int)
+while i < len(s):
+    m[s[i]] += 1
+    if m[s[i]] == 1:
+        s[pi],s[i] = s[i],s[pi]
+        pi += 1
+        i += 1
+    else:
+        
+        i += 1
+
+print s[:pi]
+        
+    
+    
+    
+    

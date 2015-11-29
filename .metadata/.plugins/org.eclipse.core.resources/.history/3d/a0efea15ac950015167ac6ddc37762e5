@@ -1,0 +1,4 @@
+def recurseLeft(root):
+    if root:
+        print root.val
+        recurseLeft(root.left)

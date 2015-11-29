@@ -1,0 +1,10 @@
+# Run Encoding
+
+s = "Ronak is a good boy"
+i = len(s) - 1
+spaces = 5
+
+s = list(s + spaces * "  ")
+
+h = len(s) - 1
+i = 

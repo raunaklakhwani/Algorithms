@@ -1,0 +1,9 @@
+def funPal(s):
+    N = len(s)
+    
+    
+    dp = [[0] * N for _ in xrange(N)]
+    
+    
+    
+     

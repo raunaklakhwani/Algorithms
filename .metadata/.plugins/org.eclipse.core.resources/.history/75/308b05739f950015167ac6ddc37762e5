@@ -1,0 +1,73 @@
+from collections import defaultdict,Counter
+class Solution(object):
+    def minWindow(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: str
+        """
+        
+        tdict = Counter(t)
+        
+        
+        i = 0
+        c = 0
+        start = 0
+        ans = float("inf")
+        ansstart = -1
+        ansend = -1
+        cdict = defaultdict(int)
+        while i < len(s):
+            if tdict.get(s[i]) is not None:
+                if cdict.get(s[i]) < tdict[s[i]]:
+                    c += 1
+                    cdict[s[i]] += 1
+                else:
+                    cdict[s[i]] += 1
+                    
+            print c
+                    
+            if c == len(t):
+                
+                while start < i:
+                    if tdict.get(s[start]) is not None:
+                        if cdict[s[start]] == tdict[s[start]]:
+                            break
+                        else:
+                            cdict[s[start]] -= 1
+                            start += 1
+                    else:
+                        start += 1
+                
+                
+                if i - start + 1 < ans:
+                    ans = i - start + 1
+                    ansstart = start
+                    ansend = i
+                
+                while start <= i:
+                    if cdict.get(s[start]) is None:
+                        start += 1
+                    elif cdict[s[start]] > tdict[s[start]]:
+                        cdict[s[start]] -= 1
+                        start += 1
+                    elif cdict[s[start]] == tdict[s[start]]:
+                        cdict[s[start]] -= 1
+                        start += 1
+                        c -= 1
+                        break
+                        
+                    else:
+                        break
+                c -= 1
+                
+                
+            i += 1
+        print ansstart,ansend
+        return s[ansstart:ansend + 1]
+        
+        
+        
+if __name__ == '__main__':
+    s = Solution()
+    print s.minWindow("bdab", "ab")

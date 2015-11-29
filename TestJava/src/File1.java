@@ -1,10 +1,10 @@
-package package2;
-public class File1 {
-	
-	private int a;
-	int b;
-	protected int c;
-	public int d;
+import java.util.HashSet;
+import java.util.Set;
 
-	
+public class File1 {
+
+	public static void main(String[] args) {
+		
+	}
+
 }

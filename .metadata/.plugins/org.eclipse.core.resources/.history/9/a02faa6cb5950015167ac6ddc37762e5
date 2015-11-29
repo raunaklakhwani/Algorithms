@@ -1,0 +1,15 @@
+primes = [1] * maximum
+primes[0] = 0
+primes[1] = 0
+x = []
+for i in xrange(2,len(primes)):
+    if primes[i] == 1:
+        primes[i] = i
+        x.append(i)
+        cache[i] = 1
+        for j in xrange(2*i,len(primes),i):
+            primes[j] = 0
+
+
+
+primes = x

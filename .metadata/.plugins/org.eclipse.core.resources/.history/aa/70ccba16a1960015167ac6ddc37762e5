@@ -1,0 +1,7 @@
+s = list("ABCBEGHBC")
+
+pi = 0
+i = 0
+while i < len(s):
+    i += 1
+    

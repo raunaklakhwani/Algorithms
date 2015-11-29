@@ -1,0 +1,17 @@
+def recurseLeft(root):
+    if root:
+        print root.data
+        if root.left:
+            recurseLeft(root.left)
+        elif root.right:
+            recurseLeft(root.right)
+            
+            
+def recurseRight(root):
+    if root:
+        if root.left:
+            recurseLeft(root.left)
+        elif root.right:
+            recurseLeft(root.right)
+        print root.data
+        

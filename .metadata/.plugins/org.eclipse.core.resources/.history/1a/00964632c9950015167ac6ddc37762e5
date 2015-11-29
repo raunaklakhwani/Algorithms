@@ -1,0 +1,23 @@
+s = "i, like, sam, sung, samsung, mobile, ice, cream, icecream, man, go, mango"
+
+s = [i.strip() for i in  s.split(",")]
+print s
+
+li = "ilike"
+
+
+N = len(li)
+dp = [False] * (N + 1)
+
+dp[0] = True
+
+
+for i in xrange(1,N+1):
+    for j in xrange(i-1,-1,-1):
+        if dp[j]:
+            if li[j:i] in s:
+                dp[i] = True
+                break
+print dp
+                
+            

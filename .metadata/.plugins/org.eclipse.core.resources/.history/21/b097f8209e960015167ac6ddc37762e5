@@ -1,0 +1,34 @@
+li = [0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1]
+def swap(li, a, b):
+    li[a], li[b] = li[b], li[a]
+    
+def partition(inp, low, high):
+    pivot = 1
+    lt = eq = gt = low + 1
+    for i in xrange(low + 1, high + 1):
+        if inp[i] < pivot:
+            if lt != eq and lt != gt:
+                inp[lt], inp[eq], inp[gt] = inp[gt], inp[lt], inp[eq]
+            elif lt != eq:
+                inp[lt], inp[eq] = inp[eq],inp[lt]
+            elif lt != gt:
+                
+                
+            lt += 1
+            eq += 1
+            gt += 1
+        elif inp[i] == pivot:
+            inp[eq], inp[gt] = inp[gt], inp[eq]
+            eq += 1
+            gt += 1
+        else:
+            gt += 1
+    
+    inp[low], inp[lt-1] = inp[lt-1], inp[low]
+    return lt - 1, eq
+
+        
+partition(li, 0, len(li) - 1)
+print li
+    
+    

@@ -1,0 +1,14 @@
+
+
+def recurse(N,m):
+    if N <= 0:
+        return 0 
+    elif N > m:
+        return 0
+    elif N == m:
+        return 1
+    else:print
+    print
+
+
+N = 6

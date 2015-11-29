@@ -1,0 +1,17 @@
+l = [1,2,1]
+r = 2
+N = len(l)
+
+
+l.sort()
+
+
+
+def recurse(res,main,index,r,l,N):
+    if len(res) == r:
+        main.append(res[:])
+        return
+    
+    for i in xrange(index,N):
+        #include
+        res.append(l[index])

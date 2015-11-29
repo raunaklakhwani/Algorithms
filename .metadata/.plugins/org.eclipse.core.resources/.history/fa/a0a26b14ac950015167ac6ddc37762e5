@@ -1,0 +1,3 @@
+def recurseLeft(root):
+    if root:
+        recurseLeft(root.left)

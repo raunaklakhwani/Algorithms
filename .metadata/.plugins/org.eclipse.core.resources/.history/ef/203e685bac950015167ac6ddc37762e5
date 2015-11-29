@@ -1,0 +1,26 @@
+from collections import deque
+def recurseLeft(root):
+    if root:
+        print root.data
+        if root.left:
+            recurseLeft(root.left)
+        elif root.right:
+            recurseLeft(root.right)
+            
+            
+def recurseRight(root):
+    if root:
+        if root.right:
+            recurseRight(root.right)
+        elif root.left:
+            recurseRight(root.left)
+        print root.data
+        
+
+def printLastLevel(root):
+    
+    
+        
+        
+        
+        

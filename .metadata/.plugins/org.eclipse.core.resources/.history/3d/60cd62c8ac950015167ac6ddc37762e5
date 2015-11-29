@@ -1,0 +1,422 @@
+
+
+from collections import deque
+from _collections import deque
+from copy import deepcopy
+class Node:
+    def __init__(self, data, left, right):
+        self.data = data
+        self.left = left
+        self.right = right
+
+def constructTree(d, key):
+    if d.get(key) is None:
+        return Node(key, None, None)
+    else:
+        root = Node(key, None, None)
+        child = d[key]
+        if len(child) == 1:
+            if child[0] is not None:
+                root.left = constructTree(d, child[0])
+        elif len(child) == 2:
+            if child[0] is not None:
+                root.left = constructTree(d, child[0])
+            if child[1] is not None:
+                root.right = constructTree(d, child[1])
+        return root
+        
+def preOrderUtil(root):
+    if root is not None:
+        print root.data,
+        preOrderUtil(root.left)
+        preOrderUtil(root.right)
+        
+def preOrder(root):
+    print "PreOrder = ",
+    preOrderUtil(root)
+    print 
+    
+def inOrderUtil(root):
+    if root is not None:
+        inOrderUtil(root.left)
+        print root.data,
+        inOrderUtil(root.right)
+        
+def inOrder(root):
+    print "InOrder = ",
+    inOrderUtil(root)
+    print 
+
+def postOrderUtil(root):
+    if root is not None:
+        postOrderUtil(root.left)
+        postOrderUtil(root.right)
+        print root.data,
+        
+def postOrder(root):
+    print "PostOrder = ",
+    postOrderUtil(root)
+    print 
+
+def getTreeDict():
+    #===========================================================================
+    # d = {}
+    # d[1] = [2,3]
+    # d[2] = [4,5]
+    # d[3] = [6]
+    # d[4] = [7,8]
+    # return d
+    #===========================================================================
+
+    d = {}
+    d[1] = [2, 3]
+    d[2] = [4, 5]
+    d[3] = [None, 6]
+    d[4] = [7, 8]
+    d[6] = [10]
+    return d
+
+def nonRecursivePreOrderTraversal(root):
+    print "PreOrder = ",
+    stack = []
+    if root is not None:
+        stack.append(root)
+        while len(stack) != 0:
+            item = stack.pop()
+            if item.right is not None:
+                stack.append(item.right)
+            if item.left is not None:
+                stack.append(item.left)
+            print item.data ,
+    print 
+    
+def nonRecursiveInOrderTraversal(root):
+    print "InOrder = ",
+    stack = []
+    if root is not None:
+        temp = root
+        while True:
+            while temp is not None:
+                stack.append(temp)
+                temp = temp.left
+                
+            if len(stack) == 0:
+                break
+            
+            item = stack.pop()
+            print item.data,
+            temp = item.right
+    print 
+    
+def nonRecursivePostOrderTraversal(root):
+    print "PostOrder = ",
+    stack = []
+    if root is not None:
+        temp = root
+        while True:
+            while temp is not None:
+                stack.append(temp)
+                temp = temp.left
+                
+            if len(stack) == 0:
+                break
+            
+            if stack[-1].right is not None:
+                temp = stack[-1].right
+            else:
+                item = stack.pop()
+                print item.data,
+                if item != stack[-1].right:
+                    temp = stack[-1].right
+                else:
+                    while len(stack) and item == stack[-1].right:
+                        item = stack.pop()
+                        print item.data,
+                        if len(stack) == 0:
+                            break
+                        temp = stack[-1].right 
+                    if len(stack) == 0:
+                        break
+    print 
+            
+
+def levelOrderTraversal(root):
+    print "Level Order = ",
+    if root is not None:
+        d = deque()
+        d.append(root)
+        
+        while len(d):
+            item = d.popleft()
+            print item.data,
+            if item.left is not None:
+                d.append(item.left)
+            if item.right is not None:
+                d.append(item.right)
+    print             
+        
+def getMax(root):
+    if root is None:
+        return float("-inf")
+    else:
+        return max(root.data, getMax(root.left), getMax(root.right))
+    
+def search(root, data):
+    if root is None:
+        return None
+    else:
+        if root.data == data:
+            return root
+        left = search(root.left, data)
+        if left is None:
+            right = search(root.right, data)
+            return right
+        else:
+            return left
+        
+def delete(root):
+    if root is not None:
+        delete(root.left)
+        delete(root.right)
+        root = None
+        
+def levelOrderTraversalInReverse(root):
+    print "levelOrderTraversalInReverse = ",
+    if root is not None:
+        q = deque([root])
+        stack = []
+        while len(q):
+            item = q.popleft()
+            if item.right is not None:
+                q.append(item.right)
+            if item.left is not None:
+                q.append(item.left)
+                
+            stack.append(item)
+        while len(stack):
+            print stack.pop().data,
+    print
+    
+def getHeight(root):
+    if root is None:
+        return 0
+    else:
+        left = getHeight(root.left)
+        right = getHeight(root.right)
+        return 1 + max(left, right)
+    
+def getHeightIterative(root):
+    h = 0
+    if root is None:
+        return 0
+    else:
+        q = deque([(root, 1)])
+        while len(q):
+            node, c = q.popleft()
+            if node.left is not None:
+                q.append((node.left, c + 1))
+            if node.right is not None:
+                q.append((node.right, c + 1))
+            h = max(h, c)
+        return h
+    
+def deleteNode(root, data):
+    node = search(root, data)
+    if node is not None:
+        temp = root
+        tempParent = None
+        while True:
+            while temp.left is not None:
+                tempParent = temp
+                temp = temp.left
+            while temp.right is not None:
+                tempParent = temp
+                temp = temp.right
+            if temp.left is None and temp.right is None:
+                break
+        node.data = temp.data
+        if tempParent.left == temp:
+            tempParent.left = None
+        else:
+            tempParent.right = None
+
+def isStructurallySame(root1, root2): 
+    if root1 is None and root2 is None:
+        return True
+    elif root1 is None and root2 is not None:
+        return False
+    elif root2 is None and root1 is not None:
+        return False
+    else:
+        left = right = True
+        left = isStructurallySame(root1.left, root2.left)
+        if left:
+            right = isStructurallySame(root1.right, root2.right)
+        return left and right
+
+def getDiameterUtil(root, d):
+    if root is None:
+        return 0
+    else:
+        left = getDiameterUtil(root.left, d)
+        right = getDiameterUtil(root.right, d)
+        if left + right + 1 > d[0]:
+            d[0] = left + right + 1
+        return max(left, right) + 1
+        
+def getDiameter(root):
+    # Q18 Karumanchi
+    d = [0]
+    getDiameterUtil(root, d)
+    return d[0]  
+
+def getMaxSumLevel(root):
+    # Q19
+    maxSum = -1
+    s = 0
+    if root is not None:
+        q = deque([root, None])
+        while len(q):
+            item = q.popleft()
+            if item is not None:
+                if item.left is not None:
+                    q.append(item.left)
+                if item.right is not None:
+                    q.append(item.right)
+                s += item.data
+            else:
+                if len(q):
+                    q.append(None)
+                if maxSum < s:
+                    maxSum = s
+                s = 0
+    return maxSum
+
+def printAllRootToLeavePaths(root, li):
+    # Q20
+    if root.left is None and root.right is None:
+        li.append(root.data)
+        print li
+    else:
+        if root.left is not None:
+            coli = deepcopy(li)
+            coli.append(root.data)
+            printAllRootToLeavePaths(root.left, coli)
+        if root.right is not None:
+            coli = deepcopy(li)
+            coli.append(root.data)
+            printAllRootToLeavePaths(root.right, coli)
+        
+def checkPathOfEqualSum(root, sum):
+    # Q21
+    if root is None:
+        return False
+    elif root.data == sum:
+        return True
+    else:
+        left = right = True
+        left = checkPathOfEqualSum(root.left, sum - root.data)
+        if not left:
+            right = checkPathOfEqualSum(root.right, sum - root.data)
+        return left or right
+
+def zigzagTraversal(root):
+    print "zigzagTraversal = ",
+    level = 1
+    stack = []
+    stack1 = []
+    if root is not None:
+        stack1.append(root)
+        
+    while len(stack) or len(stack1):
+        if level & 1:
+            while len(stack1):
+                item = stack1.pop()
+                print item.data,
+                if item.left is not None:
+                    stack.append(item.left)
+                if item.right is not None:
+                    stack.append(item.right)
+            level += 1
+        else:
+            while len(stack):
+                item = stack.pop()
+                print item.data,
+                if item.right is not None:
+                    stack1.append(item.right)
+                if item.left is not None:
+                    stack1.append(item.left)
+            level += 1
+            
+    print                       
+    
+def printAllAncestorsUtil(root, data):
+    if root is None:
+        return False
+    elif root.data == data:
+        print root.data,
+        return True
+    elif printAllAncestorsUtil(root.left, data) or printAllAncestorsUtil(root.right, data):
+        print root.data,
+        return True
+    else:
+        return False
+
+def printAllAncestors(root, data):
+    print "printAllAncestors of ", data , " : ",
+    printAllAncestorsUtil(root, data)
+    print                          
+
+            
+
+    
+    
+
+
+def recurseLeft(root):
+    if root:
+        print root.data
+        if root.left:
+            recurseLeft(root.left)
+        elif root.right:
+            recurseLeft(root.right)
+            
+            
+def recurseRight(root):
+    if root:
+        if root.right:
+            recurseRight(root.right)
+        elif root.left:
+            recurseRight(root.left)
+        print root.data
+        
+
+def printLeaves(root):
+    if root:
+        if root.left is None and root.right is None:
+            print root.data
+        printLeaves(root.left)
+        printLeaves(root.right)
+        
+def printBoundry(root):
+    recurseLeft(root)
+    
+    recurseRight(root)
+        
+        
+if __name__ == '__main__':
+    d = getTreeDict()
+    root = constructTree(d, 1)
+    preOrder(root)
+    inOrder(root)
+    postOrder(root)
+    
+    
+        
+        
+
+    
+        
+        
+        
+        

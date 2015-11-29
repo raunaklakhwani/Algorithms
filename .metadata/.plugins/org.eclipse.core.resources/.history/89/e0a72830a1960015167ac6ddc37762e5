@@ -1,0 +1,12 @@
+from collections import defaultdict
+s = list("ABCBEGHBC")
+
+pi = 0
+i = 0
+m = defaultdict(int)
+while i < len(s):
+    m[li[i]] += 1
+    
+    
+    i += 1
+    

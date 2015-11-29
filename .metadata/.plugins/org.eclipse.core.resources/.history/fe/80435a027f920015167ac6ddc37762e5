@@ -1,0 +1,17 @@
+
+
+def recurse(N,m):
+    if N <= 0:
+        return 0 
+    elif N > m:
+        return 0
+    elif N == m:
+        return 1
+    else:
+        ans = 0
+        for i in xrange(1,N):
+            ans = ans + recurse(N, m)
+    print
+
+
+N = 6
