@@ -1,0 +1,1 @@
+def getMinimumIndex(li,start,end):

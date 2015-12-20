@@ -1,0 +1,5 @@
+def getMinimumIndex(li,start,end):
+    m = start
+    for i in xrange(start,end+1):
+        if m > li[i]:
+            

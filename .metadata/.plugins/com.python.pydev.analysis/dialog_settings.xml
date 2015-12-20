@@ -1,94 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="SearchIndexPage">
-		<item value="13" key="HISTORY_SIZE"/>
+		<item value="15" key="HISTORY_SIZE"/>
 		<section name="HISTORY12">
-			<item value="coords" key="textPattern"/>
+			<item value="http://effbot.org/zone/thread-synchronization.htm" key="textPattern"/>
 			<item value="" key="scopeData"/>
 			<item value="2" key="scope"/>
 			<item value="*" key="filenamePattern"/>
 			<item value="false" key="isCaseSensitive"/>
 		</section>
 		<section name="HISTORY11">
-			<item value="Heap" key="textPattern"/>
+			<item value="coords" key="textPattern"/>
+			<item value="" key="scopeData"/>
+			<item value="2" key="scope"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY14">
+			<item value="deadline" key="textPattern"/>
+			<item value="" key="scopeData"/>
+			<item value="2" key="scope"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY13">
+			<item value="primes" key="textPattern"/>
 			<item value="" key="scopeData"/>
 			<item value="2" key="scope"/>
 			<item value="*" key="filenamePattern"/>
 			<item value="false" key="isCaseSensitive"/>
 		</section>
 		<section name="HISTORY2">
-			<item value="*suffix*" key="textPattern"/>
-			<item value="" key="scopeData"/>
-			<item value="2" key="scope"/>
-			<item value="*" key="filenamePattern"/>
-			<item value="false" key="isCaseSensitive"/>
-		</section>
-		<section name="HISTORY3">
 			<item value="histogram" key="textPattern"/>
 			<item value="" key="scopeData"/>
 			<item value="2" key="scope"/>
 			<item value="*" key="filenamePattern"/>
 			<item value="false" key="isCaseSensitive"/>
 		</section>
-		<section name="HISTORY0">
-			<item value="suffix" key="textPattern"/>
-			<item value="" key="scopeData"/>
-			<item value="2" key="scope"/>
-			<item value="*" key="filenamePattern"/>
-			<item value="false" key="isCaseSensitive"/>
-		</section>
-		<section name="HISTORY10">
-			<item value="http://www.careercup.com/question?id=5084838654640128" key="textPattern"/>
-			<item value="" key="scopeData"/>
-			<item value="2" key="scope"/>
-			<item value="*" key="filenamePattern"/>
-			<item value="false" key="isCaseSensitive"/>
-		</section>
-		<section name="HISTORY1">
-			<item value="suffix*" key="textPattern"/>
-			<item value="" key="scopeData"/>
-			<item value="2" key="scope"/>
-			<item value="*" key="filenamePattern"/>
-			<item value="false" key="isCaseSensitive"/>
-		</section>
-		<section name="HISTORY9">
-			<item value="http://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/" key="textPattern"/>
-			<item value="" key="scopeData"/>
-			<item value="2" key="scope"/>
-			<item value="*" key="filenamePattern"/>
-			<item value="false" key="isCaseSensitive"/>
-		</section>
-		<section name="HISTORY8">
-			<item value="i &amp; -i" key="textPattern"/>
-			<item value="" key="scopeData"/>
-			<item value="2" key="scope"/>
-			<item value="*" key="filenamePattern"/>
-			<item value="false" key="isCaseSensitive"/>
-		</section>
-		<section name="HISTORY5">
-			<item value="ind = ind + (ind &amp; -ind)" key="textPattern"/>
-			<item value="Test3" key="scopeData"/>
-			<item value="0" key="scope"/>
-			<item value="*" key="filenamePattern"/>
-			<item value="false" key="isCaseSensitive"/>
-		</section>
-		<section name="HISTORY4">
+		<section name="HISTORY3">
 			<item value="Binary Indexed" key="textPattern"/>
 			<item value="" key="scopeData"/>
 			<item value="2" key="scope"/>
 			<item value="*" key="filenamePattern"/>
 			<item value="false" key="isCaseSensitive"/>
 		</section>
+		<section name="HISTORY10">
+			<item value="Heap" key="textPattern"/>
+			<item value="" key="scopeData"/>
+			<item value="2" key="scope"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY0">
+			<item value="suffix*" key="textPattern"/>
+			<item value="" key="scopeData"/>
+			<item value="2" key="scope"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY1">
+			<item value="*suffix*" key="textPattern"/>
+			<item value="" key="scopeData"/>
+			<item value="2" key="scope"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY9">
+			<item value="http://www.careercup.com/question?id=5084838654640128" key="textPattern"/>
+			<item value="" key="scopeData"/>
+			<item value="2" key="scope"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY8">
+			<item value="http://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/" key="textPattern"/>
+			<item value="" key="scopeData"/>
+			<item value="2" key="scope"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY5">
+			<item value="i &amp; -i" key="textPattern"/>
+			<item value="Test3" key="scopeData"/>
+			<item value="0" key="scope"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
+		<section name="HISTORY4">
+			<item value="ind = ind + (ind &amp; -ind)" key="textPattern"/>
+			<item value="Test3" key="scopeData"/>
+			<item value="0" key="scope"/>
+			<item value="*" key="filenamePattern"/>
+			<item value="false" key="isCaseSensitive"/>
+		</section>
 		<section name="HISTORY7">
 			<item value="i &amp; -i" key="textPattern"/>
 			<item value="" key="scopeData"/>
-			<item value="0" key="scope"/>
+			<item value="2" key="scope"/>
 			<item value="*" key="filenamePattern"/>
 			<item value="false" key="isCaseSensitive"/>
 		</section>
 		<section name="HISTORY6">
 			<item value="i &amp; -i" key="textPattern"/>
-			<item value="Test3" key="scopeData"/>
+			<item value="" key="scopeData"/>
 			<item value="0" key="scope"/>
 			<item value="*" key="filenamePattern"/>
 			<item value="false" key="isCaseSensitive"/>
@@ -101,8 +115,8 @@
 		<section name="DialogBoundsSettings">
 			<item value="575" key="DIALOG_WIDTH"/>
 			<item value="117" key="DIALOG_Y_ORIGIN"/>
-			<item value="438" key="DIALOG_HEIGHT"/>
 			<item value="420" key="DIALOG_X_ORIGIN"/>
+			<item value="438" key="DIALOG_HEIGHT"/>
 			<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText-Regular" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>

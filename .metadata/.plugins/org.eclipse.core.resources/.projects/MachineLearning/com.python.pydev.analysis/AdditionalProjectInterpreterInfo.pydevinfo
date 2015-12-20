@@ -1,58 +1,24 @@
 -- VERSION_4
 -- START DISKCACHE_2
 /Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/MachineLearning/com.python.pydev.analysis/v2_indexcache
+Test|1450550740000000000|/Users/ronaklakhwani/Desktop/Algorithms/MachineLearning/Test.py
 -- END DISKCACHE
 -- START DICTIONARY
-0
+1
+1=Test
 -- END DICTIONARY
 -- START TREE 1
-38
-N|0|
-c|0|
-cha|0|
-cod|0|
-con|0|
-dp|0|
-f|0|
-f1|0|
-f2|0|
-fun|0|
-get|0|
-h|0|
-i|0|
-ind|0|
-ino|0|
-k|0|
-l|0|
-li|0|
-m|0|
-mai|0|
-nod|0|
-o|0|
-par|0|
-pi|0|
-pri|0|
-r|0|
-rec|0|
-s|0|
-siz|0|
+7
+N|1|N!11@
+dp|1|dp!11@
+end|1|end!11@
+get|2|getMaximumIndex!10@getMinimumIndex!10@
+li|1|li!11@
 sol|0|
-spa|0|
-sur|0|
-swa|0|
-t|0|
-url|0|
-ver|0|
-x|0|
-z|0|
+sta|1|start!11@
 -- END TREE
 -- START TREE 2
-7
-__i|0|
-__r|0|
-dat|0|
-lef|0|
-min|0|
-rig|0|
+2
+lon|0|
 s|0|
 -- END TREE

@@ -1,0 +1,23 @@
+from threading import Thread
+
+flag = [False,False]
+turn = 0
+
+
+
+def function(i):
+    print "abc"
+    
+    
+def common(index):
+    flag[index] = True
+    turn = index
+    while flag[1 - index] and turn == (1 - index):
+        pass
+    
+    
+
+
+
+
+

@@ -1,0 +1,8 @@
+s = "AABBC"
+
+def getFinalCount(s):
+    prev = None
+    for i in s:
+        if prev is None:
+            prev = i
+        

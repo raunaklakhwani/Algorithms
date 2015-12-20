@@ -1,4 +1,10 @@
 #URL : http://www.geeksforgeeks.org/prop-tiger-interview-experience/
+'''
+Description : 
+Suppose u have given a string like 123456342184321 and second string like 1234. 
+Find all permutations of second string (1234) in first string. 
+You have to give count of all the permutations. So for above example, first is:1234 second is 3421 third is 4321, hence output should be 3.
+'''
 def check(h,c):
     for key in h:
         if h[key] != c[key]:

@@ -1,0 +1,28 @@
+s = "AABBC"
+
+def getFinalCount(s):
+    prev = None
+    res = 0
+    for i in s:
+        if prev is None:
+            prev = i
+            c = 1
+        elif prev == i:
+            c += 1
+        else:
+            res = res + 1 + len(str(c))
+            prev = i
+            c = 0
+    else:
+        res = res + 1 + len(str(c))
+    
+    
+            
+    return res
+
+print getFinalCount(s)
+
+def compressString(s):
+            
+        
+        

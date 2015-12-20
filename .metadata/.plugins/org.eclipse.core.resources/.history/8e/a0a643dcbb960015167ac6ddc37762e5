@@ -1,0 +1,23 @@
+A = [2, 8, None, None, None, 13, None, 15, 20]
+B = [5, 7, 9, 25]
+
+
+def shiftLeft(li):
+    p = 0
+    for i in xrange(len(li)):
+        if li[i] is not None:
+            li[i],li[p] = li[p],li[i]
+            p += 1
+        
+    return li,p
+
+
+def merge(A,B,m):
+    h1 = m
+    h2 = len(B) - 1
+
+
+A = shiftLeft(A)
+
+
+

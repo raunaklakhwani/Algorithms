@@ -1,0 +1,14 @@
+from threading import Thread
+
+flag = [False,False]
+turn = 0
+
+
+
+def function(i):
+    
+
+
+
+
+

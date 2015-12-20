@@ -1,0 +1,65 @@
+__author__ = "Ronak Lakhwani"
+__copyright__ = "2015 Cisco Systems, Inc."
+
+# General Imports
+from datetime import datetime
+from collections import defaultdict
+
+# configuration
+import configparser
+
+# Imports for calling the CMX Rest API
+from urllib.request import *
+from urllib.error import URLError
+
+# Imports for reading the xml response
+from bs4 import BeautifulSoup
+
+# Imports for reading the json response
+import json
+
+# Imports for plotting the graph
+import plotly.plotly as py
+import plotly.tools as tls
+from plotly.graph_objs import Layout, Marker, Scatter, XAxis, YAxis, Data, Figure, Stream
+
+# Imports for certificate fail error
+# The below two lines should be uncommented if you are getting [SSL: CERTIFICATE_VERIFY_FAILED] Error. This depends on the browser
+# and on the environment depending on whether you have the certificate installed or not.
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
+# Read config Starts
+config = configparser.ConfigParser()
+config.read("finalconfig.ini")
+mse_ip = config.get('mse', 'mse_ip')
+username = config.get('mse', 'username')
+password = config.get('mse', 'password')
+url_suffix = config.get('mse', 'url_suffix')
+mac = config.get('local', 'mac')
+response_format = config.get('local', 'response_format')
+plotly_username = config.get('plotly', 'plotly_username')
+plotly_api_key = config.get('plotly', 'plotly_api_key')
+plotly_streaming_keys = config.get('plotly', 'plotly_streaming_keys')
+interval = config.get('local', 'interval')
+# Read config Ends
+
+# Constant
+url_prefix = "https://"
+url_query_parameters1 = "?/page="
+url_query_parameters2 = "&pageSize="
+
+
+def renderPlot():
+    print()
+
+'''
+Main Method to Invoke the Application
+'''
+if __name__ == '__main__':
+    print("Main")
+    
+    
+
+
+

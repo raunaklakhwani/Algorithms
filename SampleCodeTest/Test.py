@@ -1,7 +1,6 @@
 __author__ = "Ronak Lakhwani"
 __copyright__ = "2015 Cisco Systems, Inc."
 
-
 # General Imports
 from datetime import datetime
 
@@ -45,8 +44,11 @@ plotly_api_key = config.get('plotly', 'plotly_api_key')
 # Constant
 url_prefix = "https://"
 
-
-
+'''
+Below method is used to return the response from the CMX API
+whose end point is in the URL variable.
+Username and Password are used to access the CMX API.
+'''
 def get_response(URL, username, password, response_format):
     '''
      Returns the response in the form of dict where keys are isError and others.
@@ -56,13 +58,15 @@ def get_response(URL, username, password, response_format):
     print (URL)
     response_dict = {}
     try :
-        with open("CMXApiData.json") as f:
-            page = f.read()
-            print
-        
-        
-        
+        conn = HTTPPasswordMgrWithDefaultRealm()
+        conn.add_password(None, URL, username, password)
+        handler = HTTPBasicAuthHandler(conn)
+        opener = build_opener(handler)
+        opener.addheaders = [('Accept', 'application/' + response_format)]
+        install_opener(opener)
+        page = urlopen(URL).read()
         if len(page):
+            page = page.decode('utf-8')
             if response_format == "xml" :
                 data_dict = get_useful_data_from_XML(page)
             elif response_format == "json":
@@ -78,17 +82,17 @@ def get_response(URL, username, password, response_format):
         response_dict['isError'] = True
         return response_dict
 
-
-
-
+'''
+Gets the date in the string format 2015-03-17T00:27:33.437+0000 and converts it into 2015-03-17 00:27:33 and then returns the date_object
+'''
 def parse_date(string_date):
-    '''
-    Gets the date in the string format 2015-03-17T00:27:33.437+0000 and converts it into 2015-03-17 00:27:33 and then returns the date_object
-    '''
     string_date = string_date[0:10] + " " + string_date[11:19]
     date_object = datetime.strptime(string_date, "%Y-%m-%d %H:%M:%S")
     return date_object
 
+'''
+Extracts the useful data from the json response(in case response format in config is json) and returns the dict.
+'''
 def get_useful_data_from_json(json_response):
     '''
     Parses the json_response and returns the dict with keys as width, length and the data
@@ -112,6 +116,9 @@ def get_useful_data_from_json(json_response):
     else :
         return {}
 
+'''
+Extracts the useful data from the json response(in case response format in config is xml) and returns the dict.
+'''
 def get_useful_data_from_XML(xml):
     '''
     Parses the xml and returns the dict with keys as width, length and the data
@@ -134,8 +141,6 @@ def get_useful_data_from_XML(xml):
         return {"width" : width, "length":length, "data":data}
     else:
         return {}
-
-
 
 '''
 Method which reads the dict and renders the response on to the Plotly framework.
@@ -168,7 +173,7 @@ def plotData(data_dict):
         text=["Start point", "End point"],
         legendgroup = mac,
     )
-    
+
     py.sign_in(plotly_username, plotly_api_key)
     tls.set_credentials_file(username=plotly_username,
                                  api_key=plotly_api_key)
@@ -217,13 +222,13 @@ def plotData(data_dict):
                     title="Y co-ordinate"
                     )
                 )
-    data = Data([processed_data,startAndEndData])
+    data = Data([processed_data])
     fig = Figure(data=data, layout=layout)
     py.plot(fig, filename='Sample Code For History Of Clients ')
 
-
-
-
+'''
+Main Method to Invoke the Application
+'''
 if __name__ == '__main__':
     URL = url_prefix + mse_ip + url_suffix + mac
     data_dict = get_response(URL, username, password, response_format)

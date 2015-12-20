@@ -3,16 +3,23 @@
 /Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/Combinations/com.python.pydev.analysis/v2_indexcache
 MainHandlingDuplicates|1431371792000000000|/Users/ronaklakhwani/Desktop/Algorithms/Combinations/MainHandlingDuplicates.py
 Main|1431371204000000000|/Users/ronaklakhwani/Desktop/Algorithms/Combinations/Main.py
+MainHandlingDuplicates2|1448685441000000000|/Users/ronaklakhwani/Desktop/Algorithms/Combinations/MainHandlingDuplicates2.py
 -- END DISKCACHE
 -- START DICTIONARY
-2
-1=MainHandlingDuplicates
-2=Main
+3
+2=MainHandlingDuplicates
+3=Main
+1=MainHandlingDuplicates2
 -- END DICTIONARY
 -- START TREE 1
-2
-cou|2|count!11@count!19@
-gen|4|generateComUtil!18@generateCom!18@generateCom!10@generateComUtil!10@
+7
+N|1|N!11@
+cou|2|count!19@count!27@
+gen|4|generateComUtil!26@generateCom!26@generateCom!18@generateComUtil!18@
+l|1|l!11@
+mai|1|main!11@
+r|1|r!11@
+rec|1|recurse!10@
 -- END TREE
 -- START TREE 2
 0

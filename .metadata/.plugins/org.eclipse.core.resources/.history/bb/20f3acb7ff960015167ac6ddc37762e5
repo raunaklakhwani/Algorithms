@@ -1,0 +1,20 @@
+from threading import Thread
+
+flag = [False,False]
+turn = 0
+
+
+
+def function(i):
+    print "abc"
+    
+    
+def common(index):
+    flag[index] = True
+    
+    
+
+
+
+
+

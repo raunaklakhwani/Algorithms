@@ -1,33 +1,62 @@
 -- VERSION_4
 -- START DISKCACHE_2
 /Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/SampleCodeTest/com.python.pydev.analysis/v2_indexcache
-Test|1444673977000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/Test.py
-Test1|1446545099000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/Test1.py
-Sample|1447837757000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/Sample.py
+Test|1450266418000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/Test.py
+Test1|1449292711000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/Test1.py
+Page|1450267180000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/Page.py
+Demo|1450268758000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/Demo.py
+Sample|1449472538000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/Sample.py
+Demo1|1450344110000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/Demo1.py
 track_multiple_clients|1444673109000000000|/Users/ronaklakhwani/Desktop/Algorithms/SampleCodeTest/track_multiple_clients.py
 -- END DISKCACHE
 -- START DICTIONARY
-4
+7
 4=Test
 3=Test1
+7=Demo
+5=Page
 2=Sample
+6=Demo1
 1=track_multiple_clients
 -- END DICTIONARY
 -- START TREE 1
-13
-__a|4|__author__!11@__author__!19@__author__!27@__author__!35@
-__c|4|__copyright__!11@__copyright__!27@__copyright__!35@__copyright__!19@
+36
+__a|5|__author__!11@__author__!19@__author__!27@__author__!35@__author__!43@
+__c|5|__copyright__!11@__copyright__!27@__copyright__!35@__copyright__!19@__copyright__!43@
+c|1|c!43@
 col|2|color_generator!10@color_generator!18@
-con|4|config!11@config!35@config!19@config!27@
-get|12|get_useful_data_from_json!26@get_response!26@get_useful_data_from_json!18@get_useful_data_from_json!34@get_response!18@get_useful_data_from_XML!18@get_useful_data_from_XML!10@get_useful_data_from_XML!34@get_response!10@get_useful_data_from_XML!26@get_useful_data_from_json!10@get_response!34@
-mac|4|mac!35@mac!27@macs!19@macs!11@
-mse|4|mse_ip!27@mse_ip!19@mse_ip!11@mse_ip!35@
-par|4|parse_date!26@parse_date!10@parse_date!34@parse_date!18@
-pas|4|password!27@password!35@password!19@password!11@
-plo|12|plotData!34@plotly_api_key!35@plotly_username!27@plotly_api_key!19@plotly_username!11@plotly_username!35@plotly_api_key!11@plot_data!10@plotData!26@plotly_api_key!27@plotly_username!19@plot_data!18@
-res|4|response_format!11@response_format!27@response_format!35@response_format!19@
-url|8|url_prefix!11@url_prefix!27@url_suffix!27@url_prefix!35@url_suffix!35@url_suffix!19@url_suffix!11@url_prefix!19@
-use|4|username!27@username!11@username!19@username!35@
+con|6|config!11@config!35@config!19@conn!43@config!43@config!27@
+dat|4|data_dict!43@data!51@data!59@data!43@
+end|0|
+fig|1|fig!43@
+get|15|get_useful_data_from_json!26@get_response!26@get_useful_data_from_json!34@get_response!18@get_response!42@get_useful_data_from_XML!10@get_useful_data_from_XML!34@get_useful_data_from_XML!26@get_useful_data_from_json!42@get_useful_data_from_json!18@get_useful_data_from_XML!18@get_response!10@get_useful_data_from_XML!42@get_useful_data_from_json!10@get_response!34@
+han|1|handler!43@
+int|1|interval!43@
+lay|1|layout!43@
+mac|5|mac!35@mac!43@mac!27@macs!19@macs!11@
+mai|1|mainDict!43@
+mse|5|mse_ip!27@mse_ip!43@mse_ip!19@mse_ip!11@mse_ip!35@
+ope|1|opener!43@
+pag|1|page!43@
+par|5|parse_date!26@parse_date!10@parse_date!34@parse_date!42@parse_date!18@
+pas|5|password!27@password!35@password!43@password!19@password!11@
+plo|16|plotly_api_key!19@plotly_username!11@plotly_api_key!11@plotly_api_key!27@plotly_username!19@plotData!34@plotly_api_key!35@plot_url!43@plotly_api_key!43@plotly_username!27@plotly_username!43@plotly_username!35@plotData!42@plot_data!10@plotData!26@plot_data!18@
+pro|1|processed_data!43@
+ren|0|
+res|5|response_format!11@response_format!43@response_format!27@response_format!35@response_format!19@
+s|2|s!59@s!51@
+s1|1|s1!51@
+sca|1|scatter!43@
+sta|1|start!43@
+str|3|stream!43@stream_ids!43@stream_id!43@
+tok|2|tokens!51@tokens!59@
+tot|1|totalpages!43@
+tra|3|trace1!59@trace2!51@trace1!51@
+url|11|url_prefix!27@url_prefix!43@url_suffix!27@url_prefix!35@url_suffix!43@url_suffix!35@url_suffix!11@url_prefix!19@url_prefix!11@URL!43@url_suffix!19@
+use|5|username!27@username!43@username!11@username!19@username!35@
+wri|1|writeStream!43@
+x|1|x!43@
+y|1|y!43@
 -- END TREE
 -- START TREE 2
 0

@@ -1,0 +1,23 @@
+'''
+5
+1 2 6 5 7
+'''
+
+def getMinimumIndex(li,start,end):
+    m = start
+    for i in xrange(start,end+1):
+        if li[m] > li[i]:
+            m = i
+    return m
+
+
+def getMaximumIndex(li,start,end):
+    m = start
+    for i in xrange(start,end+1):
+        if li[m] < li[i]:
+            m = i
+    return m
+
+
+
+            

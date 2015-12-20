@@ -1,0 +1,16 @@
+import plotly.plotly as py
+from plotly.graph_objs import *
+py.sign_in('raunaklakhwani', 'n7qx3a5vcn')
+tls.set_credentials_file(username="raunaklakhwani", api_key="n7qx3a5vcn")
+trace1 = Scatter(
+        x=[],
+        y=[],
+        stream=dict(token='my_stream_id')
+    )
+
+data = Data([trace1])
+py.plot(data)
+s = py.Stream('5iv4ntu3x1')
+s.open()
+s.write(dict(x=1, y=2))
+s.close()

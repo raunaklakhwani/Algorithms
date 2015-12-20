@@ -1,0 +1,38 @@
+
+def myformat(s,l):
+    o = 0
+    c = 0
+    v = [False] * len(l)
+    
+    try:
+        o = s.index("{",o,len(s))
+        c = s.index("}",o,len(s))
+        if s[o + 1:c].isdigit():
+            num = int(s[o + 1:c])
+            if num < len(l):
+                if not v[num]:
+                    v[num] = True
+                    print l[num]
+                else:
+                    print num
+            else:
+                print num
+        elif s[o + 1:c].strip() == "":
+            start = 0
+            while start < len(l):
+                if not v[start]:
+                    v[start] = True
+                    print l[start]
+                    break
+                start += 1
+            else:
+                print s[o + 1:c]
+        else:
+            print s[o + 1:c]
+            
+        
+    except IndexError:
+        return
+    
+    
+myformat("one {} {}",["aaa","bbb"]) 

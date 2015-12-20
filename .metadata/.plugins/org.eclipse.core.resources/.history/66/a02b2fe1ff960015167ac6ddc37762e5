@@ -1,0 +1,28 @@
+from threading import Thread
+from time import sleep
+
+flag = [False,False]
+turn = 0
+
+
+
+def function(i):
+    print "abc"
+    
+    
+def common(index):
+    flag[index] = True
+    turn = index
+    while flag[1 - index] and turn == (1 - index):
+        pass
+    
+    # critical section
+    sleep(2000)
+    
+    
+    
+
+
+
+
+

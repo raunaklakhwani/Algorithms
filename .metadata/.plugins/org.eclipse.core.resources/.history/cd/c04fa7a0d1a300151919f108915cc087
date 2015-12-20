@@ -1,0 +1,120 @@
+__author__ = "Ronak Lakhwani"
+__copyright__ = "2015 Cisco Systems, Inc."
+
+# General Imports
+from datetime import datetime
+from collections import defaultdict
+
+# configuration
+import configparser
+
+# Imports for calling the CMX Rest API
+from urllib.request import *
+from urllib.error import URLError
+
+# Imports for reading the xml response
+from bs4 import BeautifulSoup
+
+# Imports for reading the json response
+import json
+
+# Imports for plotting the graph
+import plotly.plotly as py
+import plotly.tools as tls
+from plotly.graph_objs import Layout, Marker, Scatter, XAxis, YAxis, Data, Figure, Stream
+
+# Imports for certificate fail error
+# The below two lines should be uncommented if you are getting [SSL: CERTIFICATE_VERIFY_FAILED] Error. This depends on the browser
+# and on the environment depending on whether you have the certificate installed or not.
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
+# Read config Starts
+config = configparser.ConfigParser()
+config.read("finalconfig.ini")
+mse_ip = config.get('mse', 'mse_ip')
+username = config.get('mse', 'username')
+password = config.get('mse', 'password')
+url_suffix = config.get('mse', 'url_suffix')
+mac = config.get('local', 'mac')
+response_format = config.get('local', 'response_format')
+plotly_username = config.get('plotly', 'plotly_username')
+plotly_api_key = config.get('plotly', 'plotly_api_key')
+plotly_streaming_keys = config.get('plotly', 'plotly_streaming_keys')
+interval = config.get('local', 'interval')
+# Read config Ends
+
+# Constant
+url_prefix = "https://"
+url_query_parameters1 = "?/page="
+url_query_parameters2 = "&pageSize="
+
+# Global Variables
+totalpages = None
+
+
+'''
+Below method is used to return the response from the CMX API
+whose end point is in the URL variable.
+Username and Password are used to access the CMX API.
+'''
+def get_response(URL, username, password, response_format):
+    '''
+     Returns the response in the form of dict where keys are isError and others.
+     if isError is True then dict contains the other keys such as data which contains the description of the message
+     if isError is False then dict contains the other keys such as width,length,data.
+    '''
+    print (URL)
+    response_dict = {}
+    try :
+        conn = HTTPPasswordMgrWithDefaultRealm()
+        conn.add_password(None, URL, username, password)
+        handler = HTTPBasicAuthHandler(conn)
+        opener = build_opener(handler)
+        opener.addheaders = [('Accept', 'application/' + response_format)]
+        install_opener(opener)
+        page = urlopen(URL).read()
+        if len(page):
+            page = page.decode('utf-8')
+            if response_format == "xml" :
+                data_dict = get_useful_data_from_XML(page)
+            elif response_format == "json":
+                data_dict = get_useful_data_from_json(page)
+            data_dict['isError'] = False
+            return data_dict
+        else:
+            response_dict['data'] = mac + " MAC NOT FOUND"
+            response_dict['isError'] = True
+            return response_dict
+    except URLError as e:
+        response_dict['data'] = "Either URL is malformed or " + mac + " address is not found in the CMX environment"
+        response_dict['isError'] = True
+        return response_dict
+    
+
+    
+    
+
+def renderPlot():
+    global totalpages
+    start = 0
+    c = 0
+    while True:
+        if totalpages is not None and start > totalpages:
+            break
+        else:
+            URL = url_prefix + mse_ip + url_suffix + mac + url_query_parameters1 + str(start) + url_query_parameters2 + str(interval)
+            c += 1
+            start = c * interval + 1
+            
+
+'''
+Main Method to Invoke the Application
+'''
+if __name__ == '__main__':
+    renderPlot()
+    
+    
+
+
+

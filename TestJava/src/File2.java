@@ -1,4 +1,3 @@
-package package2;
 public class File2 extends File1 {
 	
 	public static void main(String[] args) {
@@ -7,7 +6,6 @@ public class File2 extends File1 {
 	}
 
 	public void print() {
-		System.out.println(b + c + d);
 	}
 
 }

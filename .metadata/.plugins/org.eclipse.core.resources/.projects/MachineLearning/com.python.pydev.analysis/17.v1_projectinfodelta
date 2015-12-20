@@ -1,5 +1,15 @@
 INSTUPTest
 /Users/ronaklakhwani/Desktop/Algorithms/MachineLearning/Test.py
-INFOS:&&3|1|2|0
+INFOS:&&2|1|2|0&&2|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0&&3|8|2|0&&3|9|2|0&&3|10|2|0&&3|11|2|0&&3|12|2|0
+li=5
+getMaximumIndex=3
 Test=2
-s=1
+second=12
+start=7
+getMinimumIndex=1
+M=10
+N=4
+m=9
+first=11
+dp=6
+end=8

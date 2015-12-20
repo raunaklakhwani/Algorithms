@@ -1,12 +1,20 @@
 -- VERSION_4
 -- START DISKCACHE_2
 /Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/URLShortener/com.python.pydev.analysis/v2_indexcache
+URLShortener|1448350806000000000|/Users/ronaklakhwani/Desktop/Algorithms/URLShortener/URLShortener.py
 -- END DISKCACHE
 -- START DICTIONARY
-0
+1
+1=URLShortener
 -- END DICTIONARY
 -- START TREE 1
-0
+6
+cha|1|char!11@
+cod|1|code!11@
+get|2|getNum!10@getCode!10@
+ind|2|ind!11@index!11@
+sur|1|surl!11@
+url|3|urls!11@URL!11@urlDict!11@
 -- END TREE
 -- START TREE 2
 0

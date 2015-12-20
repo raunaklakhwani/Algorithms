@@ -46,6 +46,7 @@ plotly_api_key = config.get('plotly', 'plotly_api_key')
 # Constant
 url_prefix = "https://"
 
+
 '''
 Below method is used to return the response from the CMX API
 whose end point is in the URL variable.
@@ -54,29 +55,41 @@ Username and Password are used to access the CMX API.
 def get_response(URL, username, password, response_format):
     '''
      Returns the response in the form of dict where keys are isError and others.
-     If isError is True then dict contains the other keys such as data which contains the description of the message
-     If isError is False then dict contains the other keys such as width,length,data.
+     if isError is True then dict contains the other keys such as data which contains the description of the message
+     if isError is False then dict contains the other keys such as width,length,data.
     '''
-    print (URL)
     response_dict = {}
-    try :
-        with open("MultipleData1.json") as f:
-            page = f.read()
-            print
-        if len(page):
-            if response_format == "xml" :
-                data_dict = get_useful_data_from_XML(page)
-            elif response_format == "json":
-                data_dict = get_useful_data_from_json(page)
-            data_dict['isError'] = False
-            return data_dict
-        else:
-            response_dict['data'] = "No Response Returned"
-            response_dict['isError'] = True
-            return response_dict
-    except URLError as e:
+    for mac in macs:
+        try:
+            print(URL + mac,username)
+            mac_dict = {}
+            conn = HTTPPasswordMgrWithDefaultRealm()
+            conn.add_password(None, URL + mac, username, password)
+            handler = HTTPBasicAuthHandler(conn)
+            opener = build_opener(handler)
+            opener.addheaders = [('Accept', 'application/' + response_format)]
+            install_opener(opener)
+            page = urlopen(URL + mac).read()
+            if len(page):
+                page = page.decode('utf-8')
+                if response_format == "xml" :
+                    mac_dict = get_useful_data_from_XML(page)
+                elif response_format == "json":
+                    mac_dict = get_useful_data_from_json(page)
+                if response_dict.get("data") is None:
+                    response_dict = mac_dict
+                else:
+                    response_dict.get("data").update(mac_dict["data"])
+        except URLError as e:
+            print("Error while calling history api for client : " + mac)
+            print("Error message = " + e.msg)
+    
+    if response_dict.get("data") is None:
         response_dict['data'] = "URL is malformed"
         response_dict['isError'] = True
+        return response_dict
+    else:
+        response_dict['isError'] = False
         return response_dict
 
 '''
@@ -217,16 +230,27 @@ def plot_data(data_dict):
             )
             processed_data.append(plot_data)
             
-            startAndEndData = Scatter(
-            x=[p_data[0][1], p_data[-1][1]],
-            y=[p_data[0][2], p_data[-1][2]],
+            startData = Scatter(
+            x=[p_data[0][1]],
+            y=[p_data[0][2]],
             mode='markers',
-            marker=Marker(color=color, size="6"),
+            marker=Marker(color=color, size="10", symbol = "triangle-left"),
             showlegend=False,
-            text=["Start point " + mac, "End point " + mac],
+            text=["Start point " + mac],
             legendgroup=mac,
             )
-            processed_data.append(startAndEndData)
+            processed_data.append(startData)
+            
+            endData = Scatter(
+            x=[p_data[-1][1]],
+            y=[p_data[-1][2]],
+            mode='markers',
+            marker=Marker(color=color, size="10"),
+            showlegend=False,
+            text=["End point " + mac],
+            legendgroup=mac,
+            )
+            processed_data.append(endData)
     data = Data(processed_data)
     fig = Figure(data=data, layout=layout)
     py.plot(fig, filename='Sample Code For History Of Clients ')

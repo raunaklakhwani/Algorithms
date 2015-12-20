@@ -1,0 +1,50 @@
+'''
+
+asasasasSASSASsasasasas
+'''
+
+class Solution(object):
+    def longestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        
+        N = len(s)
+        if N > 0:
+        
+            start = 0
+            end = 0
+            dp = [[False] * len(s) for _ in xrange(len(s))]
+            
+            for i in xrange(N):
+                dp[i][i] = True
+                if i + 1 < N and s[i] == s[i+1]:
+                    dp[i][i+1] = True
+                    start = i
+                    end = i + 1
+                    
+            
+            for l in xrange(3,N):
+                for i in xrange(N):
+                    j = i + l - 1
+                    if j < N:
+                        if s[i] == s[j]:
+                            dp[i][j] = dp[i+1][j-1]
+                            if dp[i][j]:
+                                start = i
+                                end = j
+                            #x = s[i:j+1]
+                            #print x == x[::-1]
+                    else:
+                        break
+                    
+            return s[start:end + 1]
+        else:
+            return ""
+        
+        
+if __name__ == '__main__':
+    s = Solution()
+    print   s.longestPalindrome("nmngaowrbsssvihklwmuqshcddwlxrywrlwtennwfvrevgvhsvgeccfulmuvrcksdmgeqrblnlwoepefhcwhmgyvgcoyyygrmttyfycxwbqktpurlcfhzlakhmrddsydgygganpmaglaxyhfwjusukzcnakznygqplngnkhcowavxoiwrfycxwdkxqfcjqwyqutcpyedbnuogedwobsktgioqdczxhikjrbkmqspnxcpngfdwdaboscqbkwforihzqdcppxjksiujfvlpdjryewaxgmdgigvxdlstxwngtbdrrkfudjinzyxbdmkautclvvyguekuzwwetmsxittgtxbnvvrgasvnlogdiepltweaehubwelznidltzlbzdsrxmhjpkmylnwkdsxnpkplkdzywioluaqguowtbaoqzqgjfewphqcvlnwlojbxgomvxxkhwwykawegxubjiobizicuxzeafgautefsurgjlbhcfevqzsbhwxycrcaibdsgluczcuewzqupakbzmcvzsfodbmgtugnihyhqkvyeboqhqldifbxuaxqzxtyejoswikbzpsvzkxcndgeyvfnyrfbkhlalzpqjueibnodamgpnxlkvwvliouvejcpnakllfxepldfmdzszagkyhdgqqbkb")
+    

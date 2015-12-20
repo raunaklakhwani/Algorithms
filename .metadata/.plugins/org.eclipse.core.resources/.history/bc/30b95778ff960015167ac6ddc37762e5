@@ -1,0 +1,11 @@
+from threading import thread
+
+flag = [False,False]
+turn = 0
+
+
+
+
+
+
+

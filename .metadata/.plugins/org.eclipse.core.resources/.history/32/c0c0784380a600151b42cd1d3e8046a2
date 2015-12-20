@@ -1,0 +1,3 @@
+def getMinimumIndex(li,start,end):
+    m = li[start]
+    

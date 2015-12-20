@@ -1,6 +1,6 @@
 from heapq import heapify, heappush, heappop
 def myheapify(li):
-    for i in xrange((len(li) - 1) / 2, -1, -1):
+    for i in xrange((len(li) - 1) / 2 - 1, -1, -1):
         actualHeapify(li, i)
         
 def myheappush(li, item):

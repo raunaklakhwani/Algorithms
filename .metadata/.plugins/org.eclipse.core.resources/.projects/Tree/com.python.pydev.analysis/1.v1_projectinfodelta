@@ -1,1 +1,14 @@
-DELSTRouterboundry
+INSTUPVertexCover
+/Users/ronaklakhwani/Desktop/Algorithms/Tree/VertexCover.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|5&&3|6|2|5&&3|7|2|5&&2|8|2|0&&2|9|2|0&&2|10|2|0&&2|11|2|0
+__init__=3
+Node=1
+inorder=10
+getTreeDict=9
+constructTree=8
+data=4
+vertexCover=11
+VertexCover=2
+left=6
+right=7
+Node.__init__=5

@@ -1,1 +1,11 @@
-DELSTRTest
+INSTUPTest
+/Users/ronaklakhwani/Desktop/Algorithms/MachineLearning/Test.py
+INFOS:&&2|1|2|0&&2|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0&&3|8|2|0
+li=5
+getMaximumIndex=3
+Test=2
+start=7
+getMinimumIndex=1
+N=4
+dp=6
+end=8

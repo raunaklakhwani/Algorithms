@@ -1,13 +1,72 @@
 -- VERSION_4
 -- START DISKCACHE_2
 /Users/ronaklakhwani/Desktop/Algorithms/.metadata/.plugins/org.eclipse.core.resources/.projects/Microsoft/com.python.pydev.analysis/v2_indexcache
+MergeTwoSortedArray|1448817150000000000|/Users/ronaklakhwani/Desktop/Algorithms/Microsoft/MergeTwoSortedArray.py
+removeduplicatesfromstring|1448805743000000000|/Users/ronaklakhwani/Desktop/Algorithms/Microsoft/removeduplicatesfromstring.py
+separate01and2|1448804793000000000|/Users/ronaklakhwani/Desktop/Algorithms/Microsoft/separate01and2.py
+BinarySemaphore|1448847242000000000|/Users/ronaklakhwani/Desktop/Algorithms/Microsoft/BinarySemaphore.py
+RunEncoding|1448807550000000000|/Users/ronaklakhwani/Desktop/Algorithms/Microsoft/RunEncoding.py
+CountDistinctElementInWindowOfSizeK|1448805307000000000|/Users/ronaklakhwani/Desktop/Algorithms/Microsoft/CountDistinctElementInWindowOfSizeK.py
+RemoveSpaceWith20|1448806306000000000|/Users/ronaklakhwani/Desktop/Algorithms/Microsoft/RemoveSpaceWith20.py
+FindKFrequentWords|1448845475000000000|/Users/ronaklakhwani/Desktop/Algorithms/Microsoft/FindKFrequentWords.py
 -- END DISKCACHE
 -- START DICTIONARY
-0
+12
+9=MinHeapNode
+12=MinHeapNode.__init__
+1=MergeTwoSortedArray
+10=TrieNode
+6=removeduplicatesfromstring
+8=separate01and2
+3=BinarySemaphore
+4=RunEncoding
+7=CountDistinctElementInWindowOfSizeK
+11=TrieNode.__init__
+5=RemoveSpaceWith20
+2=FindKFrequentWords
 -- END DICTIONARY
 -- START TREE 1
-0
+32
+A|1|A!11@
+B|1|B!11@
+K|1|K!19@
+com|2|common!26@compressString!34@
+exp|1|expandString!34@
+fil|1|file!19@
+fla|1|flag!27@
+fun|1|function!26@
+get|1|getFinalCount!34@
+h|1|h!43@
+hea|1|heap!19@
+i|2|i!51@i!43@
+ins|3|insertInTrie!18@insertInTrieUtil!18@insertInHeap!18@
+k|1|k!59@
+li|2|li!67@li!59@
+m|2|m!59@m!51@
+mer|1|merge!10@
+min|1|MinHeapNode!17@
+nl|1|nl!35@
+par|1|partition!66@
+per|2|percolateDown!18@percolateup!18@
+pi|1|pi!51@
+roo|1|root!19@
+s|3|s!51@s!35@s!43@
+shi|1|shiftLeft!10@
+spa|1|spaces!43@
+swa|2|swap!18@swap!66@
+t|1|t!59@
+t1|1|t1!27@
+t2|1|t2!27@
+tri|1|TrieNode!17@
+tur|1|turn!27@
 -- END TREE
 -- START TREE 2
-0
+7
+__i|2|__init__!9&18@__init__!10&18@
+chi|1|childs!11&19@
+fre|2|frequency!12&19@frequency!11&19@
+ind|1|indexMinHeap!11&19@
+ise|1|isEnd!11&19@
+nod|1|node!12&19@
+wor|1|word!12&19@
 -- END TREE

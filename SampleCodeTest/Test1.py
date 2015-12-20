@@ -1,7 +1,6 @@
 __author__ = "Ronak Lakhwani"
 __copyright__ = "2015 Cisco Systems, Inc."
 
-
 # General Imports
 from datetime import datetime
 
@@ -45,8 +44,11 @@ plotly_api_key = config.get('plotly', 'plotly_api_key')
 # Constant
 url_prefix = "https://"
 
-
-
+'''
+Below method is used to return the response from the CMX API
+whose end point is in the URL variable.
+Username and Password are used to access the CMX API.
+'''
 def get_response(URL, username, password, response_format):
     '''
      Returns the response in the form of dict where keys are isError and others.
@@ -78,17 +80,17 @@ def get_response(URL, username, password, response_format):
         response_dict['isError'] = True
         return response_dict
 
-
-
-
+'''
+Gets the date in the string format 2015-03-17T00:27:33.437+0000 and converts it into 2015-03-17 00:27:33 and then returns the date_object
+'''
 def parse_date(string_date):
-    '''
-    Gets the date in the string format 2015-03-17T00:27:33.437+0000 and converts it into 2015-03-17 00:27:33 and then returns the date_object
-    '''
     string_date = string_date[0:10] + " " + string_date[11:19]
     date_object = datetime.strptime(string_date, "%Y-%m-%d %H:%M:%S")
     return date_object
 
+'''
+Extracts the useful data from the json response(in case response format in config is json) and returns the dict.
+'''
 def get_useful_data_from_json(json_response):
     '''
     Parses the json_response and returns the dict with keys as width, length and the data
@@ -112,6 +114,9 @@ def get_useful_data_from_json(json_response):
     else :
         return {}
 
+'''
+Extracts the useful data from the json response(in case response format in config is xml) and returns the dict.
+'''
 def get_useful_data_from_XML(xml):
     '''
     Parses the xml and returns the dict with keys as width, length and the data
@@ -135,16 +140,16 @@ def get_useful_data_from_XML(xml):
     else:
         return {}
 
-
-
+'''
+Method which reads the dict and renders the response on to the Plotly framework.
+'''
 def plotData(data_dict):
     '''
     Plots the data on the Plotly Framework.
     '''
     pData = data_dict['data']
     pData = sorted(pData, key=lambda x:x[0])
-
-
+    
     processed_data = Scatter(
         x=[x[1] for x in pData],
         y=[y[2] for y in pData],
@@ -152,29 +157,37 @@ def plotData(data_dict):
         text=list(range(1, len(pData) + 1)),
         name=mac,
         marker=Marker(color="red"),
-        opacity="0.5"
+        opacity="0.5",
+        legendgroup=mac,
     )
     
-    startAndEndData = Scatter(
-        x=[pData[0][1], pData[-1][1]],
-        y=[pData[0][2], pData[-1][2]],
+    startData = Scatter(
+        x=[pData[0][1]],
+        y=[pData[0][2]],
         mode='markers',
-        marker=Marker(color="red", size="6"),
+        marker=Marker(color="red", size="12", symbol="triangle-left"),
         showlegend=False,
-        text=["Start point", "End point"]
+        name=mac,
+        text=["Start point"],
+        legendgroup=mac,
+    )
+    
+    endData = Scatter(
+        x=[pData[-1][1]],
+        y=[pData[-1][2]],
+        mode='markers',
+        marker=Marker(color="red", size="12"),
+        showlegend=False,
+        name=mac,
+        text=["End point"],
+        legendgroup=mac,
     )
     
     
 
-
-    # The below two lines are using the plotly interface account details.
-    # username is raunaklakhwani and the 'n7qx3a5vcn' is the api key to use the plotly.
-    # User can create their new account on plotly and get the new api key and change the username and apikey over here.
-    # Can also use already created username and key
     py.sign_in(plotly_username, plotly_api_key)
     tls.set_credentials_file(username=plotly_username,
                                  api_key=plotly_api_key)
-
     layout = Layout(
                 showlegend=True,
                 autosize=True,
@@ -220,14 +233,73 @@ def plotData(data_dict):
                     title="Y co-ordinate"
                     )
                 )
-    data = Data([processed_data, startAndEndData])
+    data = Data([processed_data, startData, endData])
     fig = Figure(data=data, layout=layout)
     py.plot(fig, filename='Sample Code For History Of Clients ')
 
-
-
-
+'''
+Main Method to Invoke the Application
+'''
 if __name__ == '__main__':
+    
+    
+    
+    py.sign_in(plotly_username, plotly_api_key)
+    tls.set_credentials_file(username=plotly_username,
+                                 api_key=plotly_api_key)
+    layout = Layout(
+                showlegend=True,
+                autosize=True,
+                height=800,
+                width=800,
+                title="MAP",
+                xaxis=XAxis(
+                    zerolinewidth=4,
+                    gridwidth=1,
+                    showgrid=True,
+                    zerolinecolor="#969696",
+                    gridcolor="#bdbdbd",
+                    linecolor="#636363",
+                    mirror=True,
+                    zeroline=False,
+                    showline=True,
+                    linewidth=6,
+                    type="linear",
+                    range=[0, 300],
+                    autorange=False,
+                    autotick=False,
+                    dtick=15,
+                    tickangle=-45,
+                    title="X co-ordinate"
+                    ),
+                yaxis=YAxis(
+                    zerolinewidth=4,
+                    gridwidth=1,
+                    showgrid=True,
+                    zerolinecolor="#969696",
+                    gridcolor="#bdbdbd",
+                    linecolor="#636363",
+                    mirror=True,
+                    zeroline=False,
+                    showline=True,
+                    linewidth=6,
+                    type="linear",
+                    range=[300, 0],
+                    autorange=False,
+                    autotick=False,
+                    dtick=15,
+                    tickangle=-45,
+                    title="Y co-ordinate"
+                    )
+                )
+    
+    fig = Figure(layout=layout)
+    py.plot(fig, filename='Sample Code For History Of Clients ')
+    
+    
+    
+    
+    
     URL = url_prefix + mse_ip + url_suffix + mac
     data_dict = get_response(URL, username, password, response_format)
     if data_dict['isError'] == False:

@@ -1,0 +1,34 @@
+'''
+5
+1 2 6 5 7
+
+5
+11 7 22 5 2
+'''
+
+def getMinimumIndex(li, start, end):
+    m = start
+    for i in xrange(start, end + 1):
+        if li[m] > li[i]:
+            m = i
+    return m
+
+
+def getMaximumIndex(li, start, end):
+    m = start
+    for i in xrange(start, end + 1):
+        if li[m] < li[i]:
+            m = i
+    return m
+
+
+N = input()
+li = map(int,raw_input().split())
+dp = [[0] * N for _ in xrange(N)]
+
+
+for l in xrange(2,N+1)
+
+
+
+            

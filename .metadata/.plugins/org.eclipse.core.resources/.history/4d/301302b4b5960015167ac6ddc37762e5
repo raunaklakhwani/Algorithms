@@ -1,0 +1,57 @@
+file = '''Welcome to the world of Geeks 
+This portal has been created to provide well written well thought and well explained 
+solutions for selected questions If you like Geeks for Geeks and would like to contribute 
+here is your chance You can write article and mail your article to contribute at 
+geeksforgeeks org See your article appearing on the Geeks for Geeks main page and help 
+thousands of other Geeks'''
+
+
+class TrieNode:
+    def __init__(self):
+        self.frequency = 0
+        self.indexMinHeap = -1
+        self.isEnd = False
+        self.childs = [None] * 26
+        
+        
+class MinHeapNode:
+    def __init__(self):
+        self.node = None
+        self.frequency = 0
+        self.word = None
+        
+class MinHeap:
+    def __init__(self):
+        self.nodes = []
+        self.count = 0
+        
+        
+def swap(li,a,b):
+    li[a],li[b] = li[b],li[a]
+    
+    
+def insertInTrieUtil(root,word,index):
+    if root is None:
+        root = TrieNode()
+        
+    if index == len(word):
+        root.isEnd = True
+        root.frequency += 1
+    else:
+        print
+        ni = ord(word[index])
+        
+        
+    return root
+    
+    
+
+
+def insertInTrie(root,word):
+    return insertInTrieUtil(root, word, 0)
+
+
+
+root = None
+for word in file.split():
+    root = insertInTrie(root, word)
